@@ -1,0 +1,169 @@
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #636450; /*gris*/
+}
+
+ul{ 
+	padding: 0;
+	margin: 0;
+}
+
+.logo{
+	img{
+		width: 100%;
+	  	max-width: 1024px;
+	  	height: auto;
+	  	margin: 0 auto;
+	  	display: inherit;
+	}
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.menu{
+	border-radius: 4px;
+	font-weight: bold;
+	text-align: center;
+	background: #70B52E; /*verde*/
+	padding: 5px;
+	display: inherit;
+	a{
+		color: #fff;
+	}
+	li{
+		text-decoration: none;
+		list-style: none;
+		display: inline-block;
+		padding: 0 2em;
+	}
+}
+.navegacion{
+	margin-bottom: 0; 
+}
+.contenido{
+	width: 66%;
+	float: left;
+}
+.principal{
+	width: 99%;
+	margin: 10px 0.5%;
+	background: #636450; /*gris*/
+	img{
+		float: left;
+		width: 74%;
+	}
+	p{
+		color: #fff;
+		float: left;
+		width: 25%;
+		padding: 10px 1.5%;
+	}
+}
+.principales{
+	width: 24%;
+	float: left;
+	margin: 10px 0.5%;
+	background: #636450; /*gris*/
+	img{
+		width: 100%;
+	}
+	p{
+		color: #fff;
+		padding: 5px;
+	}
+}
+.nota{
+	width: 32.1%;
+	float: left;
+	margin: 10px 0.5%;
+	display: inline-block;
+	h2{
+		background: #636450; /*gris*/
+		color: #fff;
+		font-size: 14px;
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-weight: bold;
+		margin: 0;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+.lateral{
+	width: 32.5%;
+	float: left;
+	display: inline-block;
+	margin: 10px 0  0 10px;
+}
+.cuenta{
+	background: #2e4c8f; /*azul*/
+	border-radius: 3px;
+	padding: 10px;
+}
+.complemento{
+	margin: 20px auto;
+	h2, h3{
+		color: #fff;
+		text-align: center;
+		padding: 5px;
+		font-size: 16px;
+		font-weight: bold;
+		font-family: 'Quattrocento Sans', sans-serif;
+		margin: 3px 0;
+	}
+
+}
+.resultados{
+	background: #ea5251; /*rojo claro*/
+	border-radius: 3px;
+}
+.res-list{
+	ul{
+		list-style: none;
+		text-align: center;
+		li:nth-child(odd) {
+		    background: #ccc;   
+		}
+	}
+}
+.res-footer{
+	background: #dd3b30; /*rojo*/
+	border-radius: 3px;
+}
+.twitter{
+	header{
+		background: #3c91cf; /*azul*/
+		border-radius: 3px;
+		text-align: center;
+		a {
+			color: #fff;
+			padding: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			margin: 3px 0;
+			text-decoration: none;
+			i {
+				font-size: 20px;
+			}
+		}
+	}
+}
+.audios{
+	background: #feca17; /*amarillo*/
+	border-radius: 3px;
+}
+.foto{
+	background: #70b52e; /*verde*/
+	border-radius: 3px;
+}
+.pie{
+	background: #636450; /*gris*/
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+}
