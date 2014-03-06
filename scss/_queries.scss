@@ -1,0 +1,150 @@
+/* Media Queries*/
+
+/* VERSIÓN TABLET */
+@media only screen and (min-width: 480px) {
+	.menu{
+		.navhead { display: none; }
+		.navegacion{ 
+			display: inline;
+			text-align: justify;
+			font-size: 0.1px;
+			&:after, &:before {
+				content: '';
+				width: 100%;
+				display: inline;
+			}
+			.spacer {
+				display: inline-block;
+				width: 100%;
+			}
+			li {
+				border: none;
+				display: inline;
+				font-size: 14px;
+			}
+		}
+	}
+	.contenido{
+		width: 100%;
+		.principal{
+			img{
+				width: 74%;
+			}
+			p{
+				width: 25%;
+			}
+		}
+		.principales{
+			width: 24%;
+		}
+	}
+	.lateral{
+
+		.cuenta{
+			width: 45%;
+			margin: 10px;
+			float: left;
+		}
+		.complemento{
+
+		}
+		.resultados{
+			width: 45%;
+			margin: 10px;
+			float: left;
+			.res-head{
+				margin: 0;
+			}
+			.res-list{
+				
+			}
+			.res-footer{
+
+			}
+		}
+		
+		.twitter{
+			width: 45%;
+			margin: 10px;
+			float: left;
+		}
+		.audios{
+			width: 45%;
+			margin: 10px;
+			float: left;
+		}
+		.foto{
+			width: 98%;
+			float: left;
+		}
+	}
+}
+
+/* VERSIÓN ESCRITORIO */
+@media only screen and (min-width: 769px) {
+	.menu{
+		.navegacion{
+			width: 100%;
+			text-align: justify;
+			font-size: 0.1px;
+			&:after, &:before {
+				content: '';
+				width: 100%;
+			}
+			.spacer {
+				display: none;
+				padding: 0;
+			}
+			li {
+				border: 0;
+				font-size: 14px;
+				/* width: 200px; */
+			}
+		}
+	}
+	.contenido{
+		width: 66% !important;
+		float: left;
+	}
+	.lateral{
+		width: 44%;
+		margin: 0;
+		.cuenta{
+			
+			margin: 10px;
+			float: left;
+		}
+		.complemento{
+
+		}
+		.resultados{
+			width: 44%;
+			margin: 10px;
+			float: left;
+			.res-head{
+				margin: 0;
+			}
+			.res-list{
+				
+			}
+			.res-footer{
+
+			}
+		}
+		
+		.twitter{
+			width: 44%;
+			margin: 10px;
+			float: left;
+		}
+		.audios{
+			width: 44%;
+			margin: 10px;
+			float: left;
+		}
+		.foto{
+			width: 44%;
+			float: left;
+		}
+	}
+}

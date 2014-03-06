@@ -34,19 +34,40 @@ ul{
 	a{
 		color: #fff;
 	}
-	li{
-		text-decoration: none;
-		list-style: none;
-		display: inline-block;
-		padding: 0 2em;
+	.navhead {
+		display:block;
+		font-size: 17px;
+		font-weight: bold;
+		padding: 5px;
+		a:hover{
+			text-decoration: none;
+		}
+		.menubutton{
+			float: left;
+		}
+	}
+	.navegacion{
+		margin-bottom: 0; 
+		display: none;
+		.spacer {
+			display: none;
+		}
+		li{
+			text-decoration: none;
+			list-style: none;
+			display: block;
+			padding: 0.8em 2em;
+			border-top: 1px solid #fff;
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }
-.navegacion{
-	margin-bottom: 0; 
-}
 .contenido{
-	width: 66%;
-	float: left;
+	width: 100%;
 }
 .principal{
 	width: 99%;
@@ -54,17 +75,17 @@ ul{
 	background: #636450; /*gris*/
 	img{
 		float: left;
-		width: 74%;
+		width: 100%;
 	}
 	p{
 		color: #fff;
 		float: left;
-		width: 25%;
+		width: 100%;
 		padding: 10px 1.5%;
 	}
 }
 .principales{
-	width: 24%;
+	width: 48%;
 	float: left;
 	margin: 10px 0.5%;
 	background: #636450; /*gris*/
@@ -95,15 +116,16 @@ ul{
 }
 
 .lateral{
-	width: 32.5%;
+	width: 98%;
 	float: left;
 	display: inline-block;
-	margin: 10px 0  0 10px;
+	margin: 15px 0  0 15px; /*corregiiiiiiir!!!!!!!!!!!!!!!!!!!!*/
 }
 .cuenta{
 	background: #2e4c8f; /*azul*/
 	border-radius: 3px;
 	padding: 10px;
+
 }
 .complemento{
 	margin: 20px auto;
@@ -119,47 +141,56 @@ ul{
 
 }
 .resultados{
-	background: #ea5251; /*rojo claro*/
-	border-radius: 3px;
-}
-.res-list{
-	ul{
-		list-style: none;
-		text-align: center;
-		li:nth-child(odd) {
-		    background: #ccc;   
+	float: left;
+	width: 100%;
+	.res-head{
+		background: #ea5251; /*rojo claro*/
+		border-radius: 3px;
+	}
+	.res-list{
+		ul{
+			list-style: none;
+			text-align: center;
+			li:nth-child(odd) {
+			    background: #ccc;   
+			}
 		}
 	}
-}
-.res-footer{
-	background: #dd3b30; /*rojo*/
-	border-radius: 3px;
-}
-.twitter{
-	header{
-		background: #3c91cf; /*azul*/
+	.res-footer{
+		background: #dd3b30; /*rojo*/
 		border-radius: 3px;
-		text-align: center;
-		a {
-			color: #fff;
-			padding: 5px;
-			font-size: 16px;
-			font-weight: bold;
-			margin: 3px 0;
-			text-decoration: none;
-			i {
-				font-size: 20px;
-			}
+	}
+}
+
+.twitter{
+	background: #3c91cf; /*azul*/
+	border-radius: 3px;
+	text-align: center;
+	float: left;
+	width: 100%;
+	a {
+		color: #fff;
+		padding: 5px;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 3px 0;
+		text-decoration: none;
+		i {
+			font-size: 20px;
 		}
 	}
 }
 .audios{
 	background: #feca17; /*amarillo*/
 	border-radius: 3px;
+	float: left;
+	width: 100%;
 }
 .foto{
 	background: #70b52e; /*verde*/
 	border-radius: 3px;
+	float: left;
+	width: 100%;
 }
 .pie{
 	background: #636450; /*gris*/

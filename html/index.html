@@ -15,8 +15,18 @@
         <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script>
+          Modernizr.load([
+            {
+              test: window.matchMedia,
+              nope: "js/media.match.min.js"
+            },
+            "js/enquire.min.js",
+            "js/queries.min.js"
+          ]);
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -24,13 +34,19 @@
         <![endif]-->
       <header>
         <div class="contenedor logo">
-          <img src="img/logo.jpg" alt="Periódico Digital - Brasil 2014">
+          <img src="img/logo-s.jpg" alt="Periódico Digital - Brasil 2014">
         </div>
         <div class="contenedor menu">
+          <div class="navhead clearfix">
+            <div class="menubutton">
+              <a href="#"><i class="icon-reorder"></i>&nbsp;</a>
+            </div> 
+          </div>
           <ul class="navegacion">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="#">Selección Nacional</a></li>
+            <li class="spacer"></li>
             <li><a href="#">Calendario</a></li>
             <li><a href="#">Infografías</a></li>
           </ul>
@@ -75,8 +91,8 @@
           <div class="cuenta">
             <iframe src="http://free.timeanddate.com/countdown/i41j74es/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fs100/szw320/szh135/tacfff/tpcfff/macfff/mpcfff/iso2014-06-12T12:00:00" frameborder="0" width="117" height="48"></iframe>
           </div>
-          <div class="complemento">
-            <h2 class="resultados">Últimos Resultados</h2>
+          <div class="complemento resultados">
+            <h2 class="res-head">Últimos Resultados</h2>
             <div class="res-list">
               <ul>
                 <li>Partido 1</li>
@@ -87,10 +103,10 @@
             <h3 class="res-footer">Presentado por</h3>
           </div>
           <div class="complemento twitter">
-            <header>
+            <h2>
               <a href="https://twitter.com/TribunaVigila">
               <i class="icon-twitter"></i> @TribunaDeportes</a>
-            </header>
+            </h2>
           </div>
           <div class="complemento audios">
             <h2>Audios</h2>
@@ -115,11 +131,11 @@
       </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+        <script src="js/actions.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <!--script src="js/plugins.js"></script>
+        <script src="js/main.js"></script-->
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
