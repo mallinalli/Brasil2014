@@ -39,35 +39,40 @@
 		}
 	}
 	.lateral{
-
-		.cuenta{
-			width: 47.5%;
-			margin: 10px 5px;
-		}
+		
 		.complemento{
 
 		}
-		.resultados{
-			width: 47.5%;
-			margin: 10px 5px;
-			.res-head{
-				margin: 0;
+		.widgets1{
+			width: 48%;
+			float: left;
+			margin: 0 5px;
+			.cuenta{
+				margin: 10px 5px;
 			}
-			.res-list{
-				
-			}
-			.res-footer{
+			.resultados{
+				margin: 10px 5px;
+				.res-head{
+					margin: 0;
+				}
+				.res-list{
+					
+				}
+				.res-footer{
 
+				}
 			}
 		}
-		
-		.twitter{
-			width: 47.5%;
-			margin: 10px 5px;
-		}
-		.audios{
-			width: 47.5%;
-			margin: 10px 5px;
+		.widgets2{
+			width: 48%;
+			float: left;
+			
+			.twitter{
+				margin: 10px 5px;
+			}
+			.audios{
+				margin: 10px 5px;
+			}
 		}
 		.foto{
 			width: 99%;
@@ -104,37 +109,43 @@
 	.lateral{
 		width: 33.5% !important;
 		margin: 0 auto;
-		.cuenta{
-			width: 100%;
-			margin: 10px auto;
-		}
 		.complemento{
 
 		}
-		.resultados{
+		.widgets1{
 			width: 100%;
-			margin: 10px auto;
-
-			.res-head{
-				margin: 0;
+			.cuenta{
+				width: 100%;
+				margin: 10px auto;
 			}
-			.res-list{
-				
-			}
-			.res-footer{
+			
+			.resultados{
+				width: 100%;
+				margin: 10px auto;
 
+				.res-head{
+					margin: 0;
+				}
+				.res-list{
+					
+				}
+				.res-footer{
+
+				}
 			}
 		}
-		
-		.twitter{
+		.widgets2{
 			width: 100%;
-			margin: 10px auto;
+			.twitter{
+				width: 100%;
+				margin: 10px auto;
 
-		}
-		.audios{
-			width: 100%;
-			margin: 10px auto;
+			}
+			.audios{
+				width: 100%;
+				margin: 10px auto;
 
+			}
 		}
 		.foto{
 			width: 100%;
