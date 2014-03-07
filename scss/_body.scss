@@ -116,82 +116,86 @@ ul{
 }
 
 .lateral{
-	width: 98%;
+	width: 100%;
 	float: left;
 	display: inline-block;
-	margin: 15px 0  0 15px; /*corregiiiiiiir!!!!!!!!!!!!!!!!!!!!*/
-}
-.cuenta{
-	background: #2e4c8f; /*azul*/
-	border-radius: 3px;
-	padding: 10px;
-
-}
-.complemento{
-	margin: 20px auto;
-	h2, h3{
-		color: #fff;
-		text-align: center;
-		padding: 5px;
-		font-size: 16px;
-		font-weight: bold;
-		font-family: 'Quattrocento Sans', sans-serif;
-		margin: 3px 0;
-	}
-
-}
-.resultados{
-	float: left;
-	width: 100%;
-	.res-head{
-		background: #ea5251; /*rojo claro*/
+	margin: 0 auto;
+	.cuenta{
+		background: #2e4c8f; /*azul*/
 		border-radius: 3px;
+		padding: 10px;
+		float: left;
+
 	}
-	.res-list{
-		ul{
-			list-style: none;
+	.complemento{
+		margin: 20px auto;
+		h2, h3{
+			color: #fff;
 			text-align: center;
-			li:nth-child(odd) {
-			    background: #ccc;   
+			padding: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: 'Quattrocento Sans', sans-serif;
+			margin: 3px 0;
+		}
+
+	}
+	.resultados{
+		float: left;
+		width: 100%;
+		.res-head{
+			background: #ea5251; /*rojo claro*/
+			border-radius: 3px;
+		}
+		.res-list{
+			ul{
+				list-style: none;
+				text-align: center;
+				li:nth-child(odd) {
+				    background: #ccc;   
+				}
+			}
+		}
+		.res-footer{
+			background: #dd3b30; /*rojo*/
+			border-radius: 3px;
+		}
+	}
+
+	.twitter{
+		background: #3c91cf; /*azul*/
+		border-radius: 3px;
+		text-align: center;
+		float: left;
+		width: 100%;
+		a {
+			color: #fff;
+			padding: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			margin: 3px 0;
+			text-decoration: none;
+			i {
+				font-size: 20px;
 			}
 		}
 	}
-	.res-footer{
-		background: #dd3b30; /*rojo*/
+	.audios{
+		background: #feca17; /*amarillo*/
 		border-radius: 3px;
+		float: left;
+		width: 100%;
 	}
-}
-
-.twitter{
-	background: #3c91cf; /*azul*/
-	border-radius: 3px;
-	text-align: center;
-	float: left;
-	width: 100%;
-	a {
-		color: #fff;
-		padding: 5px;
-		font-size: 16px;
-		font-weight: bold;
-		margin: 3px 0;
-		text-decoration: none;
-		i {
-			font-size: 20px;
+	.foto{
+		float: left;
+		width: 100%;
+		.foto-head, .foto-footer{
+			background: #70b52e; /*verde*/
+			border-radius: 3px;
 		}
 	}
 }
-.audios{
-	background: #feca17; /*amarillo*/
-	border-radius: 3px;
-	float: left;
-	width: 100%;
-}
-.foto{
-	background: #70b52e; /*verde*/
-	border-radius: 3px;
-	float: left;
-	width: 100%;
-}
+
 .pie{
 	background: #636450; /*gris*/
 	color: #fff;

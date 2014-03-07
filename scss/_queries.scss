@@ -41,17 +41,15 @@
 	.lateral{
 
 		.cuenta{
-			width: 45%;
-			margin: 10px;
-			float: left;
+			width: 47.5%;
+			margin: 10px 5px;
 		}
 		.complemento{
 
 		}
 		.resultados{
-			width: 45%;
-			margin: 10px;
-			float: left;
+			width: 47.5%;
+			margin: 10px 5px;
 			.res-head{
 				margin: 0;
 			}
@@ -64,18 +62,15 @@
 		}
 		
 		.twitter{
-			width: 45%;
-			margin: 10px;
-			float: left;
+			width: 47.5%;
+			margin: 10px 5px;
 		}
 		.audios{
-			width: 45%;
-			margin: 10px;
-			float: left;
+			width: 47.5%;
+			margin: 10px 5px;
 		}
 		.foto{
-			width: 98%;
-			float: left;
+			width: 99%;
 		}
 	}
 }
@@ -107,20 +102,19 @@
 		float: left;
 	}
 	.lateral{
-		width: 44%;
-		margin: 0;
+		width: 33.5% !important;
+		margin: 0 auto;
 		.cuenta{
-			
-			margin: 10px;
-			float: left;
+			width: 100%;
+			margin: 10px auto;
 		}
 		.complemento{
 
 		}
 		.resultados{
-			width: 44%;
-			margin: 10px;
-			float: left;
+			width: 100%;
+			margin: 10px auto;
+
 			.res-head{
 				margin: 0;
 			}
@@ -133,18 +127,18 @@
 		}
 		
 		.twitter{
-			width: 44%;
-			margin: 10px;
-			float: left;
+			width: 100%;
+			margin: 10px auto;
+
 		}
 		.audios{
-			width: 44%;
-			margin: 10px;
-			float: left;
+			width: 100%;
+			margin: 10px auto;
+
 		}
 		.foto{
-			width: 44%;
-			float: left;
+			width: 100%;
+			margin: 10px auto;
 		}
 	}
 }
