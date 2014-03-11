@@ -16,6 +16,7 @@
 			.spacer {
 				display: inline-block;
 				width: 100%;
+				padding: 1px 0;
 			}
 			li {
 				border: none;
@@ -36,6 +37,13 @@
 		}
 		.principales{
 			width: 24%;
+		}
+		.desk-home-video-component {
+			width: 100%;
+			display: block;
+		}
+		.home-video-component {
+			display: none;
 		}
 	}
 	.lateral{
@@ -66,7 +74,7 @@
 		.widgets2{
 			width: 48%;
 			float: left;
-			
+			margin: 0 5px;
 			.twitter{
 				margin: 10px 5px;
 			}
@@ -76,6 +84,7 @@
 		}
 		.foto{
 			width: 99%;
+			margin: 0 5px;
 		}
 	}
 }
@@ -105,7 +114,31 @@
 	.contenido{
 		width: 66% !important;
 		float: left;
+		.desk-home-video-component {
+			width: 100%;
+		}
+		.nota-s{
+			margin: 10px 0;
+			/* width: 100%; */
+			display: inline-block;
+			img, h3, p{
+				float: left;
+			}
+			img{
+				width: 20%;
+			}
+			h3{
+				margin-left: 10px;
+				margin-bottom: 0;
+				width: 80%;
+			}
+			p{
+				text-align: right;
+			}
+
+		}
 	}
+	
 	.lateral{
 		width: 33.5% !important;
 		margin: 0 auto;
@@ -149,7 +182,6 @@
 		}
 		.foto{
 			width: 100%;
-			margin: 10px auto;
 		}
 	}
 }
