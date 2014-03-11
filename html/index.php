@@ -36,13 +36,13 @@
           <section class="desk-home-video-component clearfix">
             <div class="desk-actual-video"><!-- Este es el stage para el video --></div>
             <div class="desk-pull">
-              <a href=""><i class="fa fa-angle-right"></i></a>
+              <a href=""><i class="icon-angle-right"></i></a>
             </div>
             <div class="desk-video-menu-wrapper">
               <div class="video-menu-container clearfix">
                 <nav class="desk-video-menu">
                   <ul>
-                    <li><header><i class="fa fa-youtube-play"></i> <span>Videos</span></header></li>
+                    <li><header><i class="icon-youtube-play"></i> <span>Videos</span></header></li>
                   </ul>
                 </nav>
               </div>
@@ -56,12 +56,12 @@
             <div class="video-menu-wrapper clearfix">
               <nav class="video-menu">
                 <ul>
-                  <li><header><i class="fa fa-youtube-play"></i> <span>Videos</span></header></li>
+                  <li><header><i class="icon-youtube-play"></i> <span>Videos</span></header></li>
                 </ul>
               </nav>
             </div>
             <div class="pull">
-              <a href=""><i class="fa fa-angle-down"></i></a>
+              <a href=""><i class="icon-angle-down"></i></a>
             </div>
           </section>
 

@@ -52,7 +52,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
       $('.desk-actual-video').animate({
         width: 95+'%'
       },function(){
-        $('.desk-pull a').html('<i class="fa fa-angle-left"></i>');
+        $('.desk-pull a').html('<i class="icon-angle-left"></i>');
       });
       deskstate = !deskstate;
     }
@@ -63,7 +63,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
       $('.desk-actual-video').animate({
         width: 60+'%'
       },function(){
-        $('.desk-pull a').html('<i class="fa fa-angle-right"></i>');
+        $('.desk-pull a').html('<i class="icon-angle-right"></i>');
       });
       deskstate = !deskstate;
     }
@@ -117,14 +117,14 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
     menu_state = !menu_state;
     $('.video-menu-wrapper').find('.video-menu').show();
     $('.video-menu-wrapper').stop().slideToggle(function(){
-      $('.pull a').html('<i class="fa fa-angle-up"></i>');
+      $('.pull a').html('<i class="icon-angle-up"></i>');
     });
   };
 
   function movilPush(){
     menu_state = !menu_state;
     $('.video-menu-wrapper').stop().slideToggle(function(){
-      $('.pull a').html('<i class="fa fa-angle-down"></i>');
+      $('.pull a').html('<i class="icon-angle-down"></i>');
       $('.video-menu-wrapper').find('.video-menu').hide();
     });
   };
