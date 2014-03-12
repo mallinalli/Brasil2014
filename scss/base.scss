@@ -1,6 +1,12 @@
+/* Compass */
 @import "compass";
-@import "settings";
-@import "body";
 
-@import "queries";
+/* Settings, variables, mixins, etc */
+@import "settings";
+
+/* Estilos de secciones */
+@import "body";
 @import "video"; 
+
+/* Media queries FTW */
+@import "queries";
