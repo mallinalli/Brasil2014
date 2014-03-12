@@ -29,11 +29,7 @@
   <div class="complemento foto">
     <h2 class="foto-head">Fotos del día</h2>
     <div>
-      <ul>
-        <li>Foto 1</li>
-        <li>Foto 2</li>
-        <li>Foto 3</li>
-      </ul>
+      Aquí las fotos ;D
     </div>
     <h3 class="foto-footer">Presentado por</h3>
   </div>
