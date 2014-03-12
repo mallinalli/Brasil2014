@@ -9,7 +9,7 @@
               <img src="http://placehold.it/169x120" alt="#">
               <p>Información importante aquí</p>
             </div>
-            <div class="principales">
+            <div class="principales hlpr-mr-t">
               <img src="http://placehold.it/169x120" alt="#">
               <p>Información importante aquí</p>
             </div>
