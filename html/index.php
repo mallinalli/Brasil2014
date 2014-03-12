@@ -2,35 +2,35 @@
         <div class="contenido">
           <div class="clearfix">            
             <div class="principal clearfix">
-              <img src="http://placehold.it/500x254">
+              <img src="http://placehold.it/500x254" alt="#">
+              <p>Información importante aquí</p>
+            </div>
+            <div class="principales hlpr-mr">
+              <img src="http://placehold.it/169x120" alt="#">
               <p>Información importante aquí</p>
             </div>
             <div class="principales">
-              <img src="http://placehold.it/169x120">
+              <img src="http://placehold.it/169x120" alt="#">
+              <p>Información importante aquí</p>
+            </div>
+            <div class="principales hlpr-mr">
+              <img src="http://placehold.it/169x120" alt="#">
               <p>Información importante aquí</p>
             </div>
             <div class="principales">
-              <img src="http://placehold.it/169x120">
+              <img src="http://placehold.it/169x120" alt="#">
               <p>Información importante aquí</p>
             </div>
-            <div class="principales">
-              <img src="http://placehold.it/169x120">
-              <p>Información importante aquí</p>
-            </div>
-            <div class="principales">
-              <img src="http://placehold.it/169x120">
-              <p>Información importante aquí</p>
-            </div>
-            <div class="nota">
-              <img src="http://placehold.it/220x156">
+            <div class="nota hlpr-mr">
+              <img src="http://placehold.it/220x156" alt="#">
               <h2> Grupos</h2>
             </div>
-            <div class="nota">
-              <img src="http://placehold.it/220x156">
+            <div class="nota hlpr-mr">
+              <img src="http://placehold.it/220x156" alt="#">
               <h2> Calendario</h2>
             </div>
             <div class="nota">
-              <img src="http://placehold.it/220x156">
+              <img src="http://placehold.it/220x156" alt="#">
               <h2> La Opinión de...</h2>
             </div>
           </div>

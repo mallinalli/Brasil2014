@@ -22,7 +22,7 @@
 	}
 }
 .contenido{
-	width: 100%;
+	width: 98%;
 	.principal{
 		img{
 			width: 74%;
@@ -46,43 +46,31 @@
 }
 
 .lateral{
-	
-	.complemento{
-
+	width: 98%;
+	float: left;
+	margin-left: 1%;
+	.complemento{/* Empty Style */}
+	.widgets1, .widgets2 {
+		width: 49%;
 	}
 	.widgets1{
-		width: 48%;
 		float: left;
-		margin: 0 5px;
-		.cuenta{
-			margin: 10px 5px;
+		&.hlpr-mr {
+			margin-right: 2%;
 		}
+		.cuenta{/* Empty Style */}
 		.resultados{
-			margin: 10px 5px;
-			.res-head{
-				margin: 0;
-			}
-			.res-list{
-				
-			}
-			.res-footer{
-
-			}
+			.res-head{/* Empty Style */}
+			.res-list{/* Empty Style */}
+			.res-footer{/* Empty Style */}
 		}
 	}
 	.widgets2{
-		width: 48%;
 		float: left;
-		margin: 0 5px;
 		.twitter{
-			margin: 10px 5px;
+			margin-top: 0;
 		}
-		.audios{
-			margin: 10px 5px;
-		}
+		.audios{/* Empty Style */}
 	}
-	.foto{
-		width: 99%;
-		margin: 0 5px;
-	}
+	.foto{/* Empty Style */}
 }

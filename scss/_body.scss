@@ -16,6 +16,10 @@ ul{
 	margin: 0;
 }
 
+.main-header {
+	margin-bottom: 10px;
+}
+
 .logo{
 	img{
 		width: 100%;
@@ -75,7 +79,11 @@ ul{
 	}
 }
 .contenido{
+	margin: 0 auto;
 	width: 100%;
+	/* temp */
+	background: red;
+	/* temp */
 }
 
 /* ==========================
@@ -87,10 +95,11 @@ ul{
 .desk-home-video-component {
 	display: none;
 }
-
+.principal, .principales, .nota {
+	margin-bottom: 10px;
+}
 .principal{
-	width: 99%;
-	margin: 10px 0.5%;
+	width: 100%;
 	background: $elGris;
 	img{
 		float: left;
@@ -104,9 +113,8 @@ ul{
 	}
 }
 .principales{
-	width: 48%;
+	width: 49%;
 	float: left;
-	margin: 10px 0.5%;
 	background: $elGris;
 	img{
 		width: 100%;
@@ -115,11 +123,13 @@ ul{
 		color: #fff;
 		padding: 5px;
 	}
+	&.hlpr-mr {
+		margin-right: 2%;
+	}
 }
 .nota{
-	width: 32.3%;
+	width: 32.6%;
 	float: left;
-	margin: 10px 0.5%;
 	display: inline-block;
 	h2{
 		background: $elGris;
@@ -132,6 +142,9 @@ ul{
 	}
 	img{
 		width: 100%;
+	}
+	&.hlpr-mr {
+		margin-right: 1.1%;
 	}
 }
  .nota-s{
@@ -160,11 +173,15 @@ ul{
 
 .lateral{
 	width: 100%;
-	float: left;
-	display: inline-block;
 	margin: 0 auto;
+	/* float: left; */
+	/* temp */
+	background: blue;
+	/* temp */
+	.resultados,.audios,.twitter,.foto {
+		margin-top: 10px;
+	}
 	.complemento{
-		margin: 20px auto;
 		h2, h3{
 			color: #fff;
 			text-align: center;
@@ -252,4 +269,5 @@ ul{
 	color: #fff;
 	text-align: center;
 	font-size: 12px;
+	margin-top: 10px;
 }
