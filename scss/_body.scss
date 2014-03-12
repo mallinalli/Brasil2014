@@ -81,9 +81,6 @@ ul{
 .contenido{
 	margin: 0 auto;
 	width: 100%;
-	/* temp */
-	background: red;
-	/* temp */
 }
 
 /* ==========================
@@ -175,9 +172,6 @@ ul{
 	width: 100%;
 	margin: 0 auto;
 	/* float: left; */
-	/* temp */
-	background: blue;
-	/* temp */
 	.resultados,.audios,.twitter,.foto {
 		margin-top: 10px;
 	}
@@ -256,11 +250,6 @@ ul{
 			background: $elVerde;
 			@include border-radius(3px);
 		}
-		/* temp */
-		div {
-			background: #000;
-		}
-		/* temp */
 	}
 }
 

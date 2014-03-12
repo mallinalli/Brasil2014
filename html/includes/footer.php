@@ -35,7 +35,7 @@
           </div>
         </aside>
       </div>
-      <footer>
+      <footer class="main-footer">
         <div class="contenedor pie">
           <img src="img/tribuna1.png" alt="Tribuna Comunicación"/>
           <img src="img/logo_exa.png" alt="EXA 98.7FM"/>
@@ -58,5 +58,35 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
+        <!-- THE ZEN AREA -->
+        <div class="the-developer-zen-area">
+          <style type="text/css">
+            .the-developer-zen-area {
+              position: fixed;
+              bottom: 0;
+              right: 0;
+              background: rgba(255,255,255,0.3);
+              border: 1px solid rgba(0,0,0,0.5);
+              transition: all 0.5s;
+            }
+            .the-developer-zen-area:hover { background: #fff; }
+            .zen-rojo { background: red; }
+            .zen-azul { background: blue; }
+            .zen-amarillo { background: yellow; }
+            .zen-verde { background: green; }
+          </style>
+          Ésta es mi área zen u_u (temporal, para cosas temporales no permanentes pasajeras)
+          <button id="zen-togglecolors">Toggle zones color</button>
+          <script>
+            $('#zen-togglecolors').on('click',function(){
+              $('.lateral').toggleClass('zen-rojo');
+              $('.contenido').toggleClass('zen-azul');
+              $('.main-header').toggleClass('zen-amarillo');
+              $('.main-footer').toggleClass('zen-verde');
+            });
+          </script>
+        </div>
+
     </body>
 </html>
