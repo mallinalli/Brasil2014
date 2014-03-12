@@ -45,6 +45,17 @@
 		.home-video-component {
 			display: none;
 		}
+		.nota-s{
+			img, h3{
+				float: left;
+			}
+			img{
+				/* width: 20%; */
+			}
+			h3{
+				width: 78%;
+			}
+		}
 	}
 	.lateral{
 		
@@ -125,12 +136,12 @@
 				float: left;
 			}
 			img{
-				width: 20%;
+				/* width: 20%; */
 			}
 			h3{
 				margin-left: 10px;
 				margin-bottom: 0;
-				width: 80%;
+				width: 78%;
 			}
 			p{
 				text-align: right;

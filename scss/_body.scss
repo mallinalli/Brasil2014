@@ -129,12 +129,13 @@ ul{
  .nota-s{
  	margin: 10px 10px;
  	/* width: 100%; */
+ 	width: 100%;
  	display: inline-block;
  	img, h3{
  		float: left;
  	}
  	img{
- 		width: 30%;
+ 		/* width: 30%; */
  	}
  	h3{
  		margin-left: 10px;
@@ -152,6 +153,7 @@ ul{
 
 .lateral{
 	width: 100%;
+	
 	float: left;
 	display: inline-block;
 	margin: 0 auto;
