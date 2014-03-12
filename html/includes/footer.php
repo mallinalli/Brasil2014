@@ -77,7 +77,7 @@
             .zen-verde { background: green; }
           </style>
           Ésta es mi área zen u_u (temporal, para cosas temporales no permanentes pasajeras)
-          <button id="zen-togglecolors">Toggle zones color</button>
+          <button id="zen-togglecolors">Toggle zone's color</button>
           <script>
             $('#zen-togglecolors').on('click',function(){
               $('.lateral').toggleClass('zen-rojo');
