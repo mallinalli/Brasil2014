@@ -1,3 +1,4 @@
+<?php echo "this is the second part of the test"; ?>
 <aside class="lateral">
   <div class="widgets1 clearfix">
     <div class="cuenta">
