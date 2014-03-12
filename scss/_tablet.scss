@@ -34,14 +34,17 @@
 	.principales{
 		width: 24%;
 	}
-	.desk-home-video-component {
-		width: 100%;
-		display: block;
-	}
-	.home-video-component {
-		display: none;
-	}
 }
+/* ==========================
+	Componente de video
+   ========================== */
+.desk-home-video-component {
+	display: block;
+}
+.home-video-component {
+	display: none;
+}
+
 .lateral{
 	
 	.complemento{

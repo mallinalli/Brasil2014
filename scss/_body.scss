@@ -76,10 +76,18 @@ ul{
 }
 .contenido{
 	width: 100%;
-	.desk-home-video-component {
-		display: none;
-	}
 }
+
+/* ==========================
+	Componente de video
+   ========================== */
+.video-components {
+	display: block;
+}
+.desk-home-video-component {
+	display: none;
+}
+
 .principal{
 	width: 99%;
 	margin: 10px 0.5%;
