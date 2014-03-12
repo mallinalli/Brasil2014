@@ -7,7 +7,7 @@
   background: lighten($elRojo,6%);
   margin-bottom: 15px;
   overflow: hidden;
-  @include border-radius(5px);
+  @include border-radius(3px);
 }
 
 .actual-video {
@@ -89,7 +89,7 @@
   height: 300px;
   overflow: hidden;
   background: lighten($elRojo,6%);
-  @include border-radius(5px);
+  @include border-radius(3px);
 }
 
 .desk-actual-video {
