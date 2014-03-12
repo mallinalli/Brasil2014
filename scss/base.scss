@@ -9,4 +9,14 @@
 @import "video"; 
 
 /* Media queries FTW */
-@import "queries";
+/* Media Queries*/
+
+/* VERSIÓN TABLET */
+@media only screen and (min-width: 480px) {
+	@import "tablet";
+}
+
+/* VERSIÓN ESCRITORIO */
+@media only screen and (min-width: 769px) {
+	@import "desktop";
+}

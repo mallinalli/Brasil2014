@@ -1,0 +1,85 @@
+.menu{
+	.navhead { display: none; }
+	.navegacion{ 
+		display: inline;
+		text-align: justify;
+		font-size: 0.1px;
+		&:after, &:before {
+			content: '';
+			width: 100%;
+			display: inline;
+		}
+		.spacer {
+			display: inline-block;
+			width: 100%;
+			padding: 1px 0;
+		}
+		li {
+			border: none;
+			display: inline;
+			font-size: 14px;
+		}
+	}
+}
+.contenido{
+	width: 100%;
+	.principal{
+		img{
+			width: 74%;
+		}
+		p{
+			width: 25%;
+		}
+	}
+	.principales{
+		width: 24%;
+	}
+	.desk-home-video-component {
+		width: 100%;
+		display: block;
+	}
+	.home-video-component {
+		display: none;
+	}
+}
+.lateral{
+	
+	.complemento{
+
+	}
+	.widgets1{
+		width: 48%;
+		float: left;
+		margin: 0 5px;
+		.cuenta{
+			margin: 10px 5px;
+		}
+		.resultados{
+			margin: 10px 5px;
+			.res-head{
+				margin: 0;
+			}
+			.res-list{
+				
+			}
+			.res-footer{
+
+			}
+		}
+	}
+	.widgets2{
+		width: 48%;
+		float: left;
+		margin: 0 5px;
+		.twitter{
+			margin: 10px 5px;
+		}
+		.audios{
+			margin: 10px 5px;
+		}
+	}
+	.foto{
+		width: 99%;
+		margin: 0 5px;
+	}
+}
