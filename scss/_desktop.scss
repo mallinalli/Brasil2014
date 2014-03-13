@@ -21,25 +21,11 @@
 	width: 66% !important;
 	float: left;
 	@include box-sizing(border-box);
-	padding: 0 1% 0 1%; /* Margen al interior del contenedor: */
+	padding: 0 0.5% 0 0.5%; /* Margen al interior del contenedor: */
 	.nota-s{
-		margin: 10px 0;
-		display: inline-block;
-		img, h3, p{
-			float: left;
+		.nota-r{
+			margin-top: 10px;
 		}
-		img{
-			width: 20%;
-		}
-		h3{
-			margin-left: 10px;
-			margin-bottom: 0;
-			width: 80%;
-		}
-		p{
-			text-align: right;
-		}
-
 	}
 }
 
@@ -47,7 +33,7 @@
 	width: 34%;
 	margin: 0 auto;
 	@include box-sizing(border-box);
-	padding: 0 1% 0 1%; /* Margen al interior del contenedor: */
+	padding: 0 0.5% 0 0.5%; /* Margen al interior del contenedor: */
 	.complemento{/* Empty Style */}
 	.widgets1{
 		width: 100%;
