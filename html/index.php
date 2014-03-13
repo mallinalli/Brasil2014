@@ -32,13 +32,13 @@
               </a>  
             </div>
             <div class="nota hlpr-mr">
-              <a href="nota.php">
+              <a href="calendario.php#">
                 <img src="http://placehold.it/220x156" alt="#">
                 <h2> Grupos</h2>
               </a> 
             </div> 
             <div class="nota hlpr-mr">
-              <a href="nota.php">
+              <a href="calendario.php#">
                 <img src="http://placehold.it/220x156" alt="#">
                 <h2> Calendario</h2>
               </a>
