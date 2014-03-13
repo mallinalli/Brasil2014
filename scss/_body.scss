@@ -241,10 +241,12 @@ ul{
 			}
 		}
 		.audios{
-			background: $elAmarillo;
-			@include border-radius(3px);
 			float: left;
 			width: 100%;
+			.aud-head{
+				background: $elAmarillo;
+				@include border-radius(3px);
+			}
 		}
 	}
 	.foto{

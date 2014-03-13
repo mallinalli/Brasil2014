@@ -34,7 +34,7 @@
         <![endif]-->
       <header class="main-header">
         <div class="contenedor logo">
-          <img src="#" alt="Periódico Digital - Brasil 2014">
+          <a href="index.php"><img src="#" alt="Periódico Digital - Brasil 2014"></a>
         </div>
         <div class="contenedor menu">
           <div class="navhead clearfix">

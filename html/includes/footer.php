@@ -23,7 +23,14 @@
               </h2>
             </div>
             <div class="complemento audios">
-              <h2>Audios</h2>
+              <h2 class="aud-head">Audios</h2>
+              <ul>
+                <li>Audio 1</li>
+                <li>Audio 2</li>
+                <li>Audio 3</li>
+                <li>Audio 4</li>
+                <li>Audio 5</li>
+              </ul>
             </div>
           </div>
           <div class="complemento foto">
