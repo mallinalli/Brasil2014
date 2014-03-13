@@ -19,8 +19,12 @@
             <div class="complemento twitter">
               <h2>
                 <a href="https://twitter.com/TribunaVigila">
-                <i class="icon-twitter"></i> @TribunaDeportes</a>
+                  <i class="icon-twitter"></i> @TribunaDeportes
+                </a>
               </h2>
+              <div class="tweets-container">
+                <?php /*Aquí entran los tuits*/ ?>
+              </div>
             </div>
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>
@@ -65,6 +69,10 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+        <?php
+          /*Include para el componente de twitter*/
+          include('twitter.php');
+        ?>
 
         <!-- THE ZEN AREA -->
         <div class="the-developer-zen-area">
