@@ -2,36 +2,52 @@
         <div class="contenido">
           <div class="clearfix">            
             <div class="principal clearfix">
-              <img src="http://placehold.it/500x254" alt="#">
-              <p>Información importante aquí</p>
+              <a href="nota.php">
+                <img src="http://placehold.it/500x254" alt="#">
+                <p>Información importante aquí</p>
+              </a>
             </div>
             <div class="principales hlpr-mr">
-              <img src="http://placehold.it/169x120" alt="#">
-              <p>Información importante aquí</p>
+              <a href="nota.php">
+                <img src="http://placehold.it/169x120" alt="#">
+                <p>Información importante aquí</p>
+              </a>  
             </div>
             <div class="principales hlpr-mr-t">
-              <img src="http://placehold.it/169x120" alt="#">
-              <p>Información importante aquí</p>
+              <a href="nota.php">
+                <img src="http://placehold.it/169x120" alt="#">
+                <p>Información importante aquí</p>
+              </a>  
             </div>
             <div class="principales hlpr-mr">
-              <img src="http://placehold.it/169x120" alt="#">
-              <p>Información importante aquí</p>
+              <a href="nota.php">
+                <img src="http://placehold.it/169x120" alt="#">
+                <p>Información importante aquí</p>
+              </a>  
             </div>
             <div class="principales">
-              <img src="http://placehold.it/169x120" alt="#">
-              <p>Información importante aquí</p>
+              <a href="nota.php">
+                <img src="http://placehold.it/169x120" alt="#">
+                <p>Información importante aquí</p>
+              </a>  
             </div>
             <div class="nota hlpr-mr">
-              <img src="http://placehold.it/220x156" alt="#">
-              <h2> Grupos</h2>
-            </div>
+              <a href="nota.php">
+                <img src="http://placehold.it/220x156" alt="#">
+                <h2> Grupos</h2>
+              </a> 
+            </div> 
             <div class="nota hlpr-mr">
-              <img src="http://placehold.it/220x156" alt="#">
-              <h2> Calendario</h2>
+              <a href="nota.php">
+                <img src="http://placehold.it/220x156" alt="#">
+                <h2> Calendario</h2>
+              </a>
             </div>
             <div class="nota">
-              <img src="http://placehold.it/220x156" alt="#">
-              <h2> La Opinión de...</h2>
+              <a href="nota.php">
+                <img src="http://placehold.it/220x156" alt="#">
+                <h2> La Opinión de...</h2>
+              </a>  
             </div>
           </div>
           <div class="video-components clearfix">

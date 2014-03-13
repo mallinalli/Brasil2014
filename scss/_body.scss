@@ -148,6 +148,7 @@ ul{
  	margin: 10px 0;
  	padding: 0 10px;
  	width: 100%;
+ 	a{ @extend %link-reset; }
  	img{
  		float: left;
  		width: 30%;
@@ -166,12 +167,27 @@ ul{
  .news-des{
  	font-size: 16px;
  }
+ .day{
+ 	font-size: 18px;
+ 	font-weight: bold;
+ }
 .date{
 	float: right;
 	font-size: 14px;
 	font-family: 'Quattrocento Sans', sans-serif;
   	color: $elGris;
 }
+
+.nota-completa{
+	img{
+		width: 100%;
+	}
+}
+.pie-foto{
+	background: none;
+	font-size: 16px;
+}
+
 
 .lateral{
 	width: 100%;
