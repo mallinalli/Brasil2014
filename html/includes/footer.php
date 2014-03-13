@@ -4,8 +4,7 @@
               <?php
                 $test = date_create();
                 /*Día - Mes - Año  Hora - Minuto - Segundo*/
-                $esteDia = date('d');
-                $anotherTest = date_create($esteDia.'-03-2014 16:55:00');
+                $anotherTest = date_create('12-06-2014 14:00:00');
               
                 $f1 = date_format($test,'Y-m-d  H:i:s');
                 $f2 = date_format($anotherTest,'Y-m-d  H:i:s');
