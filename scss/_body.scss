@@ -211,7 +211,6 @@ ul{
 		.cuenta{
 			background: $elAzul; /*azul*/
 			@include border-radius(3px);
-			padding: 10px;
 			float: left;
 			width: 100%;
 		}
@@ -271,6 +270,22 @@ ul{
 		.foto-head, .foto-footer{
 			background: $elVerde;
 			@include border-radius(3px);
+		}
+	}
+}
+
+.cuenta {
+	color: #fff;
+	@include box-sizing(border-box);
+	padding: 10px;
+	div {
+		float: left;
+		width: 25%;
+		text-align: center;
+		span {
+			font-size: 40px;
+			display: block;
+			line-height: 100%;
 		}
 	}
 }
