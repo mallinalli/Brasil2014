@@ -1,0 +1,79 @@
+.menu{
+	.navhead { display: none; }
+	.navegacion{ 
+		display: inline;
+		text-align: justify;
+		font-size: 0.1px;
+		&:after, &:before {
+			content: '';
+			width: 100%;
+			display: inline;
+		}
+		.spacer {
+			display: inline-block;
+			width: 100%;
+			padding: 1px 0;
+		}
+		li {
+			border: none;
+			display: inline;
+			font-size: 14px;
+		}
+	}
+}
+.contenido{
+	width: 98%;
+	.principal{
+		img{
+			width: 74%;
+		}
+		p{
+			width: 25%;
+		}
+	}
+	.principales{
+		&.hlpr-mr, &.hlpr-mr-t {
+			margin-right: 1.3%;
+		}
+		width: 24%;
+	}
+}
+/* ==========================
+	Componente de video
+   ========================== */
+.desk-home-video-component {
+	display: block;
+}
+.home-video-component {
+	display: none;
+}
+
+.lateral{
+	width: 98%;
+	float: left;
+	margin-left: 1%;
+	.complemento{/* Empty Style */}
+	.widgets1, .widgets2 {
+		width: 49%;
+	}
+	.widgets1{
+		float: left;
+		&.hlpr-mr {
+			margin-right: 2%;
+		}
+		.cuenta{/* Empty Style */}
+		.resultados{
+			.res-head{/* Empty Style */}
+			.res-list{/* Empty Style */}
+			.res-footer{/* Empty Style */}
+		}
+	}
+	.widgets2{
+		float: left;
+		.twitter{
+			margin-top: 0;
+		}
+		.audios{/* Empty Style */}
+	}
+	.foto{/* Empty Style */}
+}

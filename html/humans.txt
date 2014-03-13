@@ -3,7 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Mallinalli Gabarrón -- Front End Developer -- @mallinalli
+    Jorge Cortés -- Front End Developer -- @vjdarr
 
 # THANKS
 

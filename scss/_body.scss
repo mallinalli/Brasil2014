@@ -1,6 +1,6 @@
 body, h2, h3 {
   font-family: 'Quattrocento Sans', sans-serif;
-  color: #636450; /*gris*/
+  color: $elGris; /*gris*/
 }
 
 h2{
@@ -14,6 +14,10 @@ h3{
 ul{ 
 	padding: 0;
 	margin: 0;
+}
+
+.main-header {
+	margin-bottom: 10px;
 }
 
 .logo{
@@ -33,12 +37,12 @@ ul{
 }
 
 .menu{
-	border-radius: 4px;
 	font-weight: bold;
 	text-align: center;
-	background: #70B52E; /*verde*/
+	background: $elVerde;
 	padding: 5px;
 	display: inherit;
+	@include border-radius(4px);
 	a{
 		color: #fff;
 	}
@@ -75,15 +79,25 @@ ul{
 	}
 }
 .contenido{
+	margin: 0 auto;
 	width: 100%;
-	.desk-home-video-component {
-		display: none;
-	}
+}
+
+/* ==========================
+	Componente de video
+   ========================== */
+.video-components {
+	display: block;
+}
+.desk-home-video-component {
+	display: none;
+}
+.principal, .principales, .nota {
+	margin-bottom: 10px;
 }
 .principal{
-	width: 99%;
-	margin: 10px 0.5%;
-	background: #636450; /*gris*/
+	width: 100%;
+	background: $elGris;
 	img{
 		float: left;
 		width: 100%;
@@ -96,10 +110,9 @@ ul{
 	}
 }
 .principales{
-	width: 48%;
+	width: 49%;
 	float: left;
-	margin: 10px 0.5%;
-	background: #636450; /*gris*/
+	background: $elGris;
 	img{
 		width: 100%;
 	}
@@ -107,14 +120,16 @@ ul{
 		color: #fff;
 		padding: 5px;
 	}
+	&.hlpr-mr {
+		margin-right: 2%;
+	}
 }
 .nota{
-	width: 32.3%;
+	width: 32.6%;
 	float: left;
-	margin: 10px 0.5%;
 	display: inline-block;
 	h2{
-		background: #636450; /*gris*/
+		background: $elGris;
 		color: #fff;
 		font-size: 14px;
 		font-family: 'Quattrocento Sans', sans-serif;
@@ -124,6 +139,9 @@ ul{
 	}
 	img{
 		width: 100%;
+	}
+	&.hlpr-mr {
+		margin-right: 1.1%;
 	}
 }
  .nota-s{
@@ -153,12 +171,11 @@ ul{
 
 .lateral{
 	width: 100%;
-	
-	float: left;
-	display: inline-block;
 	margin: 0 auto;
+	.resultados,.audios,.twitter,.foto {
+		margin-top: 10px;
+	}
 	.complemento{
-		margin: 20px auto;
 		h2, h3{
 			color: #fff;
 			text-align: center;
@@ -172,8 +189,8 @@ ul{
 	}
 	.widgets1{
 		.cuenta{
-			background: #2e4c8f; /*azul*/
-			border-radius: 3px;
+			background: $elAzul; /*azul*/
+			@include border-radius(3px);
 			padding: 10px;
 			float: left;
 			width: 100%;
@@ -182,8 +199,8 @@ ul{
 			float: left;
 			width: 100%;
 			.res-head{
-				background: #ea5251; /*rojo claro*/
-				border-radius: 3px;
+				background: lighten($elRojo,6%); /*rojo claro*/
+				@include border-radius(3px);
 			}
 			.res-list{
 				ul{
@@ -195,15 +212,15 @@ ul{
 				}
 			}
 			.res-footer{
-				background: #dd3b30; /*rojo*/
-				border-radius: 3px;
+				background: $elRojo; /*rojo*/
+				@include border-radius(3px);
 			}
 		}
 	}
 	.widgets2{
 		.twitter{
-			background: #3c91cf; /*azul*/
-			border-radius: 3px;
+			background: $elAzulClaro; /*azul*/
+			@include border-radius(3px);
 			text-align: center;
 			float: left;
 			width: 100%;
@@ -220,8 +237,8 @@ ul{
 			}
 		}
 		.audios{
-			background: #feca17; /*amarillo*/
-			border-radius: 3px;
+			background: $elAmarillo;
+			@include border-radius(3px);
 			float: left;
 			width: 100%;
 		}
@@ -230,15 +247,16 @@ ul{
 		float: left;
 		width: 100%;
 		.foto-head, .foto-footer{
-			background: #70b52e; /*verde*/
-			border-radius: 3px;
+			background: $elVerde;
+			@include border-radius(3px);
 		}
 	}
 }
 
 .pie{
-	background: #636450; /*gris*/
+	background: $elGris;
 	color: #fff;
 	text-align: center;
 	font-size: 12px;
+	margin-top: 10px;
 }
