@@ -94,6 +94,7 @@ ul{
 }
 .principal, .principales, .nota {
 	margin-bottom: 10px;
+	a{ @extend %link-reset; }
 }
 .principal{
 	width: 100%;
