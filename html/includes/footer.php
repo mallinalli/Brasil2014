@@ -11,10 +11,15 @@
                 
                 $purinto = date_diff($test,$anotherTest);
               ?>
-              <div><span id="day"><?php echo $purinto->format('%a'); ?></span> días</div>
-              <div><span id="hour"><?php echo $purinto->format('%h'); ?></span> horas</div>
-              <div><span id="min"><?php echo $purinto->format('%i'); ?></span> minutos</div>
-              <div><span id="sec"><?php echo $purinto->format('%s'); ?></span> segundos</div>
+              <a href="http://www.google.com">Esto va a Google</a>
+              <div class="count-title">Faltan:</div>
+              <div class="clearfix">
+                <div class="count-num"><span id="day"><?php echo $purinto->format('%a'); ?></span> días</div>
+                <div class="count-num"><span id="hour"><?php echo $purinto->format('%h'); ?></span> horas</div>
+                <div class="count-num"><span id="min"><?php echo $purinto->format('%i'); ?></span> min</div>
+                <div class="count-num"><span id="sec"><?php echo $purinto->format('%s'); ?></span> seg</div>
+              </div>
+              <div class="count-foot">Para la inauguración</div>
               <input id="timer_sign" type="hidden" data-sign="<?php echo $purinto->format('%R'); ?>">
             </div>
             <div class="complemento resultados">
@@ -42,7 +47,16 @@
             </div>
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>
-              Aquí los audios :0
+              <div class="clearfix">
+                <div class="play_cont">
+                  <a href="#" id="play"><i class="icon-play"></i></a>
+                </div>
+                <div class="audio_wrapper">
+                  <div class="audio_container">
+                    <div class="audio_thingie"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="complemento foto">
