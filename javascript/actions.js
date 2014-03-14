@@ -4,9 +4,22 @@ $('.menubutton').on('click','a',function(a){
 	$('.navegacion').stop().slideToggle();
 });
 
+
+/*var url = 'https://api.soundcloud.com/tracks.json?client_id=YOUR_CLIENT_ID';
+$.getJSON(url, function(tracks) {
+  $(tracks).each(function(track) {
+    console.log(track.title);
+  }
+});*/
+
 /* Obtención de datos para el componente de video
 */
 
+  /**
+    /* ====================================
+    /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO
+    /* ====================================
+    */
 var elCanalDeYoutubeQueQuieresVer = 'kexpradio';
 
 
@@ -22,9 +35,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
   $('.desk-actual-video').html('<iframe id="ytplayer" type="text/html" width="100%" height="100%" src="'+startervid+'" frameborder="0" allowfullscreen></iframe>');
 
   /**
-		/* ========================================================
 		/* AQUÍ COMIENZA EL COMPONENTE DE VIDEO VERSIÓN ESCRITORIO
-		/* ========================================================
 		*/
   $('.desk-home-video-component,.home-video-component').on('click','a',function(e){
     e.preventDefault();
@@ -77,9 +88,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
   });
 
   /**
-		/* ========================================================
 		/* AQUÍ COMIENZA EL COMPONENTE DE VIDEO VERSIÓN MÓVIL
-		/* ========================================================
 		*/
   var menu_state = false;
   /**

@@ -47,13 +47,16 @@
             </div>
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>
-              <div class="clearfix">
-                <div class="play_cont">
-                  <a href="#" id="play"><i class="icon-play"></i></a>
-                </div>
-                <div class="audio_wrapper">
-                  <div class="audio_container">
-                    <div class="audio_thingie"></div>
+              <div class="audio-list">
+                <div class="clearfix">
+                  <div>Estás escuchando: Tribuna Deportes</div>
+                  <div class="play_cont">
+                    <a href="#" id="play"><i class="icon-play"></i></a>
+                  </div>
+                  <div class="audio_wrapper">
+                    <div class="audio_container">
+                      <div class="audio_thingie"></div>
+                    </div>
                   </div>
                 </div>
               </div>
