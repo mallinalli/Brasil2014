@@ -4,14 +4,6 @@ $('.menubutton').on('click','a',function(a){
 	$('.navegacion').stop().slideToggle();
 });
 
-
-/*var url = 'https://api.soundcloud.com/tracks.json?client_id=YOUR_CLIENT_ID';
-$.getJSON(url, function(tracks) {
-  $(tracks).each(function(track) {
-    console.log(track.title);
-  }
-});*/
-
 /* Obtención de datos para el componente de video
 */
 
@@ -198,6 +190,22 @@ function timerEnded(){
 /**
 /* Creación del objeto song, al que se puede controlar con play, pause, etc.
 */
+
+SC.initialize({
+  client_id: 'fadfafec99840a9bab19d077b12fd206'
+});
+
+var url = 'https://api.soundcloud.com/tracks.json?user_id=sinnerei&client_id=fadfafec99840a9bab19d077b12fd206';
+$.getJSON(url, function(tracks) {
+  var songs = tracks;
+  console.log(songs);
+});
+
+// stream track id 293
+SC.stream("/tracks/60424593", function(sound){
+  sound.play();
+});
+
 console.log('queonda')
 var playing = false;
 var song = new Audio("http://ctrlup.net/test_files/common.mp3");
