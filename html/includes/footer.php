@@ -1,7 +1,26 @@
         <aside class="lateral clearfix">
           <div class="widgets1 clearfix hlpr-mr">
             <div class="cuenta">
-              <iframe src="http://free.timeanddate.com/countdown/i41j74es/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fs100/szw320/szh135/tacfff/tpcfff/macfff/mpcfff/iso2014-06-12T12:00:00" frameborder="0" width="117" height="48"></iframe>
+              <?php
+                $test = date_create();
+                /*Día - Mes - Año  Hora - Minuto - Segundo*/
+                $anotherTest = date_create('12-06-2014 14:00:00');
+              
+                $f1 = date_format($test,'Y-m-d  H:i:s');
+                $f2 = date_format($anotherTest,'Y-m-d  H:i:s');
+                
+                $purinto = date_diff($test,$anotherTest);
+              ?>
+              <a href="http://www.google.com">Esto va a Google</a>
+              <div class="count-title">Faltan:</div>
+              <div class="clearfix">
+                <div class="count-num"><span id="day"><?php echo $purinto->format('%a'); ?></span> días</div>
+                <div class="count-num"><span id="hour"><?php echo $purinto->format('%h'); ?></span> horas</div>
+                <div class="count-num"><span id="min"><?php echo $purinto->format('%i'); ?></span> min</div>
+                <div class="count-num"><span id="sec"><?php echo $purinto->format('%s'); ?></span> seg</div>
+              </div>
+              <div class="count-foot">Para la inauguración</div>
+              <input id="timer_sign" type="hidden" data-sign="<?php echo $purinto->format('%R'); ?>">
             </div>
             <div class="complemento resultados">
               <h2 class="res-head">Últimos Resultados</h2>
@@ -19,18 +38,28 @@
             <div class="complemento twitter">
               <h2>
                 <a href="https://twitter.com/TribunaVigila">
-                <i class="icon-twitter"></i> @TribunaDeportes</a>
+                  <i class="icon-twitter"></i> @TribunaDeportes
+                </a>
               </h2>
+              <div class="tweets-container">
+                <?php /*Aquí entran los tuits*/ ?>
+              </div>
             </div>
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>
-              <ul>
-                <li>Audio 1</li>
-                <li>Audio 2</li>
-                <li>Audio 3</li>
-                <li>Audio 4</li>
-                <li>Audio 5</li>
-              </ul>
+              <div class="audio-list">
+                <div class="clearfix">
+                  <div>Estás escuchando: Tribuna Deportes</div>
+                  <div class="play_cont">
+                    <a href="#" id="play"><i class="icon-play"></i></a>
+                  </div>
+                  <div class="audio_wrapper">
+                    <div class="audio_container">
+                      <div class="audio_thingie"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="complemento foto">
@@ -53,18 +82,14 @@
       </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/actions.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="http://connect.soundcloud.com/sdk.js"></script>
+        <script src="js/actions.min.js"></script>
 
-        <!--script src="js/plugins.js"></script>
-        <script src="js/main.js"></script-->
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        <?php
+          /*Include para el componente de twitter*/
+          include('twitter.php');
+        ?>
 
         <!-- THE ZEN AREA -->
         <div class="the-developer-zen-area">
@@ -95,5 +120,11 @@
           </script>
         </div>
 
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
     </body>
 </html>
