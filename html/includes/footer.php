@@ -73,9 +73,13 @@
       </div>
       <footer class="main-footer">
         <div class="contenedor pie">
-          <img src="img/tribuna1.png" alt="Tribuna Comunicación"/>
+          <img src="img/tribuna.png" alt="Tribuna Comunicación"/>
+          <img src="img/logo_indetta.png" alt="Indetta"/>
           <img src="img/logo_exa.png" alt="EXA 98.7FM"/>
           <img src="img/logo_lamejor.png" alt="La Mejor 1250AM"/>
+          <img src="img/logo_pd.png" alt="Periódico Digital"/>
+          <img src="img/logo_cp.png" alt="Canal Puebla"/>
+          <img src="img/logo_tribuna1.png" alt="Radio Tribuna"/>
           <img src="img/logo_factory.png" alt="Factory Television"/>
           <p> Copyright &copy; 2011 TRIBUNA Comunicación, Sn. Martín Texmelucan no.68 Col. La Paz, Puebla, Mex. Tel. (222) 2328000</p>
         </div>
