@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Compass */
 /* Settings, variables, mixins, etc */
-.nota-s a, .tweets-container .single-tweet a, .video-menu-wrapper a, .pull a, .desk-video-min a {
+.principal a, .principales a, .nota a, .nota-s a, .tweets-container .single-tweet a, .video-menu-wrapper a, .pull a, .desk-video-min a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -463,6 +463,10 @@ Componente de Audio
   text-align: center;
   font-size: 12px;
   margin-top: 10px;
+}
+.pie img {
+  padding: 0 10px;
+  margin: 10px 0;
 }
 
 /* ======================================================================

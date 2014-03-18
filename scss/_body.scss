@@ -94,6 +94,7 @@ ul{
 }
 .principal, .principales, .nota {
 	margin-bottom: 10px;
+	a{ @extend %link-reset; }
 }
 .principal{
 	width: 100%;
@@ -395,4 +396,8 @@ Componente de Audio
 	text-align: center;
 	font-size: 12px;
 	margin-top: 10px;
+	img{
+		padding: 0 10px;
+		margin: 10px 0;
+	}
 }
