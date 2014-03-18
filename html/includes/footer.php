@@ -48,7 +48,7 @@
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>
               <div class="audio-list">
-                <div class="clearfix">
+                <!-- <div class="clearfix">
                   <div>Estás escuchando: Tribuna Deportes</div>
                   <div class="play_cont">
                     <a href="#" id="play"><i class="icon-play"></i></a>
@@ -58,7 +58,7 @@
                       <div class="audio_thingie"></div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -109,9 +109,10 @@
             .zen-verde { background: green; }
           </style>
           Ésta es mi área zen u_u (temporal, para cosas temporales, no permanentes, pasajeras)
-          <button id="zen-togglecolors">Toggle zone's color</button>
+          <button class="zen-togglecolors p54">Toggle zone's color</button>
           <script>
-            $('#zen-togglecolors').on('click',function(){
+            var elid = 'p54';
+            $('.zen-togglecolors.'+elid).on('click',function(){
               $('.lateral').toggleClass('zen-rojo');
               $('.contenido').toggleClass('zen-azul');
               $('.main-header').toggleClass('zen-amarillo');

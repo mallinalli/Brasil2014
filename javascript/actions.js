@@ -187,32 +187,30 @@ function timerEnded(){
     /* COMPONENTE DE AUDIO
     /* =================================
     */
-/**
-/* Creación del objeto song, al que se puede controlar con play, pause, etc.
-*/
-
 SC.initialize({
   client_id: 'fadfafec99840a9bab19d077b12fd206'
 });
 
-var url = 'https://api.soundcloud.com/tracks.json?user_id=sinnerei&client_id=fadfafec99840a9bab19d077b12fd206';
+var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
 $.getJSON(url, function(tracks) {
-  var theTrack = tracks[0];
+  var theTrack = tracks[2];
+  console.log(tracks)
+  for (var i = 0; i < tracks.length; i++) {
+    printSong(tracks[i].id,tracks[i].title,tracks[i].duration);
+  };
   streamTrack(theTrack.duration,theTrack.id);
 });
 
-function streamTrack(duracion,elid){
+function printSong(id,titulo,duracion){
+  $('.audio-list').append('<div class="clearfix '+id+'" data-duration="'+duracion+'"><div>Estás escuchando: '+ titulo +'</div><div class="play_cont"><a href="#" id="play"><i class="icon-play"></i></a></div><div class="audio_wrapper"><div class="audio_container"><div class="audio_thingie"></div></div></div></div>');
+}
 
+function streamTrack(duracion,elid){
+  /**
+  /* Creación del objeto song, al que se puede controlar con play, pause, etc.
+  */
   SC.stream("/tracks/"+elid, function(song){
     var playing = false;
-    /*var song = new Audio("http://ctrlup.net/test_files/common.mp3");*/
-    /**
-    /* Verificación, si el navegador no puede reproducir mp3, carga un ogg. (Ópera)
-    */
-      /*isSupp=song.canPlayType('audio/mp3');
-      if (!isSupp){
-        song = new Audio("http://ctrlup.net/test_files/common.ogg");
-      }*/
     /**
     /* Se inicializa una variable timer para que sea accesible desde donde sea.
     */
