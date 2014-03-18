@@ -193,12 +193,11 @@ SC.initialize({
 
 var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
 $.getJSON(url, function(tracks) {
-  var theTrack = tracks[2];
   console.log(tracks)
   for (var i = 0; i < tracks.length; i++) {
     printSong(tracks[i].id,tracks[i].title,tracks[i].duration);
+    streamTrack(tracks[i].duration,tracks[i].id);
   };
-  streamTrack(theTrack.duration,theTrack.id);
 });
 
 function printSong(id,titulo,duracion){
@@ -218,7 +217,7 @@ function streamTrack(duracion,elid){
     /**
     /* Al dar click en el botón de play/pause ejecuta la función togglePlay()
     */
-    $('#play').on('click',function(e){
+    $('.clearfix.'+elid).find('#play').on('click',function(e){
       e.preventDefault();
       togglePlay();
     });
@@ -226,8 +225,8 @@ function streamTrack(duracion,elid){
     /* Al hacer clic sobre la bolita de posición y arrastrarla, iguala la posición del mouse dentro
     /* de .audio_wrapper con la de ésta. Mientras esto suceda, se elimina el timer
     */
-    $('.audio_thingie').on('mousedown',function(){
-      $('.audio_wrapper').mousemove(function(e){
+    $('.clearfix.'+elid).find('.audio_thingie').on('mousedown',function(){
+      $('.clearfix.'+elid).find('.audio_wrapper').mousemove(function(e){
         /**
         /* Nota: el 10 es para compensar el padding de audio_wrapper y audio_thingie, se puede mejorar
         */
@@ -236,11 +235,11 @@ function streamTrack(duracion,elid){
         /* Un if para los límites del drag
         */
         if(theX < 0){
-          $('.audio_thingie').css('margin-left','0');
-        } else if(theX > $('.audio_wrapper').width()) {
-          $('.audio_thingie').css('margin-left',$('.audio_wrapper').width());
+          $('.clearfix.'+elid).find('.audio_thingie').css('margin-left','0');
+        } else if(theX > $('.clearfix.'+elid).find('.audio_wrapper').width()) {
+          $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',$('.clearfix.'+elid).find('.audio_wrapper').width());
         } else {
-          $('.audio_thingie').css('margin-left',theX);
+          $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',theX);
         }
         clearInterval(timer)
       });
@@ -249,8 +248,8 @@ function streamTrack(duracion,elid){
       /* posición del mouse - posición de la bolita, y de estar en reproducción el audio
       /* crea un timer
       */
-      $('.audio_wrapper').on('mouseleave',function(){
-        $('.audio_wrapper').unbind('mousemove');
+      $('.clearfix.'+elid).find('.audio_wrapper').on('mouseleave',function(){
+        $('.clearfix.'+elid).find('.audio_wrapper').unbind('mousemove');
         if (playing == false) {
           timerSettings();
         };
@@ -260,8 +259,8 @@ function streamTrack(duracion,elid){
     /* Al detectar el evento mouseup dentro de .audio_wrapper, se hace la desvinculación
     /* del mousemove y si se está reproduciendo el audio crea un timer
     */
-    $('.audio_wrapper').on('mouseup',function(){
-      $('.audio_wrapper').unbind('mousemove');
+    $('.clearfix.'+elid).find('.audio_wrapper').on('mouseup',function(){
+      $('.clearfix.'+elid).find('.audio_wrapper').unbind('mousemove');
       if (playing == true) {
         timerSettings();
       };
@@ -271,13 +270,13 @@ function streamTrack(duracion,elid){
     /* y se hace una relación con respecto a la duración del archivo de audio, tomando
     /* el ancho total de .audio_wrapper como la duración total del audio
     */
-    $('.audio_wrapper').on('click',function(e) {
+    $('.clearfix.'+elid).find('.audio_wrapper').on('click',function(e) {
       var posX = $(this).offset().left;
       /**
       /* 10 de paddings
       */
       var newPos = (e.pageX - posX)-10;
-      var posFinal = (newPos * duracion) / $('.audio_container').width();
+      var posFinal = (newPos * duracion) / $('.clearfix.'+elid).find('.audio_container').width();
       song.setPosition(posFinal);
       moveThingie();
     });
@@ -287,8 +286,8 @@ function streamTrack(duracion,elid){
     /* de audio
     */
     function moveThingie(){
-      $('.audio_thingie').stop().animate({
-        marginLeft: (song.position*$('.audio_container').width())/duracion
+      $('.clearfix.'+elid).find('.audio_thingie').stop().animate({
+        marginLeft: (song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion
       },300);
     }
     /**
@@ -311,14 +310,14 @@ function streamTrack(duracion,elid){
         */
         if (song.playState == 0) {
           playing = false;
-          $('#play').html('<i class="icon-play"></i>');
+          $('.clearfix.'+elid).find('#play').html('<i class="icon-play"></i>');
           clearInterval(timer);
         };
         /**
         /* Asigna el valor proporcional del tiempo actual de la canción al margen
         /* izquierdo, que representa la posición actual en el archivo de audio
         */
-        $('.audio_thingie').css('margin-left',(song.position*$('.audio_container').width())/duracion);
+        $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',(song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion);
         console.log(song.position)
       }, 500);
     }
@@ -330,12 +329,12 @@ function streamTrack(duracion,elid){
       if (song.paused || song.playState == 0) {
         song.play();
         play = true;
-        $('#play').html('<i class="icon-pause"></i>');
+        $('.clearfix.'+elid).find('#play').html('<i class="icon-pause"></i>');
         timerSettings();
       } else {
         song.pause();
         play = false;
-        $('#play').html('<i class="icon-play"></i>');
+        $('.clearfix.'+elid).find('#play').html('<i class="icon-play"></i>');
         clearInterval(timer);
       }
     }
