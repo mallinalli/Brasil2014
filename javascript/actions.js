@@ -14,8 +14,6 @@ $('.menubutton').on('click','a',function(a){
     */
 var elCanalDeYoutubeQueQuieresVer = 'kexpradio';
 
-
-var categorias = new Array();
 $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?&max-results=50&alt=json', function(data) {
   var elvideo = data.feed.entry;
   /**
@@ -31,7 +29,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
 		*/
   $('.desk-home-video-component,.home-video-component').on('click','a',function(e){
     e.preventDefault();
-  })
+  });
 
   var deskstate = true;
   /**
@@ -48,7 +46,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
   }
 
   $('.desk-pull').on('click',function(){
-    if (deskstate == true) {
+    if (deskstate === true) {
       $('.desk-video-menu-wrapper').animate({
         width: 0+'%'
       });
@@ -94,7 +92,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
     var videourl = elvideo[k].id.$t;
     videourl = videourl.replace('http://gdata.youtube.com/feeds/api/videos/','https://www.youtube.com/embed/');
     $('.video-menu > ul').append('<li class="video-min"><a href="" data-videocall="'+videourl+'"><img src="'+elvideo[k].media$group.media$thumbnail[1].url+'" alt="img"><div class="vid-cap"><span>'+elvideo[k].title.$t+'</span></div></a></li>');
-  };
+  }
 
   /**
 			/* Sustitución del video actual en stage, por el cliqueado
@@ -106,12 +104,12 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
 
 
   $('.home-video-component .pull').on('click','a',function(){
-    if (menu_state == false) {
+    if (menu_state === false) {
       movilPull();
     }
     else {
       movilPush();
-    };
+    }
   });
 
   function movilPull(){
@@ -120,7 +118,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
     $('.video-menu-wrapper').stop().slideToggle(function(){
       $('.pull a').html('<i class="icon-angle-up"></i>');
     });
-  };
+  }
 
   function movilPush(){
     menu_state = !menu_state;
@@ -128,7 +126,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
       $('.pull a').html('<i class="icon-angle-down"></i>');
       $('.video-menu-wrapper').find('.video-menu').hide();
     });
-  };
+  }
 
 });
 
@@ -157,9 +155,9 @@ function dateTimerInitiate(){
   clearInterval(dateTimer);
   dateTimer =  setInterval (function(){
     iSec--;
-    if (iSec == 0 && iMin == 0 && iHour == 0 && iDay == 0) {
+    if (iSec === 0 && iMin === 0 && iHour === 0 && iDay === 0) {
         timerEnded();
-    } else if (iSec == 0) {
+    } else if (iSec === 0) {
       iSec = 59;
       iMin--;
       if (iMin == -1) {
@@ -169,14 +167,14 @@ function dateTimerInitiate(){
           iHour = 23;
           iDay --;
           $('#day').html(iDay);
-        };
+        }
         $('#hour').html(iHour);
-      };
+      }
       $('#min').html(iMin);
     }
     $('#sec').html(iSec);
   }, 1000);
-};
+}
 
 function timerEnded(){
   clearInterval(dateTimer);
@@ -192,16 +190,31 @@ SC.initialize({
 });
 
 var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
+var trackPosition = -1;
 $.getJSON(url, function(tracks) {
-  console.log(tracks)
-  for (var i = 0; i < tracks.length; i++) {
-    printSong(tracks[i].id,tracks[i].title,tracks[i].duration);
-    streamTrack(tracks[i].duration,tracks[i].id);
-  };
+  theAudioLoop(tracks,3);
+  $('.mastracks').on('click',function(e){
+    e.preventDefault();
+    theAudioLoop(tracks,2);
+  });
 });
 
+function theAudioLoop(tracks,times){
+  for (var i = 0; i < times; i++) {
+    trackPosition++;
+    if (tracks[trackPosition] != undefined) {
+      console.log(tracks[trackPosition].id);
+      printSong(tracks[trackPosition].id,tracks[trackPosition].title,tracks[trackPosition].duration);
+      streamTrack(tracks[trackPosition].duration,tracks[trackPosition].id);
+    } else {
+      $('.mastracks').html('');
+    }
+  }
+  console.log('Track Position:'+trackPosition);
+}
+
 function printSong(id,titulo,duracion){
-  $('.audio-list').append('<div class="clearfix '+id+'" data-duration="'+duracion+'"><div>Estás escuchando: '+ titulo +'</div><div class="play_cont"><a href="#" id="play"><i class="icon-play"></i></a></div><div class="audio_wrapper"><div class="audio_container"><div class="audio_thingie"></div></div></div></div>');
+  $('.audio-list').append('<div class="clearfix '+id+'" data-duration="'+duracion+'"><div class="trackname">'+ titulo +'</div><div class="play_cont"><a href="#" class="bplay"><i class="icon-play"></i></a></div><div class="audio_wrapper"><div class="audio_container"><div class="audio_thingie"></div></div></div></div>');
 }
 
 function streamTrack(duracion,elid){
@@ -217,7 +230,7 @@ function streamTrack(duracion,elid){
     /**
     /* Al dar click en el botón de play/pause ejecuta la función togglePlay()
     */
-    $('.clearfix.'+elid).find('#play').on('click',function(e){
+    $('.clearfix.'+elid).find('.bplay').on('click',function(e){
       e.preventDefault();
       togglePlay();
     });
@@ -241,7 +254,7 @@ function streamTrack(duracion,elid){
         } else {
           $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',theX);
         }
-        clearInterval(timer)
+        clearInterval(timer);
       });
       /**
       /* Al retirar el mouse de los límites de .audio_wrapper, desvincula la relación
@@ -250,9 +263,9 @@ function streamTrack(duracion,elid){
       */
       $('.clearfix.'+elid).find('.audio_wrapper').on('mouseleave',function(){
         $('.clearfix.'+elid).find('.audio_wrapper').unbind('mousemove');
-        if (playing == false) {
+        if (playing === false) {
           timerSettings();
-        };
+        }
       });
     });
     /**
@@ -261,9 +274,9 @@ function streamTrack(duracion,elid){
     */
     $('.clearfix.'+elid).find('.audio_wrapper').on('mouseup',function(){
       $('.clearfix.'+elid).find('.audio_wrapper').unbind('mousemove');
-      if (playing == true) {
+      if (playing === true) {
         timerSettings();
-      };
+      }
     });
     /**
     /* Al hacer click en algun punto dentro de .audio_wrapper, se detecta esta posición
@@ -308,17 +321,17 @@ function streamTrack(duracion,elid){
         /* Si la canción ya terminó, cambia el texto del botón de play/pause y
         /* elimina el timer
         */
-        if (song.playState == 0) {
+        if (song.playState === 0) {
           playing = false;
-          $('.clearfix.'+elid).find('#play').html('<i class="icon-play"></i>');
+          $('.clearfix.'+elid).find('.bplay').html('<i class="icon-play"></i>');
           clearInterval(timer);
-        };
+        }
         /**
         /* Asigna el valor proporcional del tiempo actual de la canción al margen
         /* izquierdo, que representa la posición actual en el archivo de audio
         */
         $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',(song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion);
-        console.log(song.position)
+        console.log(song.position);
       }, 500);
     }
     /**
@@ -326,15 +339,15 @@ function streamTrack(duracion,elid){
     /* de acuerdo a esto, además de asignar el texto adecuado al botón de play/pause
     */
     function togglePlay() {
-      if (song.paused || song.playState == 0) {
+      if (song.paused || song.playState === 0) {
         song.play();
         play = true;
-        $('.clearfix.'+elid).find('#play').html('<i class="icon-pause"></i>');
+        $('.clearfix.'+elid).find('.bplay').html('<i class="icon-pause"></i>');
         timerSettings();
       } else {
         song.pause();
         play = false;
-        $('.clearfix.'+elid).find('#play').html('<i class="icon-play"></i>');
+        $('.clearfix.'+elid).find('.bplay').html('<i class="icon-play"></i>');
         clearInterval(timer);
       }
     }

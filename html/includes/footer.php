@@ -1,6 +1,6 @@
         <aside class="lateral clearfix">
-          <div class="widgets1 clearfix hlpr-mr">
-            <div class="cuenta">
+          <div class="widgets1 clearfix">
+            <div class="cuenta hlpr-mr">
               <?php
                 $test = date_create();
                 /*Día - Mes - Año  Hora - Minuto - Segundo*/
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="widgets2 clearfix">
-            <div class="complemento twitter">
+            <div class="complemento twitter hlpr-mr">
               <h2>
                 <a href="https://twitter.com/TribunaVigila">
                   <i class="icon-twitter"></i> @TribunaDeportes
@@ -48,18 +48,9 @@
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>
               <div class="audio-list">
-                <!-- <div class="clearfix">
-                  <div>Estás escuchando: Tribuna Deportes</div>
-                  <div class="play_cont">
-                    <a href="#" id="play"><i class="icon-play"></i></a>
-                  </div>
-                  <div class="audio_wrapper">
-                    <div class="audio_container">
-                      <div class="audio_thingie"></div>
-                    </div>
-                  </div>
-                </div> -->
+                <?php /*Aquí entran los audios*/ ?>
               </div>
+              <a href="" class="mastracks">Más...</a>
             </div>
           </div>
           <div class="complemento foto">

@@ -213,15 +213,16 @@ ul{
 			@include border-radius(3px);
 			float: left;
 			width: 100%;
+			height: 120px;
 		}
 		.resultados{
 			float: left;
 			width: 100%;
-			.res-head{
-				background: lighten($elRojo,6%); /*rojo claro*/
-				@include border-radius(3px);
-			}
+			background: lighten($elRojo,6%); /*rojo claro*/
+			@include border-radius(3px);
+			overflow: hidden;
 			.res-list{
+				background: #fff;
 				ul{
 					list-style: none;
 					text-align: center;
@@ -232,7 +233,7 @@ ul{
 			}
 			.res-footer{
 				background: $elRojo; /*rojo*/
-				@include border-radius(3px);
+				margin: 0 auto;
 			}
 		}
 	}
@@ -253,15 +254,6 @@ ul{
 				i {
 					font-size: 20px;
 				}
-			}
-		}
-		.audios{
-			float: left;
-			width: 100%;
-			@include user-select(none);
-			.aud-head{
-				background: $elAmarillo;
-				@include border-radius(3px);
 			}
 		}
 	}
@@ -315,6 +307,9 @@ ul{
 }
 
 .tweets-container {
+	margin-bottom: 15px;
+	max-height: 250px;
+	overflow: auto;
 	.single-tweet {
 		font-size: 12px;
 		color: darken($elAzulClaro,30%);
@@ -331,18 +326,31 @@ ul{
 			}
 		}
 	}
-	margin-bottom: 15px;
 }
 
 /* =========================
-Componente de Audio
+	Componente de Audio
 ========================= */
+.audios{
+	float: left;
+	width: 100%;
+	@include user-select(none);
+	background: $elAmarillo;
+		@include border-radius(3px);
+}
 .audio-list {
 	@include box-sizing(border-box);
 	padding: 3px 5px 3px 10px;
+	margin: 0 3px;
+	background: #fff;
+	max-height: 250px;
+	overflow: auto;
 }
 .all_container {
   margin: 50px auto;
+}
+.trackname {
+	font-size: 12px;
 }
 .play_cont, .audio_wrapper {
   float: left;
@@ -355,7 +363,7 @@ Componente de Audio
     color: #fff;
     display: inline-block;
 	text-decoration: none;
-    padding: 5px 9px;
+    padding: 2px 7px;
     background: darken($elAmarillo,10%);
     @include border-radius(15px);
 	@include box-sizing(border-box);
@@ -389,6 +397,13 @@ Componente de Audio
   		@include border-radius(0);
   	}
 }
+.mastracks {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+/* ========================= */
 
 .pie{
 	background: $elGris;

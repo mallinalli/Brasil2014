@@ -54,15 +54,21 @@
 	margin-left: 1%;
 	.complemento{/* Empty Style */}
 	.widgets1, .widgets2 {
-		width: 49%;
+		width: 100%;
 	}
 	.widgets1{
 		float: left;
-		&.hlpr-mr {
-			margin-right: 2%;
+		margin-bottom: 10px;
+		.cuenta, .resultados {
+			width: 49%;
 		}
-		.cuenta{/* Empty Style */}
+		.cuenta{
+			&.hlpr-mr {
+				margin-right: 2%;
+			}
+		}
 		.resultados{
+			margin: 0;
 			.res-head{/* Empty Style */}
 			.res-list{/* Empty Style */}
 			.res-footer{/* Empty Style */}
@@ -70,8 +76,14 @@
 	}
 	.widgets2{
 		float: left;
-		.twitter{
+		.twitter, .audios {
+			width: 49%;
 			margin-top: 0;
+		}
+		.twitter{
+			&.hlpr-mr {
+				margin-right: 2%;
+			}
 		}
 		.audios{/* Empty Style */}
 	}

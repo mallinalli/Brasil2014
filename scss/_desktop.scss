@@ -37,7 +37,12 @@
 	.complemento{/* Empty Style */}
 	.widgets1{
 		width: 100%;
-		.cuenta{/* Empty Style */}
+		.cuenta, .resultados {
+			width: 100%;
+		}
+		.cuenta{
+			margin-bottom: 10px;
+		}
 		.resultados{
 			.res-head{/* Empty Style */}
 			.res-list{/* Empty Style */}
@@ -46,8 +51,11 @@
 	}
 	.widgets2{
 		width: 100%;
+		.twitter, .audios {
+			width: 100%;
+		}
 		.twitter{
-			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 		.audios{/* Empty Style */}
 	}
