@@ -192,7 +192,7 @@ SC.initialize({
 var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
 var trackPosition = -1;
 $.getJSON(url, function(tracks) {
-  theAudioLoop(tracks,3);
+  theAudioLoop(tracks,4);
   $('.mastracks').on('click',function(e){
     e.preventDefault();
     theAudioLoop(tracks,2);

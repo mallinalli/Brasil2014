@@ -50,35 +50,58 @@
             /**
             /* En un ciclo, maneja los últimos tweets
             */
-            for(i=0; i<4; i++) {
-                /**
-                /* La variable eltuit almacena el texto del tweet número [i]
-                */
-                eltuit = tweetData[i].text;
-                /**
-                /* Busca un link dentro del tweet, de encontrarlo ejecuta lo siguiente:
-                /* La variable link almacena un substring de 22 caracteres que comienze con "http"
-                */
-                if (eltuit.indexOf('http') > 0) {
-                    link = eltuit.substring(eltuit.indexOf('http'), eltuit.indexOf('http')+22);
-                };
-                /**
-                /* Elimina el link del texto del tweet
-                */
-                eltuit = eltuit.replace(link,'');
-                /**
-                /* Si la variable link no está vacía:
-                /* Imprime el tweet convirtiéndolo en un link que abre en una nueva ventana.
-                /* Si está vacía, imprime puro texto
-                */
-                if (link != '') {
-                    $('.tweets-container').append('<div class="single-tweet"><a href="'+link+'" target="_blank">'+eltuit+'</a></div>');
+            var tweetPosition = 0;
+            /**
+            /* Tweets iniciales
+            */
+            addTweets(4);
+            /**
+            /* Función de carga de tweets, parámetro: cuántos tweets quieres
+            */
+            function addTweets(cuantos){
+                if (tweetData[tweetPosition] != undefined) {
+                    for(i=0; i < cuantos; i++) {
+                        /**
+                        /* La variable eltuit almacena el texto del tweet número [i]
+                        */
+                        eltuit = tweetData[tweetPosition].text;
+                        /**
+                        /* Busca un link dentro del tweet, de encontrarlo ejecuta lo siguiente:
+                        /* La variable link almacena un substring de 22 caracteres que comienze con "http"
+                        */
+                        if (eltuit.indexOf('http') > 0) {
+                            link = eltuit.substring(eltuit.indexOf('http'), eltuit.indexOf('http')+22);
+                        };
+                        /**
+                        /* Elimina el link del texto del tweet
+                        */
+                        eltuit = eltuit.replace(link,'');
+                        /**
+                        /* Si la variable link no está vacía:
+                        /* Imprime el tweet convirtiéndolo en un link que abre en una nueva ventana.
+                        /* Si está vacía, imprime puro texto
+                        */
+                        if (link != '') {
+                            $('.tweets-container').append('<div class="single-tweet"><a href="'+link+'" target="_blank">'+eltuit+'</a></div>');
+                        }
+                        else {
+                            $('.tweets-container').append('<div class="single-tweet">'+eltuit+'</div>');
+                        }
+                        link = '';
+                        tweetPosition++;   
+                    }
+                } else {
+                    $('.moretweets').html('');
+                    console.log('Ya no hay más tweets');
                 }
-                else {
-                    $('.tweets-container').append('<div class="single-tweet">'+eltuit+'</div>');
-                }
-                link = '';
             }
+            /**
+            /* Botón de cargar más tweets
+            */
+            $('.moretweets').on('click',function(e){
+                e.preventDefault();
+                addTweets(1);
+            });
         });
         
       </script>    
@@ -89,8 +112,3 @@
                 };
               </script>
     <?php } ?>
-    <script>
-        $('.moretweets').on('click',function(e){
-            e.preventDefault();
-        });
-    </script>
