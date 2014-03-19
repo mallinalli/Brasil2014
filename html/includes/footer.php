@@ -37,7 +37,7 @@
           <div class="widgets2 clearfix">
             <div class="complemento twitter hlpr-mr">
               <h2>
-                <a href="https://twitter.com/TribunaVigila">
+                <a href="https://twitter.com/TribunaDeportes">
                   <i class="icon-twitter"></i> @TribunaDeportes
                 </a>
               </h2>

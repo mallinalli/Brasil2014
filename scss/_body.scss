@@ -405,6 +405,28 @@ ul{
 
 /* ========================= */
 
+.infografias{
+	width: 100%;
+	position: relative;
+	.info{
+		background: #ccc;
+		margin: 5px 0.75%;
+		float: left;
+	}
+	.large{
+		width: 31%;
+		height: 284px;
+
+	}
+	.medium{
+		width: 63.5%;
+		height: 137px;
+	}
+	.small{
+		width: 31%;
+		height: 137px;
+	}
+}
 .pie{
 	background: $elGris;
 	color: #fff;

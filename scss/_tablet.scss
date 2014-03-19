@@ -47,7 +47,21 @@
 .home-video-component {
 	display: none;
 }
+.infografias{
+	.large{
+		width: 23.5%;
+		height: 310px;
 
+	}
+	.medium{
+		width: 48.5%;
+		height: 150px;
+	}
+	.small{
+		width: 23.5%;
+		height: 150px;
+	}
+}
 .lateral{
 	width: 98%;
 	float: left;
