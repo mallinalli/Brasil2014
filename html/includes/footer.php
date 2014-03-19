@@ -44,6 +44,7 @@
               <div class="tweets-container">
                 <?php /*Aquí entran los tuits*/ ?>
               </div>
+              <a href="#" class="moretweets">Más...</a>
             </div>
             <div class="complemento audios">
               <h2 class="aud-head">Audios</h2>

@@ -307,7 +307,6 @@ ul{
 }
 
 .tweets-container {
-	margin-bottom: 15px;
 	max-height: 250px;
 	overflow: auto;
 	.single-tweet {
@@ -325,6 +324,12 @@ ul{
 				color: darken($elAzulClaro,20%);
 			}
 		}
+	}
+}
+.moretweets {
+	color: #fff;
+	&:hover {
+		color: #ddd;
 	}
 }
 
