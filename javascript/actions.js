@@ -203,14 +203,12 @@ function theAudioLoop(tracks,times){
   for (var i = 0; i < times; i++) {
     trackPosition++;
     if (tracks[trackPosition] != undefined) {
-      console.log(tracks[trackPosition].id);
       printSong(tracks[trackPosition].id,tracks[trackPosition].title,tracks[trackPosition].duration);
       streamTrack(tracks[trackPosition].duration,tracks[trackPosition].id);
     } else {
       $('.mastracks').html('');
     }
   }
-  console.log('Track Position:'+trackPosition);
 }
 
 function printSong(id,titulo,duracion){
@@ -331,7 +329,6 @@ function streamTrack(duracion,elid){
         /* izquierdo, que representa la posición actual en el archivo de audio
         */
         $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',(song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion);
-        console.log(song.position);
       }, 500);
     }
     /**

@@ -80,6 +80,7 @@
                 link = '';
             }
         });
+        
       </script>    
     <?php } else { ?>
               <script>
@@ -88,3 +89,8 @@
                 };
               </script>
     <?php } ?>
+    <script>
+        $('.moretweets').on('click',function(e){
+            e.preventDefault();
+        });
+    </script>

@@ -3,6 +3,10 @@
 /* ======================================================================
 */
 
+.home-video-component, .desk-home-video-component {
+  @include user-select(none);
+}
+
 .home-video-component {
   background: lighten($elRojo,6%);
   margin-bottom: 15px;
