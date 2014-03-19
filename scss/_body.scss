@@ -92,9 +92,13 @@ ul{
 .desk-home-video-component {
 	display: none;
 }
-.principal, .principales, .nota {
+.principal, .principales, .nota, .nota-s {
 	margin-bottom: 10px;
-	a{ @extend %link-reset; }
+	position: relative;
+	a {
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+	}
 }
 .principal{
 	width: 100%;
