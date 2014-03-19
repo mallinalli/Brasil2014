@@ -14,8 +14,6 @@ $('.menubutton').on('click','a',function(a){
     */
 var elCanalDeYoutubeQueQuieresVer = 'kexpradio';
 
-
-var categorias = new Array();
 $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?&max-results=50&alt=json', function(data) {
   var elvideo = data.feed.entry;
   /**
@@ -31,7 +29,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
 		*/
   $('.desk-home-video-component,.home-video-component').on('click','a',function(e){
     e.preventDefault();
-  })
+  });
 
   var deskstate = true;
   /**
@@ -48,7 +46,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
   }
 
   $('.desk-pull').on('click',function(){
-    if (deskstate == true) {
+    if (deskstate === true) {
       $('.desk-video-menu-wrapper').animate({
         width: 0+'%'
       });
@@ -94,7 +92,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
     var videourl = elvideo[k].id.$t;
     videourl = videourl.replace('http://gdata.youtube.com/feeds/api/videos/','https://www.youtube.com/embed/');
     $('.video-menu > ul').append('<li class="video-min"><a href="" data-videocall="'+videourl+'"><img src="'+elvideo[k].media$group.media$thumbnail[1].url+'" alt="img"><div class="vid-cap"><span>'+elvideo[k].title.$t+'</span></div></a></li>');
-  };
+  }
 
   /**
 			/* Sustitución del video actual en stage, por el cliqueado
@@ -106,12 +104,12 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
 
 
   $('.home-video-component .pull').on('click','a',function(){
-    if (menu_state == false) {
+    if (menu_state === false) {
       movilPull();
     }
     else {
       movilPush();
-    };
+    }
   });
 
   function movilPull(){
@@ -120,7 +118,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
     $('.video-menu-wrapper').stop().slideToggle(function(){
       $('.pull a').html('<i class="icon-angle-up"></i>');
     });
-  };
+  }
 
   function movilPush(){
     menu_state = !menu_state;
@@ -128,7 +126,7 @@ $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuiere
       $('.pull a').html('<i class="icon-angle-down"></i>');
       $('.video-menu-wrapper').find('.video-menu').hide();
     });
-  };
+  }
 
 });
 
@@ -157,9 +155,9 @@ function dateTimerInitiate(){
   clearInterval(dateTimer);
   dateTimer =  setInterval (function(){
     iSec--;
-    if (iSec == 0 && iMin == 0 && iHour == 0 && iDay == 0) {
+    if (iSec === 0 && iMin === 0 && iHour === 0 && iDay === 0) {
         timerEnded();
-    } else if (iSec == 0) {
+    } else if (iSec === 0) {
       iSec = 59;
       iMin--;
       if (iMin == -1) {
@@ -169,14 +167,14 @@ function dateTimerInitiate(){
           iHour = 23;
           iDay --;
           $('#day').html(iDay);
-        };
+        }
         $('#hour').html(iHour);
-      };
+      }
       $('#min').html(iMin);
     }
     $('#sec').html(iSec);
   }, 1000);
-};
+}
 
 function timerEnded(){
   clearInterval(dateTimer);
@@ -187,32 +185,44 @@ function timerEnded(){
     /* COMPONENTE DE AUDIO
     /* =================================
     */
-/**
-/* Creación del objeto song, al que se puede controlar con play, pause, etc.
-*/
-
 SC.initialize({
   client_id: 'fadfafec99840a9bab19d077b12fd206'
 });
 
-var url = 'https://api.soundcloud.com/tracks.json?user_id=sinnerei&client_id=fadfafec99840a9bab19d077b12fd206';
+var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
+var trackPosition = -1;
 $.getJSON(url, function(tracks) {
-  var theTrack = tracks[0];
-  streamTrack(theTrack.duration,theTrack.id);
+  theAudioLoop(tracks,3);
+  $('.mastracks').on('click',function(e){
+    e.preventDefault();
+    theAudioLoop(tracks,2);
+  });
 });
 
-function streamTrack(duracion,elid){
+function theAudioLoop(tracks,times){
+  for (var i = 0; i < times; i++) {
+    trackPosition++;
+    if (tracks[trackPosition] != undefined) {
+      console.log(tracks[trackPosition].id);
+      printSong(tracks[trackPosition].id,tracks[trackPosition].title,tracks[trackPosition].duration);
+      streamTrack(tracks[trackPosition].duration,tracks[trackPosition].id);
+    } else {
+      $('.mastracks').html('');
+    }
+  }
+  console.log('Track Position:'+trackPosition);
+}
 
+function printSong(id,titulo,duracion){
+  $('.audio-list').append('<div class="clearfix '+id+'" data-duration="'+duracion+'"><div class="trackname">'+ titulo +'</div><div class="play_cont"><a href="#" class="bplay"><i class="icon-play"></i></a></div><div class="audio_wrapper"><div class="audio_container"><div class="audio_thingie"></div></div></div></div>');
+}
+
+function streamTrack(duracion,elid){
+  /**
+  /* Creación del objeto song, al que se puede controlar con play, pause, etc.
+  */
   SC.stream("/tracks/"+elid, function(song){
     var playing = false;
-    /*var song = new Audio("http://ctrlup.net/test_files/common.mp3");*/
-    /**
-    /* Verificación, si el navegador no puede reproducir mp3, carga un ogg. (Ópera)
-    */
-      /*isSupp=song.canPlayType('audio/mp3');
-      if (!isSupp){
-        song = new Audio("http://ctrlup.net/test_files/common.ogg");
-      }*/
     /**
     /* Se inicializa una variable timer para que sea accesible desde donde sea.
     */
@@ -220,7 +230,7 @@ function streamTrack(duracion,elid){
     /**
     /* Al dar click en el botón de play/pause ejecuta la función togglePlay()
     */
-    $('#play').on('click',function(e){
+    $('.clearfix.'+elid).find('.bplay').on('click',function(e){
       e.preventDefault();
       togglePlay();
     });
@@ -228,8 +238,8 @@ function streamTrack(duracion,elid){
     /* Al hacer clic sobre la bolita de posición y arrastrarla, iguala la posición del mouse dentro
     /* de .audio_wrapper con la de ésta. Mientras esto suceda, se elimina el timer
     */
-    $('.audio_thingie').on('mousedown',function(){
-      $('.audio_wrapper').mousemove(function(e){
+    $('.clearfix.'+elid).find('.audio_thingie').on('mousedown',function(){
+      $('.clearfix.'+elid).find('.audio_wrapper').mousemove(function(e){
         /**
         /* Nota: el 10 es para compensar el padding de audio_wrapper y audio_thingie, se puede mejorar
         */
@@ -238,48 +248,48 @@ function streamTrack(duracion,elid){
         /* Un if para los límites del drag
         */
         if(theX < 0){
-          $('.audio_thingie').css('margin-left','0');
-        } else if(theX > $('.audio_wrapper').width()) {
-          $('.audio_thingie').css('margin-left',$('.audio_wrapper').width());
+          $('.clearfix.'+elid).find('.audio_thingie').css('margin-left','0');
+        } else if(theX > $('.clearfix.'+elid).find('.audio_wrapper').width()) {
+          $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',$('.clearfix.'+elid).find('.audio_wrapper').width());
         } else {
-          $('.audio_thingie').css('margin-left',theX);
+          $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',theX);
         }
-        clearInterval(timer)
+        clearInterval(timer);
       });
       /**
       /* Al retirar el mouse de los límites de .audio_wrapper, desvincula la relación
       /* posición del mouse - posición de la bolita, y de estar en reproducción el audio
       /* crea un timer
       */
-      $('.audio_wrapper').on('mouseleave',function(){
-        $('.audio_wrapper').unbind('mousemove');
-        if (playing == false) {
+      $('.clearfix.'+elid).find('.audio_wrapper').on('mouseleave',function(){
+        $('.clearfix.'+elid).find('.audio_wrapper').unbind('mousemove');
+        if (playing === false) {
           timerSettings();
-        };
+        }
       });
     });
     /**
     /* Al detectar el evento mouseup dentro de .audio_wrapper, se hace la desvinculación
     /* del mousemove y si se está reproduciendo el audio crea un timer
     */
-    $('.audio_wrapper').on('mouseup',function(){
-      $('.audio_wrapper').unbind('mousemove');
-      if (playing == true) {
+    $('.clearfix.'+elid).find('.audio_wrapper').on('mouseup',function(){
+      $('.clearfix.'+elid).find('.audio_wrapper').unbind('mousemove');
+      if (playing === true) {
         timerSettings();
-      };
+      }
     });
     /**
     /* Al hacer click en algun punto dentro de .audio_wrapper, se detecta esta posición
     /* y se hace una relación con respecto a la duración del archivo de audio, tomando
     /* el ancho total de .audio_wrapper como la duración total del audio
     */
-    $('.audio_wrapper').on('click',function(e) {
+    $('.clearfix.'+elid).find('.audio_wrapper').on('click',function(e) {
       var posX = $(this).offset().left;
       /**
       /* 10 de paddings
       */
       var newPos = (e.pageX - posX)-10;
-      var posFinal = (newPos * duracion) / $('.audio_container').width();
+      var posFinal = (newPos * duracion) / $('.clearfix.'+elid).find('.audio_container').width();
       song.setPosition(posFinal);
       moveThingie();
     });
@@ -289,8 +299,8 @@ function streamTrack(duracion,elid){
     /* de audio
     */
     function moveThingie(){
-      $('.audio_thingie').stop().animate({
-        marginLeft: (song.position*$('.audio_container').width())/duracion
+      $('.clearfix.'+elid).find('.audio_thingie').stop().animate({
+        marginLeft: (song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion
       },300);
     }
     /**
@@ -311,17 +321,17 @@ function streamTrack(duracion,elid){
         /* Si la canción ya terminó, cambia el texto del botón de play/pause y
         /* elimina el timer
         */
-        if (song.playState == 0) {
+        if (song.playState === 0) {
           playing = false;
-          $('#play').html('<i class="icon-play"></i>');
+          $('.clearfix.'+elid).find('.bplay').html('<i class="icon-play"></i>');
           clearInterval(timer);
-        };
+        }
         /**
         /* Asigna el valor proporcional del tiempo actual de la canción al margen
         /* izquierdo, que representa la posición actual en el archivo de audio
         */
-        $('.audio_thingie').css('margin-left',(song.position*$('.audio_container').width())/duracion);
-        console.log(song.position)
+        $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',(song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion);
+        console.log(song.position);
       }, 500);
     }
     /**
@@ -329,15 +339,15 @@ function streamTrack(duracion,elid){
     /* de acuerdo a esto, además de asignar el texto adecuado al botón de play/pause
     */
     function togglePlay() {
-      if (song.paused || song.playState == 0) {
+      if (song.paused || song.playState === 0) {
         song.play();
         play = true;
-        $('#play').html('<i class="icon-pause"></i>');
+        $('.clearfix.'+elid).find('.bplay').html('<i class="icon-pause"></i>');
         timerSettings();
       } else {
         song.pause();
         play = false;
-        $('#play').html('<i class="icon-play"></i>');
+        $('.clearfix.'+elid).find('.bplay').html('<i class="icon-play"></i>');
         clearInterval(timer);
       }
     }
