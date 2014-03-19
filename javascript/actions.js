@@ -1,21 +1,25 @@
-/*Menú principal -------------------------------------------------------------------------------------------------*/
 $('.menubutton').on('click','a',function(a){
 	a.preventDefault();
 	$('.navegacion').stop().slideToggle();
 });
 
-/* Obtención de datos para el componente de video
-*/
-
-  /**
-    /* ====================================
-    /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO
-    /* ====================================
-    */
-var elCanalDeYoutubeQueQuieresVer = 'kexpradio';
+ /**
+   /* ====================================
+   /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO
+   /* ====================================
+   */
+var elCanalDeYoutubeQueQuieresVer = 'canalpuebla';
 
 $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?&max-results=50&alt=json', function(data) {
-  var elvideo = data.feed.entry;
+  var listaInicial = data.feed.entry;
+
+/*brujiscontreras*/
+  var elvideo = [];
+  for (var i = 0; i < listaInicial.length; i++) {
+    if (listaInicial[i].content.$t.indexOf('brujiscontreras') > 0) {
+      elvideo.push(listaInicial[i]);
+    }
+  };
   /**
 		/* Obtiene el último video del canal de Youtube y lo asigna al stage del componente
 		*/

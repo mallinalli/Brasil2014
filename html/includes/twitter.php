@@ -92,7 +92,6 @@
                     }
                 } else {
                     $('.moretweets').html('');
-                    console.log('Ya no hay más tweets');
                 }
             }
             /**
