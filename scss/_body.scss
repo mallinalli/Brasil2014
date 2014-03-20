@@ -465,8 +465,48 @@ ul{
 	text-align: center;
 	font-size: 12px;
 	margin-top: 10px;
-	img{
-		padding: 0 10px;
-		margin: 10px 0;
+	width: 100%;
+	/* .logos-p{
+		width: 300px;
+		margin: 0 auto;
+	} */
+	p{
+		width: 100%;
+		text-align: center;
 	}
+	.logos{
+		background: #000;
+	}
+	#tribuna, #indetta, #exa, #lamejor, #periodico, #canalpuebla, #radio{
+		background: url('../img/logos.png') no-repeat;
+		width: 119px;
+		height: 75px;
+		display: inline-block;
+		margin: 10px 0; 
+		float: left;
+	}
+	#tribuna{
+		background-position: 12px 0;
+		display: block;
+		margin: 10px auto;
+	}
+	#indetta{
+		background-position: -120px 0;
+	}
+	#exa{
+		background-position: -250px 0;
+	}
+	#lamejor{
+		background-position: -385px 0;
+	}
+	#periodico{
+		background-position: -516px 0;
+	}
+	#canalpuebla{
+		background-position: -649px 0;
+	}
+	#radio{
+		background-position: -780px 0;
+	}
+
 }

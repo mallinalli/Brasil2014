@@ -103,3 +103,11 @@
 	}
 	.foto{/* Empty Style */}
 }
+.pie{
+	#tribuna, #indetta, #exa, #lamejor, #periodico, #canalpuebla, #radio{
+		float: none;
+	}
+	.hlpr-logo{
+		display: block;
+	}
+}
