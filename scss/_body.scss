@@ -188,6 +188,26 @@ ul{
 		width: 100%;
 	}
 }
+.grupo{
+
+}
+.calendario{
+	width: 100%;
+	.cal-fecha{
+		width: 32%;
+		height: 60px;
+		background: #ccc;
+		font-size: 18px;
+ 		font-weight: bold;
+ 		float: left;
+ 		padding: 10px 0;
+ 		margin: 5px 0;
+ 		text-align: center;
+ 		&.hlpr-mr, &.hlpr-mr-t {
+ 			margin-right: 2%;
+ 		}
+	}
+}
 .pie-foto{
 	background: none;
 	font-size: 16px;
