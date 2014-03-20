@@ -3,6 +3,17 @@ $('.menubutton').on('click','a',function(a){
 	$('.navegacion').stop().slideToggle();
 });
 
+
+$.getJSON('includes/calendario.json', function(data) {
+  console.log(data);
+});
+
+/**
+  /* ===========================
+  /* AQUÍ COMIENZA EL CALENDARIO
+  /* ===========================
+  */
+
 var lastFecha;
 $('.cal-fecha').on('click',function(){
   if ($(this).hasClass('cal-selected')) {
