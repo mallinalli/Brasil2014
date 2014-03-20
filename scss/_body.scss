@@ -196,7 +196,8 @@ ul{
 	.cal-fecha{
 		width: 32%;
 		height: 60px;
-		background: #ccc;
+		background: $elGris;
+		color: #fff;
 		font-size: 18px;
  		font-weight: bold;
  		float: left;
@@ -207,6 +208,17 @@ ul{
  		&.hlpr-mr, &.hlpr-mr-t {
  			margin-right: 2%;
  		}
+	}
+	.cal-selected {
+		background: #fff;
+		color: $elGris
+	}
+	.cal-cont,.removeme {
+		float: left;
+		width: 100%;
+	}
+	.hidden {
+		display: none;
 	}
 }
 .pie-foto{
