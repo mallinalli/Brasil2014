@@ -1,21 +1,25 @@
-/*Menú principal -------------------------------------------------------------------------------------------------*/
 $('.menubutton').on('click','a',function(a){
 	a.preventDefault();
 	$('.navegacion').stop().slideToggle();
 });
 
-/* Obtención de datos para el componente de video
-*/
-
-  /**
-    /* ====================================
-    /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO
-    /* ====================================
-    */
-var elCanalDeYoutubeQueQuieresVer = 'kexpradio';
+ /**
+   /* ====================================
+   /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO
+   /* ====================================
+   */
+var elCanalDeYoutubeQueQuieresVer = 'canalpuebla';
 
 $.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?&max-results=50&alt=json', function(data) {
-  var elvideo = data.feed.entry;
+  var listaInicial = data.feed.entry;
+
+/*brujiscontreras*/
+  var elvideo = [];
+  for (var i = 0; i < listaInicial.length; i++) {
+    if (listaInicial[i].content.$t.indexOf('brujiscontreras') > 0) {
+      elvideo.push(listaInicial[i]);
+    }
+  };
   /**
 		/* Obtiene el último video del canal de Youtube y lo asigna al stage del componente
 		*/
@@ -192,7 +196,7 @@ SC.initialize({
 var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
 var trackPosition = -1;
 $.getJSON(url, function(tracks) {
-  theAudioLoop(tracks,3);
+  theAudioLoop(tracks,4);
   $('.mastracks').on('click',function(e){
     e.preventDefault();
     theAudioLoop(tracks,2);
@@ -203,14 +207,12 @@ function theAudioLoop(tracks,times){
   for (var i = 0; i < times; i++) {
     trackPosition++;
     if (tracks[trackPosition] != undefined) {
-      console.log(tracks[trackPosition].id);
       printSong(tracks[trackPosition].id,tracks[trackPosition].title,tracks[trackPosition].duration);
       streamTrack(tracks[trackPosition].duration,tracks[trackPosition].id);
     } else {
       $('.mastracks').html('');
     }
   }
-  console.log('Track Position:'+trackPosition);
 }
 
 function printSong(id,titulo,duracion){
@@ -331,7 +333,6 @@ function streamTrack(duracion,elid){
         /* izquierdo, que representa la posición actual en el archivo de audio
         */
         $('.clearfix.'+elid).find('.audio_thingie').css('margin-left',(song.position*$('.clearfix.'+elid).find('.audio_container').width())/duracion);
-        console.log(song.position);
       }, 500);
     }
     /**

@@ -92,9 +92,13 @@ ul{
 .desk-home-video-component {
 	display: none;
 }
-.principal, .principales, .nota {
+.principal, .principales, .nota, .nota-s {
 	margin-bottom: 10px;
-	a{ @extend %link-reset; }
+	position: relative;
+	a {
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+	}
 }
 .principal{
 	width: 100%;
@@ -306,10 +310,12 @@ ul{
 	}
 }
 
-.tweets-container {
-	margin-bottom: 15px;
+.tweets-container, .audio-list {
 	max-height: 250px;
 	overflow: auto;
+}
+
+.tweets-container {
 	.single-tweet {
 		font-size: 12px;
 		color: darken($elAzulClaro,30%);
@@ -327,6 +333,13 @@ ul{
 		}
 	}
 }
+.moretweets {
+	color: #fff;
+	display: inline-block;
+	&:hover {
+		color: #ddd;
+	}
+}
 
 /* =========================
 	Componente de Audio
@@ -336,15 +349,13 @@ ul{
 	width: 100%;
 	@include user-select(none);
 	background: $elAmarillo;
-		@include border-radius(3px);
+	@include border-radius(3px);
 }
 .audio-list {
 	@include box-sizing(border-box);
 	padding: 3px 5px 3px 10px;
 	margin: 0 3px;
 	background: #fff;
-	max-height: 250px;
-	overflow: auto;
 }
 .all_container {
   margin: 50px auto;
