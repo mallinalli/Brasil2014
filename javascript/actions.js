@@ -3,6 +3,21 @@ $('.menubutton').on('click','a',function(a){
 	$('.navegacion').stop().slideToggle();
 });
 
+/*<div class="cal-cont">Algún texto adentro</div>*/
+$('.cal-fecha').on('click',function(){
+  switch($(this).index())
+  {
+  case 0: case 1: case 2:
+    console.log('erocero');
+    $('.calendario').index(1).hide()
+    break;
+  case 3:
+    console.log('dos');
+    break;
+  }
+
+});
+
  /**
    /* ====================================
    /* AQUÍ COMIENZA EL COMPONENTE DE VIDEO

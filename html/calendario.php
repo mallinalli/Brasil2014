@@ -36,7 +36,6 @@
                   <div class="cal-fecha hlpr-mr">Jueves 12 de Junio</div>
                   <div class="cal-fecha hlpr-mr-t">Viernes 13 de Junio</div>
                   <div class="cal-fecha">Sábado 14 de Junio</div>
-                  <div class="cal-cont">Algún texto adentro</div>
                   <div class="cal-fecha hlpr-mr">Domingo 15 de Junio</div>
                   <div class="cal-fecha hlpr-mr-t">Lunes 16 de Junio</div>
                   <div class="cal-fecha">Martes 17 de Junio</div>
