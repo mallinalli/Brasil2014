@@ -3,7 +3,35 @@ $('.menubutton').on('click','a',function(a){
 	$('.navegacion').stop().slideToggle();
 });
 
+/**
+  /* ========================
+  /* AQUÍ COMIENZA LA GALERÍA
+  /* ========================
+  */
+var margen = 0;
+var jItemW = $('.jcaritem').width()+5;
+var jItemsW = $('.jcaritem').length * ($('.jcaritem').width()+5);
+console.log('Ancho de los items: '+$('.jcaritem').length * ($('.jcaritem').width()+5));
+console.log('Ancho del contenedor: '+$('.jcarousel').width());
 
+$('.jcarcontrol').on('click',function(){
+  moveCont($(this).attr('id'));
+});
+
+function moveCont(elid){
+  if (elid == 'izq') {
+    if (margen < 0){
+      margen = (margen+$('.jcaritem').width())+5;
+    }
+  } else {
+    if (margen > -(jItemsW-jItemW))
+    margen = (margen-$('.jcaritem').width())-5;
+  }
+  console.log('Margen: '+margen);
+  $('.jcar-cont').stop().animate({
+    marginLeft: margen
+  })
+}
 /**
   /* ===========================
   /* AQUÍ COMIENZA EL CALENDARIO

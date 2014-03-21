@@ -57,7 +57,17 @@
           <div class="complemento foto">
             <h2 class="foto-head">Fotos del día</h2>
             <div>
-              Aquí las fotos ;D
+              <div class="jcarousel">
+                <div class="jcarcontrol" id="izq"><span><i class="icon-chevron-left"></i></span></div>
+                <div class="jcarcontrol" id="der"><span><i class="icon-chevron-right"></i></span></div>
+                <div class="jcar-cont">
+                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
+                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
+                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
+                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
+                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
+                </div>
+              </div>
             </div>
             <h3 class="foto-footer">Presentado por</h3>
           </div>
