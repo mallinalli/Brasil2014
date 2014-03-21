@@ -199,7 +199,7 @@
 							"bandera" : "img/por.jpg"
 						}
 					],
-					"hora" : "0",
+					"hora" : "1100",
 					"estadio" : "Fonte Nova",
 					"grupo" : "G"
 				},
@@ -229,7 +229,7 @@
 							"bandera" : "img/usa.jpg"
 						}
 					],
-					"hora" : "0",
+					"hora" : "1700",
 					"estadio" : "Estadio Das Dunas",
 					"grupo" : "G"
 				}
@@ -731,7 +731,7 @@
 			]
 		},
 		{
-			"dia" : "25",
+			"dia" : "26",
 			"partidos" : [
 				{
 					"equipos" : [

@@ -6,28 +6,73 @@
             		<div class="cal-grupo hlpr-mr">
             		    <p>Grupo A</p>
             		    <ul>
-            		    	<li>Pais 1</li>
-            		    	<li>Pais 2</li>
-            		    	<li>Pais 3</li>
-            		    	<li>Pais 4</li>
+            		    	<li><img src="img/bra.jpg">Brasil</li>
+            		    	<li><img src="img/cro.jpg">Croacia</li>
+            		    	<li><img src="img/mex.jpg">México</li>
+            		    	<li><img src="img/cmr.jpg">Camerún</li>
             		    </ul>
             		</div>
                 <div class="cal-grupo hlpr-mr">
-                    <p>Grupo b</p>
+                    <p>Grupo B</p>
                     <ul>
-                      <li>Pais 1</li>
-                      <li>Pais 2</li>
-                      <li>Pais 3</li>
-                      <li>Pais 4</li>
+                      <li><img src="img/esp.jpg">España</li>
+                      <li><img src="img/ned.jpg">Holanda</li>
+                      <li><img src="img/chi.jpg">Chile</li>
+                      <li><img src="img/aus.jpg">Australia</li>
                     </ul>
                 </div>
                 <div class="cal-grupo hlpr-mr">
-                    <p>Grupo c</p>
+                    <p>Grupo C</p>
                     <ul>
-                      <li>Pais 1</li>
-                      <li>Pais 2</li>
-                      <li>Pais 3</li>
-                      <li>Pais 4</li>
+                      <li><img src="img/col.jpg">Colombia</li>
+                      <li><img src="img/gre.jpg">Grecia</li>
+                      <li><img src="img/civ.jpg">Costa de Marfil</li>
+                      <li><img src="img/jpn.jpg">Japón</li>
+                    </ul>
+                </div>
+                <div class="cal-grupo hlpr-mr">
+                    <p>Grupo D</p>
+                    <ul>
+                      <li><img src="img/uru.jpg">Uruguay</li>
+                      <li><img src="img/crc.jpg">Costa Rica</li>
+                      <li><img src="img/eng.jpg">Inglaterra</li>
+                      <li><img src="img/ita.jpg">Italia</li>
+                    </ul>
+                </div>
+                <div class="cal-grupo hlpr-mr">
+                    <p>Grupo E</p>
+                    <ul>
+                      <li><img src="img/sui.jpg">Suiza</li>
+                      <li><img src="img/ecu.jpg">Ecuador</li>
+                      <li><img src="img/fra.jpg">Francia</li>
+                      <li><img src="img/hon.jpg">Honduras</li>
+                    </ul>
+                </div>
+                <div class="cal-grupo hlpr-mr">
+                    <p>Grupo F</p>
+                    <ul>
+                      <li><img src="img/arg.jpg">Argentina</li>
+                      <li><img src="img/bih.jpg">Bosnia</li>
+                      <li><img src="img/irn.jpg">Irán</li>
+                      <li><img src="img/nga.jpg">Nigeria</li>
+                    </ul>
+                </div>
+                <div class="cal-grupo hlpr-mr">
+                    <p>Grupo G</p>
+                    <ul>
+                      <li><img src="img/ger.jpg">Alemania</li>
+                      <li><img src="img/por.jpg">Portugal</li>
+                      <li><img src="img/gha.jpg">Ghana</li>
+                      <li><img src="img/usa.jpg">Estados Unidos</li>
+                    </ul>
+                </div>
+                <div class="cal-grupo hlpr-mr">
+                    <p>Grupo H</p>
+                    <ul>
+                      <li><img src="img/bel.jpg">Bélgica</li>
+                      <li><img src="img/alg.jpg">Argelia</li>
+                      <li><img src="img/rus.jpg">Rusia</li>
+                      <li><img src="img/kor.jpg">Corea del Sur</li>
                     </ul>
                 </div>
               </section>
