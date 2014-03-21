@@ -2,25 +2,74 @@
 	"fechas" : [
 		{
 			"dia" : "12",
-			"equipos" : [
-				{ "nombre" : "México" },
-				{ "nombre" : "Portugal" }
-			],
-			"hora" : "1400",
-			"estadio" : "Un estadio de futbol",
-			"grupo" : "Z"
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "México",
+							"bandera" : "img/mexico.jpg"
+						},
+						{
+							"nombre" : "Portugal",
+							"bandera" : "img/flag.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Un estadio de futbol",
+					"grupo" : "Z"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Venezuela",
+							"bandera" : "img/플래그.jpg"
+						},
+						{
+							"nombre" : "Kuala Lumpur",
+							"bandera" : "img/drapeau.jpg"
+						}
+					],
+					"hora" : "0900",
+					"estadio" : "Un estadio de futbol",
+					"grupo" : "J"
+				}
+			]
 		},
 		{
-			"dia" : "13",
-			"equipos" : [
+			"dia" : "12",
+			"partidos" : [
 				{
-					"nombre" : "México",
-					"nombre" : "Portugal"
+					"equipos" : [
+						{
+							"nombre" : "México",
+							"bandera" : "img/mexico.jpg"
+						},
+						{
+							"nombre" : "Portugal",
+							"bandera" : "img/flag.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Un estadio de futbol",
+					"grupo" : "Z"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Venezuela",
+							"bandera" : "img/플래그.jpg"
+						},
+						{
+							"nombre" : "Kuala Lumpur",
+							"bandera" : "img/drapeau.jpg"
+						}
+					],
+					"hora" : "0900",
+					"estadio" : "Un estadio de futbol",
+					"grupo" : "J"
 				}
-			],
-			"hora" : "1400",
-			"estadio" : "Un estadio de futbol",
-			"grupo" : "Z"
+			]
 		}
+		
 	]
 }
