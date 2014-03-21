@@ -14,7 +14,7 @@
 							"bandera" : "img/cro.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Arena de Sao Paulo",
 					"grupo" : "A"
 				}
@@ -34,7 +34,7 @@
 							"bandera" : "img/cmr.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Estadio Das Dunas",
 					"grupo" : "A"
 				},
@@ -49,7 +49,7 @@
 							"bandera" : "img/ned.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Fonte Nova",
 					"grupo" : "B"
 				},
@@ -64,7 +64,7 @@
 							"bandera" : "img/aus.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena Pantanal",
 					"grupo" : "B"
 				}
@@ -84,7 +84,7 @@
 							"bandera" : "img/gre.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Estadio Mineirao",
 					"grupo" : "C"
 				},
@@ -99,7 +99,7 @@
 							"bandera" : "img/crc.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Castelao",
 					"grupo" : "D"
 				},
@@ -114,7 +114,7 @@
 							"bandera" : "img/ita.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena de Amazonia",
 					"grupo" : "D"
 				},
@@ -129,7 +129,7 @@
 							"bandera" : "img/jpn.jpg"
 						}
 					],
-					"hora" : "2000",
+					"hora" : "20:00",
 					"estadio" : "Arena Pernambuco",
 					"grupo" : "C"
 				}
@@ -149,7 +149,7 @@
 							"bandera" : "img/ecu.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Nacional de Brasilia",
 					"grupo" : "E"
 				},
@@ -164,7 +164,7 @@
 							"bandera" : "img/hon.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Beira-Rio",
 					"grupo" : "E"
 				},
@@ -179,7 +179,7 @@
 							"bandera" : "img/bih.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Maracaná",
 					"grupo" : "F"
 				}
@@ -199,7 +199,7 @@
 							"bandera" : "img/por.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Fonte Nova",
 					"grupo" : "G"
 				},
@@ -214,7 +214,7 @@
 							"bandera" : "img/nga.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Arena Baixada",
 					"grupo" : "F"
 				},
@@ -229,7 +229,7 @@
 							"bandera" : "img/usa.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Estadio Das Dunas",
 					"grupo" : "G"
 				}
@@ -249,7 +249,7 @@
 							"bandera" : "img/alg.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Estadio Mineirao",
 					"grupo" : "H"
 				},
@@ -264,7 +264,7 @@
 							"bandera" : "img/mex.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Castelao",
 					"grupo" : "A"
 				},
@@ -279,7 +279,7 @@
 							"bandera" : "img/kor.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena Pantanal",
 					"grupo" : "H"
 				}
@@ -299,7 +299,7 @@
 							"bandera" : "img/ned.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Beira-Rio",
 					"grupo" : "B"
 				},
@@ -314,7 +314,7 @@
 							"bandera" : "img/chi.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Maracaná",
 					"grupo" : "B"
 				},
@@ -329,7 +329,7 @@
 							"bandera" : "img/cro.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena de Amazonia",
 					"grupo" : "A"
 				}
@@ -349,7 +349,7 @@
 							"bandera" : "img/civ.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Nacional de Brasilia",
 					"grupo" : "C"
 				},
@@ -364,7 +364,7 @@
 							"bandera" : "img/eng.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Arena de Sao Paulo",
 					"grupo" : "D"
 				},
@@ -379,7 +379,7 @@
 							"bandera" : "img/gre.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Estadio Das Dunas",
 					"grupo" : "C"
 				}
@@ -399,7 +399,7 @@
 							"bandera" : "img/crc.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Arena Pernambuco",
 					"grupo" : "D"
 				},
@@ -414,7 +414,7 @@
 							"bandera" : "img/fra.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Fonte Nova",
 					"grupo" : "E"
 				},
@@ -429,7 +429,7 @@
 							"bandera" : "img/ecu.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena da Baixada",
 					"grupo" : "E"
 				}
@@ -449,7 +449,7 @@
 							"bandera" : "img/irn.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Estadio Mineirao",
 					"grupo" : "F"
 				},
@@ -464,7 +464,7 @@
 							"bandera" : "img/gha.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Castelao",
 					"grupo" : "G"
 				},
@@ -479,7 +479,7 @@
 							"bandera" : "img/bih.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena Pantanal",
 					"grupo" : "F"
 				}
@@ -499,7 +499,7 @@
 							"bandera" : "img/rus.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Maracaná",
 					"grupo" : "H"
 				},
@@ -514,7 +514,7 @@
 							"bandera" : "img/alg.jpg"
 						}
 					],
-					"hora" : "1400",
+					"hora" : "14:00",
 					"estadio" : "Beira-Rio",
 					"grupo" : "H"
 				},
@@ -529,7 +529,7 @@
 							"bandera" : "img/por.jpg"
 						}
 					],
-					"hora" : "1700",
+					"hora" : "17:00",
 					"estadio" : "Arena de Amazonia",
 					"grupo" : "G"
 				}
@@ -549,7 +549,7 @@
 							"bandera" : "img/esp.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Arena da Baixada",
 					"grupo" : "B"
 				},
@@ -564,7 +564,7 @@
 							"bandera" : "img/chi.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Arena de Sao Paulo",
 					"grupo" : "B"
 				},
@@ -579,7 +579,7 @@
 							"bandera" : "img/bra.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Nacional de Brasilia",
 					"grupo" : "A"
 				},
@@ -594,7 +594,7 @@
 							"bandera" : "img/mex.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Arena Pernambuco",
 					"grupo" : "A"
 				}
@@ -614,7 +614,7 @@
 							"bandera" : "img/uru.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Estadio Das Dunas",
 					"grupo" : "D"
 				},
@@ -629,7 +629,7 @@
 							"bandera" : "img/eng.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Estadio Mineirao",
 					"grupo" : "D"
 				},
@@ -644,7 +644,7 @@
 							"bandera" : "img/col.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Arena Pantanal",
 					"grupo" : "C"
 				},
@@ -659,7 +659,7 @@
 							"bandera" : "img/civ.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Castelao",
 					"grupo" : "C"
 				}
@@ -679,7 +679,7 @@
 							"bandera" : "img/arg.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Beira-Rio",
 					"grupo" : "F"
 				},
@@ -694,7 +694,7 @@
 							"bandera" : "img/irn.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Fonte Nova",
 					"grupo" : "F"
 				},
@@ -709,7 +709,7 @@
 							"bandera" : "img/sui.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Arena Amazonia",
 					"grupo" : "E"
 				},
@@ -724,7 +724,7 @@
 							"bandera" : "img/fra.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Maracaná",
 					"grupo" : "E"
 				}
@@ -744,7 +744,7 @@
 							"bandera" : "img/ger.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Arena Pernambuco",
 					"grupo" : "G"
 				},
@@ -759,7 +759,7 @@
 							"bandera" : "img/gha.jpg"
 						}
 					],
-					"hora" : "1100",
+					"hora" : "11:00",
 					"estadio" : "Nacional de Brasilia",
 					"grupo" : "G"
 				},
@@ -774,7 +774,7 @@
 							"bandera" : "img/bel.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Arena de Sao Paulo",
 					"grupo" : "H"
 				},
@@ -789,7 +789,7 @@
 							"bandera" : "img/rus.jpg"
 						}
 					],
-					"hora" : "1500",
+					"hora" : "15:00",
 					"estadio" : "Arena da Baixada",
 					"grupo" : "H"
 				}

@@ -193,6 +193,7 @@ ul{
 }
 .calendario{
 	width: 100%;
+	@include user-select(none);
 	.cal-fecha{
 		width: 32%;
 		height: 60px;
@@ -219,6 +220,14 @@ ul{
 	}
 	.hidden {
 		display: none;
+	}
+	table {
+		width: 80%;
+		margin: 10px auto;
+	}
+	td {
+		padding: 5px 0;
+		text-align: center;
 	}
 }
 .pie-foto{

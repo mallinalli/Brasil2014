@@ -78,25 +78,25 @@
               </section>
               <!--Publicidad-->
               <section class="calendario clearfix">
-                  <div class="cal-fecha hlpr-mr">Jueves 12 de Junio</div>
-                  <div class="cal-fecha hlpr-mr-t">Viernes 13 de Junio</div>
-                  <div class="cal-fecha">Sábado 14 de Junio</div>
-                  <div class="cal-fecha hlpr-mr">Domingo 15 de Junio</div>
-                  <div class="cal-fecha hlpr-mr-t">Lunes 16 de Junio</div>
-                  <div class="cal-fecha">Martes 17 de Junio</div>
-                  <div class="cal-fecha hlpr-mr">Miércoles 18 de Junio</div>
-                  <div class="cal-fecha hlpr-mr-t">Jueves 19 de Junio</div>
-                  <div class="cal-fecha">Viernes 20 de Junio</div>
-                  <div class="cal-fecha hlpr-mr">Sábado 21 de Junio</div>
-                  <div class="cal-fecha hlpr-mr-t">Domingo 22 de Junio</div>
-                  <div class="cal-fecha">Lunes 23 de Junio</div>
-                  <div class="cal-fecha hlpr-mr">Martes 24 de Junio</div>
-                  <div class="cal-fecha hlpr-mr-t">Miércoles 25 de Junio</div>
-                  <div class="cal-fecha">Jueves 26 de Junio</div>
-                  <div class="cal-fecha hlpr-mr">Viernes 27 de Junio</div>
-                  <div class="cal-fecha hlpr-mr-t">Sábado 28 de Junio</div>
-                  <div class="cal-fecha">Domingo 29 de Junio</div>
-                  <div class="cal-fecha">Lunes 30 de Junio</div>
+                  <div data-cdate="12" class="cal-fecha hlpr-mr">Jueves 12 de Junio</div>
+                  <div data-cdate="13" class="cal-fecha hlpr-mr-t">Viernes 13 de Junio</div>
+                  <div data-cdate="14" class="cal-fecha">Sábado 14 de Junio</div>
+                  <div data-cdate="15" class="cal-fecha hlpr-mr">Domingo 15 de Junio</div>
+                  <div data-cdate="16" class="cal-fecha hlpr-mr-t">Lunes 16 de Junio</div>
+                  <div data-cdate="17" class="cal-fecha">Martes 17 de Junio</div>
+                  <div data-cdate="18" class="cal-fecha hlpr-mr">Miércoles 18 de Junio</div>
+                  <div data-cdate="19" class="cal-fecha hlpr-mr-t">Jueves 19 de Junio</div>
+                  <div data-cdate="20" class="cal-fecha">Viernes 20 de Junio</div>
+                  <div data-cdate="21" class="cal-fecha hlpr-mr">Sábado 21 de Junio</div>
+                  <div data-cdate="22" class="cal-fecha hlpr-mr-t">Domingo 22 de Junio</div>
+                  <div data-cdate="23" class="cal-fecha">Lunes 23 de Junio</div>
+                  <div data-cdate="24" class="cal-fecha hlpr-mr">Martes 24 de Junio</div>
+                  <div data-cdate="25" class="cal-fecha hlpr-mr-t">Miércoles 25 de Junio</div>
+                  <div data-cdate="26" class="cal-fecha">Jueves 26 de Junio</div>
+                  <div data-cdate="27" class="cal-fecha hlpr-mr">Viernes 27 de Junio</div>
+                  <div data-cdate="28" class="cal-fecha hlpr-mr-t">Sábado 28 de Junio</div>
+                  <div data-cdate="29" class="cal-fecha">Domingo 29 de Junio</div>
+                  <div data-cdate="30" class="cal-fecha">Lunes 30 de Junio</div>
               </section>        		
           	</div>
         </div>

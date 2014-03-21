@@ -4,57 +4,87 @@ $('.menubutton').on('click','a',function(a){
 });
 
 
-$.getJSON('includes/calendario.json', function(data) {
-  console.log(data);
-});
-
 /**
   /* ===========================
   /* AQUÍ COMIENZA EL CALENDARIO
   /* ===========================
   */
 
-var lastFecha;
-$('.cal-fecha').on('click',function(){
-  if ($(this).hasClass('cal-selected')) {
-    $(this).toggleClass('cal-selected');
-    
-    calKill();
-  } else {
-    $('.cal-selected').removeClass('cal-selected');
-    $(this).toggleClass('cal-selected');
-    
-    calKill();
-    var evaluando = $(this).index('.cal-fecha');
-    if (evaluando >= 0 && evaluando < 3) {
-      calEvent(2,$(this));
-    } else if (evaluando >= 3 && evaluando < 6) {
-      calEvent(5,$(this));
-    } else if (evaluando >= 6 && evaluando < 9) {
-      calEvent(8,$(this));
-    } else if (evaluando >= 9 && evaluando < 12) {
-      calEvent(11,$(this));
-    } else if (evaluando >= 12 && evaluando < 15) {
-      calEvent(14,$(this));
-    } else if (evaluando >= 15 && evaluando < 18) {
-      calEvent(17,$(this));
-    } else if (evaluando >= 18 && evaluando < 21) {
-      calEvent(18,$(this));
+$.getJSON('includes/calendario.json', function(data) {
+  var cData = data.fechas;
+  var lastFecha;
+  $('.cal-fecha').on('click',function(){
+    if ($(this).hasClass('cal-selected')) {
+      $(this).toggleClass('cal-selected');
+      
+      calKill();
+    } else {
+      $('.cal-selected').removeClass('cal-selected');
+      $(this).toggleClass('cal-selected');
+      
+      calKill();
+      var evaluando = $(this).index('.cal-fecha');
+      if (evaluando >= 0 && evaluando < 3) {
+        calEvent(2,$(this));
+      } else if (evaluando >= 3 && evaluando < 6) {
+        calEvent(5,$(this));
+      } else if (evaluando >= 6 && evaluando < 9) {
+        calEvent(8,$(this));
+      } else if (evaluando >= 9 && evaluando < 12) {
+        calEvent(11,$(this));
+      } else if (evaluando >= 12 && evaluando < 15) {
+        calEvent(14,$(this));
+      } else if (evaluando >= 15 && evaluando < 18) {
+        calEvent(17,$(this));
+      } else if (evaluando >= 18 && evaluando < 21) {
+        calEvent(18,$(this));
+      }
     }
+  });
+
+  function calParse(day){
+    for (var i = 0; i < cData.length; i++) {
+      if (day == cData[i].dia) {
+        var eldia = cData[i];
+      };
+    }
+    return eldia;
+  };
+
+  function calEvent(posicion,este){
+    var cSource = calParse(este.data('cdate'));
+    var $equipos = '';
+    if (cSource != undefined) {
+      for (var i = 0; i < cSource.partidos.length; i++) {
+        $equipos += '<tr><td><img src="'+cSource.partidos[i].equipos[0].bandera+'" alt="'+cSource.partidos[i].equipos[0].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[0].nombre+'</strong></td><td>vs</td><td><img src="'+cSource.partidos[i].equipos[1].bandera+'" alt="'+cSource.partidos[i].equipos[1].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[1].nombre+'</strong></td><td>'+cSource.partidos[i].hora+'</td><td>'+cSource.partidos[i].grupo+'</td><td>'+cSource.partidos[i].estadio+'</td></tr>';
+      }
+    } else {
+      switch (este.data('cdate')) {
+        case 27:
+          $equipos += "<tr><td><i>Día de descanso.</i></td></tr>";
+          break;
+        case 28:
+          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
+          break;
+        case 29:
+          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
+          break;
+        case 30:
+          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
+          break;
+      }
+    }
+    $('.cal-fecha:eq('+posicion+')').after('<div class="cal-cont hidden"><table><tbody>'+$equipos+'</tbody></table></div>');
+    $('.cal-cont').hide().removeClass('hidden').slideToggle();
+  };
+
+  function calKill(){
+    $('.cal-cont').addClass('removeme').removeClass('cal-cont');
+   $('.removeme').slideToggle(500,function(){
+    $(this).remove();
+   });
   }
 });
-
-function calEvent(posicion,este){
-  $('.cal-fecha:eq('+posicion+')').after('<div class="cal-cont hidden">'+este.html()+'</div>');
-  $('.cal-cont').hide().removeClass('hidden').slideToggle();
-}
-
-function calKill(){
-  $('.cal-cont').addClass('removeme').removeClass('cal-cont');
- $('.removeme').slideToggle(500,function(){
-  $(this).remove();
- });
-}
 
  /**
    /* ====================================
