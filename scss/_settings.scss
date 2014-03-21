@@ -12,6 +12,16 @@
 	margin: 0;
 	padding: 0;
 }
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	/* Opacidad de fondo (con fallback): */
+	/* background: rgba(0,0,0,0.5);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4c000000', endColorstr='#4c000000'); */
+}
 
 /**
 /* ====================
