@@ -12,9 +12,9 @@
 	margin: 0;
 	padding: 0;
 }
-.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
-.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
-
+#fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span, .fbFeedbackContent {
+width: 100% !important;
+}
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
