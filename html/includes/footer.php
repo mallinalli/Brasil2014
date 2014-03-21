@@ -61,11 +61,13 @@
                 <div class="jcarcontrol" id="izq"><span><i class="icon-chevron-left"></i></span></div>
                 <div class="jcarcontrol" id="der"><span><i class="icon-chevron-right"></i></span></div>
                 <div class="jcar-cont">
-                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
-                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
-                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
-                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
-                  <div class="jcaritem"><img src="http://placehold.it/100x75" alt="jcaritem"></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
+                  <div class="jcaritem"><a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/temp/300x225.gif"><img src="http://placehold.it/100x75" alt="jcaritem"></a></div>
                 </div>
               </div>
             </div>
@@ -93,6 +95,36 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="http://connect.soundcloud.com/sdk.js"></script>
         <script src="js/actions.min.js"></script>
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+        <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+        
+        <!-- Add Thumbnail helper (this is optional) -->
+        <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+        <script type="text/javascript" src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+        <script>
+          $(document).ready(function(){
+            $('.fancybox-thumbs').fancybox({
+              prevEffect : 'none',
+              nextEffect : 'none',
+
+              closeBtn  : true,
+              arrows    : false,
+              nextClick : true,
+
+              helpers : {
+                thumbs : {
+                  width  : 50,
+                  height : 50
+                }
+              }
+            }); 
+          });
+        </script>
 
         <?php
           /*Include para el componente de twitter*/

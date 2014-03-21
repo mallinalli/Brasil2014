@@ -7,11 +7,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Brasil",
-							"bandera" : "img/bra.jpg"
+							"bandera" : "img/flags/mini/bra.jpg"
 						},
 						{
 							"nombre" : "Croacia",
-							"bandera" : "img/cro.jpg"
+							"bandera" : "img/flags/mini/cro.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -27,11 +27,11 @@
 					"equipos" : [
 						{
 							"nombre" : "México",
-							"bandera" : "img/mex.jpg"
+							"bandera" : "img/flags/mini/mex.jpg"
 						},
 						{
 							"nombre" : "Camerún",
-							"bandera" : "img/cmr.jpg"
+							"bandera" : "img/flags/mini/cmr.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -42,11 +42,11 @@
 					"equipos" : [
 						{
 							"nombre" : "España",
-							"bandera" : "img/esp.jpg"
+							"bandera" : "img/flags/mini/esp.jpg"
 						},
 						{
 							"nombre" : "Holanda",
-							"bandera" : "img/ned.jpg"
+							"bandera" : "img/flags/mini/ned.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -57,11 +57,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Chile",
-							"bandera" : "img/chi.jpg"
+							"bandera" : "img/flags/mini/chi.jpg"
 						},
 						{
 							"nombre" : "Australia",
-							"bandera" : "img/aus.jpg"
+							"bandera" : "img/flags/mini/aus.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -77,11 +77,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Colombia",
-							"bandera" : "img/col.jpg"
+							"bandera" : "img/flags/mini/col.jpg"
 						},
 						{
 							"nombre" : "Grecia",
-							"bandera" : "img/gre.jpg"
+							"bandera" : "img/flags/mini/gre.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -92,11 +92,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Uruguay",
-							"bandera" : "img/uru.jpg"
+							"bandera" : "img/flags/mini/uru.jpg"
 						},
 						{
 							"nombre" : "Costa Rica",
-							"bandera" : "img/crc.jpg"
+							"bandera" : "img/flags/mini/crc.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -107,11 +107,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Inglaterra",
-							"bandera" : "img/eng.jpg"
+							"bandera" : "img/flags/mini/eng.jpg"
 						},
 						{
 							"nombre" : "Italia",
-							"bandera" : "img/ita.jpg"
+							"bandera" : "img/flags/mini/ita.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -122,11 +122,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Costa de Marfil",
-							"bandera" : "img/civ.jpg"
+							"bandera" : "img/flags/mini/civ.jpg"
 						},
 						{
 							"nombre" : "Japón",
-							"bandera" : "img/jpn.jpg"
+							"bandera" : "img/flags/mini/jpn.jpg"
 						}
 					],
 					"hora" : "20:00",
@@ -142,11 +142,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Suiza",
-							"bandera" : "img/sui.jpg"
+							"bandera" : "img/flags/mini/sui.jpg"
 						},
 						{
 							"nombre" : "Ecuador",
-							"bandera" : "img/ecu.jpg"
+							"bandera" : "img/flags/mini/ecu.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -157,11 +157,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Francia",
-							"bandera" : "img/fra.jpg"
+							"bandera" : "img/flags/mini/fra.jpg"
 						},
 						{
 							"nombre" : "Honduras",
-							"bandera" : "img/hon.jpg"
+							"bandera" : "img/flags/mini/hon.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -172,11 +172,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Argentina",
-							"bandera" : "img/arg.jpg"
+							"bandera" : "img/flags/mini/arg.jpg"
 						},
 						{
 							"nombre" : "Bosnia",
-							"bandera" : "img/bih.jpg"
+							"bandera" : "img/flags/mini/bih.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -192,11 +192,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Alemania",
-							"bandera" : "img/ger.jpg"
+							"bandera" : "img/flags/mini/ger.jpg"
 						},
 						{
 							"nombre" : "Portugal",
-							"bandera" : "img/por.jpg"
+							"bandera" : "img/flags/mini/por.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -207,11 +207,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Irán",
-							"bandera" : "img/irn.jpg"
+							"bandera" : "img/flags/mini/irn.jpg"
 						},
 						{
 							"nombre" : "Nigeria",
-							"bandera" : "img/nga.jpg"
+							"bandera" : "img/flags/mini/nga.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -222,11 +222,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Ghana",
-							"bandera" : "img/gha.jpg"
+							"bandera" : "img/flags/mini/gha.jpg"
 						},
 						{
 							"nombre" : "Estados Unidos",
-							"bandera" : "img/usa.jpg"
+							"bandera" : "img/flags/mini/usa.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -242,11 +242,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Bélgica",
-							"bandera" : "img/bel.jpg"
+							"bandera" : "img/flags/mini/bel.jpg"
 						},
 						{
 							"nombre" : "Argelia",
-							"bandera" : "img/alg.jpg"
+							"bandera" : "img/flags/mini/alg.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -257,11 +257,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Brasil",
-							"bandera" : "img/bra.jpg"
+							"bandera" : "img/flags/mini/bra.jpg"
 						},
 						{
 							"nombre" : "México",
-							"bandera" : "img/mex.jpg"
+							"bandera" : "img/flags/mini/mex.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -272,11 +272,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Rusia",
-							"bandera" : "img/rus.jpg"
+							"bandera" : "img/flags/mini/rus.jpg"
 						},
 						{
 							"nombre" : "Corea del Sur",
-							"bandera" : "img/kor.jpg"
+							"bandera" : "img/flags/mini/kor.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -292,11 +292,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Australia",
-							"bandera" : "img/aus.jpg"
+							"bandera" : "img/flags/mini/aus.jpg"
 						},
 						{
 							"nombre" : "Holanda",
-							"bandera" : "img/ned.jpg"
+							"bandera" : "img/flags/mini/ned.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -307,11 +307,11 @@
 					"equipos" : [
 						{
 							"nombre" : "España",
-							"bandera" : "img/esp.jpg"
+							"bandera" : "img/flags/mini/esp.jpg"
 						},
 						{
 							"nombre" : "China",
-							"bandera" : "img/chi.jpg"
+							"bandera" : "img/flags/mini/chi.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -322,11 +322,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Camerún",
-							"bandera" : "img/cmr.jpg"
+							"bandera" : "img/flags/mini/cmr.jpg"
 						},
 						{
 							"nombre" : "Croacia",
-							"bandera" : "img/cro.jpg"
+							"bandera" : "img/flags/mini/cro.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -342,11 +342,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Colombia",
-							"bandera" : "img/col.jpg"
+							"bandera" : "img/flags/mini/col.jpg"
 						},
 						{
 							"nombre" : "Costa de Marfil",
-							"bandera" : "img/civ.jpg"
+							"bandera" : "img/flags/mini/civ.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -357,11 +357,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Uruguay",
-							"bandera" : "img/uru.jpg"
+							"bandera" : "img/flags/mini/uru.jpg"
 						},
 						{
 							"nombre" : "Inglaterra",
-							"bandera" : "img/eng.jpg"
+							"bandera" : "img/flags/mini/eng.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -372,11 +372,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Japón",
-							"bandera" : "img/jpn.jpg"
+							"bandera" : "img/flags/mini/jpn.jpg"
 						},
 						{
 							"nombre" : "Grecia",
-							"bandera" : "img/gre.jpg"
+							"bandera" : "img/flags/mini/gre.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -392,11 +392,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Italia",
-							"bandera" : "img/ita.jpg"
+							"bandera" : "img/flags/mini/ita.jpg"
 						},
 						{
 							"nombre" : "Costa Rica",
-							"bandera" : "img/crc.jpg"
+							"bandera" : "img/flags/mini/crc.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -407,11 +407,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Suiza",
-							"bandera" : "img/sui.jpg"
+							"bandera" : "img/flags/mini/sui.jpg"
 						},
 						{
 							"nombre" : "Francia",
-							"bandera" : "img/fra.jpg"
+							"bandera" : "img/flags/mini/fra.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -422,11 +422,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Honduras",
-							"bandera" : "img/hon.jpg"
+							"bandera" : "img/flags/mini/hon.jpg"
 						},
 						{
 							"nombre" : "Ecuador",
-							"bandera" : "img/ecu.jpg"
+							"bandera" : "img/flags/mini/ecu.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -442,11 +442,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Argentina",
-							"bandera" : "img/arg.jpg"
+							"bandera" : "img/flags/mini/arg.jpg"
 						},
 						{
 							"nombre" : "Irán",
-							"bandera" : "img/irn.jpg"
+							"bandera" : "img/flags/mini/irn.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -457,11 +457,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Alemania",
-							"bandera" : "img/ger.jpg"
+							"bandera" : "img/flags/mini/ger.jpg"
 						},
 						{
 							"nombre" : "Ghana",
-							"bandera" : "img/gha.jpg"
+							"bandera" : "img/flags/mini/gha.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -472,11 +472,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Nigeria",
-							"bandera" : "img/nga.jpg"
+							"bandera" : "img/flags/mini/nga.jpg"
 						},
 						{
 							"nombre" : "Bosnia",
-							"bandera" : "img/bih.jpg"
+							"bandera" : "img/flags/mini/bih.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -492,11 +492,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Bélgica",
-							"bandera" : "img/bel.jpg"
+							"bandera" : "img/flags/mini/bel.jpg"
 						},
 						{
 							"nombre" : "Rusia",
-							"bandera" : "img/rus.jpg"
+							"bandera" : "img/flags/mini/rus.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -507,11 +507,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Corea del Sur",
-							"bandera" : "img/kor.jpg"
+							"bandera" : "img/flags/mini/kor.jpg"
 						},
 						{
 							"nombre" : "Argelia",
-							"bandera" : "img/alg.jpg"
+							"bandera" : "img/flags/mini/alg.jpg"
 						}
 					],
 					"hora" : "14:00",
@@ -522,11 +522,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Estados Unidos",
-							"bandera" : "img/usa.jpg"
+							"bandera" : "img/flags/mini/usa.jpg"
 						},
 						{
 							"nombre" : "Portugal",
-							"bandera" : "img/por.jpg"
+							"bandera" : "img/flags/mini/por.jpg"
 						}
 					],
 					"hora" : "17:00",
@@ -542,11 +542,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Australia",
-							"bandera" : "img/aus.jpg"
+							"bandera" : "img/flags/mini/aus.jpg"
 						},
 						{
 							"nombre" : "España",
-							"bandera" : "img/esp.jpg"
+							"bandera" : "img/flags/mini/esp.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -557,11 +557,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Holanda",
-							"bandera" : "img/ned.jpg"
+							"bandera" : "img/flags/mini/ned.jpg"
 						},
 						{
 							"nombre" : "Chile",
-							"bandera" : "img/chi.jpg"
+							"bandera" : "img/flags/mini/chi.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -572,11 +572,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Camerún",
-							"bandera" : "img/cmr.jpg"
+							"bandera" : "img/flags/mini/cmr.jpg"
 						},
 						{
 							"nombre" : "Brasil",
-							"bandera" : "img/bra.jpg"
+							"bandera" : "img/flags/mini/bra.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -587,11 +587,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Croacia",
-							"bandera" : "img/cro.jpg"
+							"bandera" : "img/flags/mini/cro.jpg"
 						},
 						{
 							"nombre" : "México",
-							"bandera" : "img/mex.jpg"
+							"bandera" : "img/flags/mini/mex.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -607,11 +607,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Italia",
-							"bandera" : "img/ita.jpg"
+							"bandera" : "img/flags/mini/ita.jpg"
 						},
 						{
 							"nombre" : "Uruguay",
-							"bandera" : "img/uru.jpg"
+							"bandera" : "img/flags/mini/uru.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -622,11 +622,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Costa Rica",
-							"bandera" : "img/crc.jpg"
+							"bandera" : "img/flags/mini/crc.jpg"
 						},
 						{
 							"nombre" : "Inglaterra",
-							"bandera" : "img/eng.jpg"
+							"bandera" : "img/flags/mini/eng.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -637,11 +637,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Japón",
-							"bandera" : "img/jpn.jpg"
+							"bandera" : "img/flags/mini/jpn.jpg"
 						},
 						{
 							"nombre" : "Colombia",
-							"bandera" : "img/col.jpg"
+							"bandera" : "img/flags/mini/col.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -652,11 +652,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Grecia",
-							"bandera" : "img/gre.jpg"
+							"bandera" : "img/flags/mini/gre.jpg"
 						},
 						{
 							"nombre" : "Costa de Marfil",
-							"bandera" : "img/civ.jpg"
+							"bandera" : "img/flags/mini/civ.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -672,11 +672,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Nigeria",
-							"bandera" : "img/nga.jpg"
+							"bandera" : "img/flags/mini/nga.jpg"
 						},
 						{
 							"nombre" : "Argentina",
-							"bandera" : "img/arg.jpg"
+							"bandera" : "img/flags/mini/arg.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -687,11 +687,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Bosnia",
-							"bandera" : "img/bih.jpg"
+							"bandera" : "img/flags/mini/bih.jpg"
 						},
 						{
 							"nombre" : "Irán",
-							"bandera" : "img/irn.jpg"
+							"bandera" : "img/flags/mini/irn.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -702,11 +702,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Honduras",
-							"bandera" : "img/hon.jpg"
+							"bandera" : "img/flags/mini/hon.jpg"
 						},
 						{
 							"nombre" : "Suiza",
-							"bandera" : "img/sui.jpg"
+							"bandera" : "img/flags/mini/sui.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -717,11 +717,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Ecuador",
-							"bandera" : "img/ecu.jpg"
+							"bandera" : "img/flags/mini/ecu.jpg"
 						},
 						{
 							"nombre" : "Francia",
-							"bandera" : "img/fra.jpg"
+							"bandera" : "img/flags/mini/fra.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -737,11 +737,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Estados Unidos",
-							"bandera" : "img/usa.jpg"
+							"bandera" : "img/flags/mini/usa.jpg"
 						},
 						{
 							"nombre" : "Alemania",
-							"bandera" : "img/ger.jpg"
+							"bandera" : "img/flags/mini/ger.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -752,11 +752,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Portugal",
-							"bandera" : "img/por.jpg"
+							"bandera" : "img/flags/mini/por.jpg"
 						},
 						{
 							"nombre" : "Ghana",
-							"bandera" : "img/gha.jpg"
+							"bandera" : "img/flags/mini/gha.jpg"
 						}
 					],
 					"hora" : "11:00",
@@ -767,11 +767,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Corea del Sur",
-							"bandera" : "img/kor.jpg"
+							"bandera" : "img/flags/mini/kor.jpg"
 						},
 						{
 							"nombre" : "Bélgica",
-							"bandera" : "img/bel.jpg"
+							"bandera" : "img/flags/mini/bel.jpg"
 						}
 					],
 					"hora" : "15:00",
@@ -782,11 +782,11 @@
 					"equipos" : [
 						{
 							"nombre" : "Argelia",
-							"bandera" : "img/alg.jpg"
+							"bandera" : "img/flags/mini/alg.jpg"
 						},
 						{
 							"nombre" : "Rusia",
-							"bandera" : "img/rus.jpg"
+							"bandera" : "img/flags/mini/rus.jpg"
 						}
 					],
 					"hora" : "15:00",
