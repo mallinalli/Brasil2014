@@ -6,32 +6,17 @@
 				{
 					"equipos" : [
 						{
-							"nombre" : "México",
-							"bandera" : "img/mexico.jpg"
+							"nombre" : "Brasil",
+							"bandera" : "img/bra.jpg"
 						},
 						{
-							"nombre" : "Portugal",
-							"bandera" : "img/flag.jpg"
+							"nombre" : "Croacia",
+							"bandera" : "img/cro.jpg"
 						}
 					],
-					"hora" : "1400",
-					"estadio" : "Un estadio de futbol",
-					"grupo" : "Z"
-				},
-				{
-					"equipos" : [
-						{
-							"nombre" : "Venezuela",
-							"bandera" : "img/플래그.jpg"
-						},
-						{
-							"nombre" : "Kuala Lumpur",
-							"bandera" : "img/drapeau.jpg"
-						}
-					],
-					"hora" : "0900",
-					"estadio" : "Un estadio de futbol",
-					"grupo" : "J"
+					"hora" : "1500",
+					"estadio" : "Arena de Sao Paulo",
+					"grupo" : "A"
 				}
 			]
 		},
@@ -42,34 +27,773 @@
 					"equipos" : [
 						{
 							"nombre" : "México",
-							"bandera" : "img/mexico.jpg"
+							"bandera" : "img/mex.jpg"
 						},
 						{
-							"nombre" : "Portugal",
-							"bandera" : "img/flag.jpg"
+							"nombre" : "Camerún",
+							"bandera" : "img/cmr.jpg"
 						}
 					],
-					"hora" : "1400",
-					"estadio" : "Un estadio de futbol",
-					"grupo" : "Y"
+					"hora" : "1100",
+					"estadio" : "Estadio Das Dunas",
+					"grupo" : "A"
 				},
 				{
 					"equipos" : [
 						{
-							"nombre" : "Venezuela",
-							"bandera" : "img/플래그.jpg"
+							"nombre" : "España",
+							"bandera" : "img/esp.jpg"
 						},
 						{
-							"nombre" : "Kuala Lumpur",
-							"bandera" : "img/drapeau.jpg"
+							"nombre" : "Holanda",
+							"bandera" : "img/ned.jpg"
 						}
 					],
-					"hora" : "0900",
-					"estadio" : "Un estadio de futbol",
-					"grupo" : "J"
+					"hora" : "1400",
+					"estadio" : "Fonte Nova",
+					"grupo" : "B"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Chile",
+							"bandera" : "img/chi.jpg"
+						},
+						{
+							"nombre" : "Australia",
+							"bandera" : "img/aus.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena Pantanal",
+					"grupo" : "B"
+				}
+			]
+		},
+		{
+			"dia" : "14",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Colombia",
+							"bandera" : "img/col.jpg"
+						},
+						{
+							"nombre" : "Grecia",
+							"bandera" : "img/gre.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Estadio Mineirao",
+					"grupo" : "C"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Uruguay",
+							"bandera" : "img/uru.jpg"
+						},
+						{
+							"nombre" : "Costa Rica",
+							"bandera" : "img/crc.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Castelao",
+					"grupo" : "D"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Inglaterra",
+							"bandera" : "img/eng.jpg"
+						},
+						{
+							"nombre" : "Italia",
+							"bandera" : "img/ita.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena de Amazonia",
+					"grupo" : "D"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Costa de Marfil",
+							"bandera" : "img/civ.jpg"
+						},
+						{
+							"nombre" : "Japón",
+							"bandera" : "img/jpn.jpg"
+						}
+					],
+					"hora" : "2000",
+					"estadio" : "Arena Pernambuco",
+					"grupo" : "C"
+				}
+			]
+		},
+		{
+			"dia" : "15",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Suiza",
+							"bandera" : "img/sui.jpg"
+						},
+						{
+							"nombre" : "Ecuador",
+							"bandera" : "img/ecu.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Nacional de Brasilia",
+					"grupo" : "E"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Francia",
+							"bandera" : "img/fra.jpg"
+						},
+						{
+							"nombre" : "Honduras",
+							"bandera" : "img/hon.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Beira-Rio",
+					"grupo" : "E"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Argentina",
+							"bandera" : "img/arg.jpg"
+						},
+						{
+							"nombre" : "Bosnia",
+							"bandera" : "img/bih.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Maracaná",
+					"grupo" : "F"
+				}
+			]
+		},
+		{
+			"dia" : "16",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Alemania",
+							"bandera" : "img/ger.jpg"
+						},
+						{
+							"nombre" : "Portugal",
+							"bandera" : "img/por.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Fonte Nova",
+					"grupo" : "G"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Irán",
+							"bandera" : "img/irn.jpg"
+						},
+						{
+							"nombre" : "Nigeria",
+							"bandera" : "img/nga.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Arena Baixada",
+					"grupo" : "F"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Ghana",
+							"bandera" : "img/gha.jpg"
+						},
+						{
+							"nombre" : "Estados Unidos",
+							"bandera" : "img/usa.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Estadio Das Dunas",
+					"grupo" : "G"
+				}
+			]
+		},	
+		{
+			"dia" : "17",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Bélgica",
+							"bandera" : "img/bel.jpg"
+						},
+						{
+							"nombre" : "Argelia",
+							"bandera" : "img/alg.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Estadio Mineirao",
+					"grupo" : "H"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Brasil",
+							"bandera" : "img/bra.jpg"
+						},
+						{
+							"nombre" : "México",
+							"bandera" : "img/mex.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Castelao",
+					"grupo" : "A"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Rusia",
+							"bandera" : "img/rus.jpg"
+						},
+						{
+							"nombre" : "Corea del Sur",
+							"bandera" : "img/kor.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena Pantanal",
+					"grupo" : "H"
+				}
+			]
+		},	
+		{
+			"dia" : "18",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Australia",
+							"bandera" : "img/aus.jpg"
+						},
+						{
+							"nombre" : "Holanda",
+							"bandera" : "img/ned.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Beira-Rio",
+					"grupo" : "B"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "España",
+							"bandera" : "img/esp.jpg"
+						},
+						{
+							"nombre" : "China",
+							"bandera" : "img/chi.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Maracaná",
+					"grupo" : "B"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Camerún",
+							"bandera" : "img/cmr.jpg"
+						},
+						{
+							"nombre" : "Croacia",
+							"bandera" : "img/cro.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena de Amazonia",
+					"grupo" : "A"
+				}
+			]
+		},	
+		{
+			"dia" : "19",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Colombia",
+							"bandera" : "img/col.jpg"
+						},
+						{
+							"nombre" : "Costa de Marfil",
+							"bandera" : "img/civ.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Nacional de Brasilia",
+					"grupo" : "C"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Uruguay",
+							"bandera" : "img/uru.jpg"
+						},
+						{
+							"nombre" : "Inglaterra",
+							"bandera" : "img/eng.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Arena de Sao Paulo",
+					"grupo" : "D"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Japón",
+							"bandera" : "img/jpn.jpg"
+						},
+						{
+							"nombre" : "Grecia",
+							"bandera" : "img/gre.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Estadio Das Dunas",
+					"grupo" : "C"
+				}
+			]
+		},	
+		{
+			"dia" : "20",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Italia",
+							"bandera" : "img/ita.jpg"
+						},
+						{
+							"nombre" : "Costa Rica",
+							"bandera" : "img/crc.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Arena Pernambuco",
+					"grupo" : "D"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Suiza",
+							"bandera" : "img/sui.jpg"
+						},
+						{
+							"nombre" : "Francia",
+							"bandera" : "img/fra.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Fonte Nova",
+					"grupo" : "E"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Honduras",
+							"bandera" : "img/hon.jpg"
+						},
+						{
+							"nombre" : "Ecuador",
+							"bandera" : "img/ecu.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena da Baixada",
+					"grupo" : "E"
+				}
+			]
+		},
+		{
+			"dia" : "21",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Argentina",
+							"bandera" : "img/arg.jpg"
+						},
+						{
+							"nombre" : "Irán",
+							"bandera" : "img/irn.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Estadio Mineirao",
+					"grupo" : "F"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Alemania",
+							"bandera" : "img/ger.jpg"
+						},
+						{
+							"nombre" : "Ghana",
+							"bandera" : "img/gha.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Castelao",
+					"grupo" : "G"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Nigeria",
+							"bandera" : "img/nga.jpg"
+						},
+						{
+							"nombre" : "Bosnia",
+							"bandera" : "img/bih.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena Pantanal",
+					"grupo" : "F"
+				}
+			]
+		},
+		{
+			"dia" : "22",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Bélgica",
+							"bandera" : "img/bel.jpg"
+						},
+						{
+							"nombre" : "Rusia",
+							"bandera" : "img/rus.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Maracaná",
+					"grupo" : "H"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Corea del Sur",
+							"bandera" : "img/kor.jpg"
+						},
+						{
+							"nombre" : "Argelia",
+							"bandera" : "img/alg.jpg"
+						}
+					],
+					"hora" : "1400",
+					"estadio" : "Beira-Rio",
+					"grupo" : "H"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Estados Unidos",
+							"bandera" : "img/usa.jpg"
+						},
+						{
+							"nombre" : "Portugal",
+							"bandera" : "img/por.jpg"
+						}
+					],
+					"hora" : "1700",
+					"estadio" : "Arena de Amazonia",
+					"grupo" : "G"
+				}
+			]
+		},
+		{
+			"dia" : "23",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Australia",
+							"bandera" : "img/aus.jpg"
+						},
+						{
+							"nombre" : "España",
+							"bandera" : "img/esp.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Arena da Baixada",
+					"grupo" : "B"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Holanda",
+							"bandera" : "img/ned.jpg"
+						},
+						{
+							"nombre" : "Chile",
+							"bandera" : "img/chi.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Arena de Sao Paulo",
+					"grupo" : "B"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Camerún",
+							"bandera" : "img/cmr.jpg"
+						},
+						{
+							"nombre" : "Brasil",
+							"bandera" : "img/bra.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Nacional de Brasilia",
+					"grupo" : "A"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Croacia",
+							"bandera" : "img/cro.jpg"
+						},
+						{
+							"nombre" : "México",
+							"bandera" : "img/mex.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Arena Pernambuco",
+					"grupo" : "A"
+				}
+			]
+		},
+		{
+			"dia" : "24",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Italia",
+							"bandera" : "img/ita.jpg"
+						},
+						{
+							"nombre" : "Uruguay",
+							"bandera" : "img/uru.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Estadio Das Dunas",
+					"grupo" : "D"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Costa Rica",
+							"bandera" : "img/crc.jpg"
+						},
+						{
+							"nombre" : "Inglaterra",
+							"bandera" : "img/eng.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Estadio Mineirao",
+					"grupo" : "D"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Japón",
+							"bandera" : "img/jpn.jpg"
+						},
+						{
+							"nombre" : "Colombia",
+							"bandera" : "img/col.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Arena Pantanal",
+					"grupo" : "C"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Grecia",
+							"bandera" : "img/gre.jpg"
+						},
+						{
+							"nombre" : "Costa de Marfil",
+							"bandera" : "img/civ.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Castelao",
+					"grupo" : "C"
+				}
+			]
+		},
+		{
+			"dia" : "25",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Nigeria",
+							"bandera" : "img/nga.jpg"
+						},
+						{
+							"nombre" : "Argentina",
+							"bandera" : "img/arg.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Beira-Rio",
+					"grupo" : "F"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Bosnia",
+							"bandera" : "img/bih.jpg"
+						},
+						{
+							"nombre" : "Irán",
+							"bandera" : "img/irn.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Fonte Nova",
+					"grupo" : "F"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Honduras",
+							"bandera" : "img/hon.jpg"
+						},
+						{
+							"nombre" : "Suiza",
+							"bandera" : "img/sui.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Arena Amazonia",
+					"grupo" : "E"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Ecuador",
+							"bandera" : "img/ecu.jpg"
+						},
+						{
+							"nombre" : "Francia",
+							"bandera" : "img/fra.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Maracaná",
+					"grupo" : "E"
+				}
+			]
+		},
+		{
+			"dia" : "25",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Estados Unidos",
+							"bandera" : "img/usa.jpg"
+						},
+						{
+							"nombre" : "Alemania",
+							"bandera" : "img/ger.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Arena Pernambuco",
+					"grupo" : "G"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Portugal",
+							"bandera" : "img/por.jpg"
+						},
+						{
+							"nombre" : "Ghana",
+							"bandera" : "img/gha.jpg"
+						}
+					],
+					"hora" : "1100",
+					"estadio" : "Nacional de Brasilia",
+					"grupo" : "G"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Corea del Sur",
+							"bandera" : "img/kor.jpg"
+						},
+						{
+							"nombre" : "Bélgica",
+							"bandera" : "img/bel.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Arena de Sao Paulo",
+					"grupo" : "H"
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Argelia",
+							"bandera" : "img/alg.jpg"
+						},
+						{
+							"nombre" : "Rusia",
+							"bandera" : "img/rus.jpg"
+						}
+					],
+					"hora" : "1500",
+					"estadio" : "Arena da Baixada",
+					"grupo" : "H"
 				}
 			]
 		}
-		
 	]
 }
