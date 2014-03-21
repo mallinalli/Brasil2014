@@ -12,7 +12,6 @@ $('.menubutton').on('click','a',function(a){
 
 $.getJSON('includes/calendario.json', function(data) {
   var cData = data.fechas;
-  console.log(cData);
   var lastFecha;
   $('.cal-fecha').on('click',function(){
     if ($(this).hasClass('cal-selected')) {
@@ -52,22 +51,29 @@ $.getJSON('includes/calendario.json', function(data) {
     return eldia;
   };
 
-  function milTime(hour){
-    hour = String(hour);
-    var horafin = hour.substring(0,2)+':'+hour.substring(2,2);
-    return horafin;
-  }
-
-  console.log(milTime(0000));
-
   function calEvent(posicion,este){
     var cSource = calParse(este.data('cdate'));
     var $equipos = '';
     if (cSource != undefined) {
       for (var i = 0; i < cSource.partidos.length; i++) {
         $equipos += '<tr><td><img src="'+cSource.partidos[i].equipos[0].bandera+'" alt="'+cSource.partidos[i].equipos[0].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[0].nombre+'</strong></td><td>vs</td><td><img src="'+cSource.partidos[i].equipos[1].bandera+'" alt="'+cSource.partidos[i].equipos[1].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[1].nombre+'</strong></td><td>'+cSource.partidos[i].hora+'</td><td>'+cSource.partidos[i].grupo+'</td><td>'+cSource.partidos[i].estadio+'</td></tr>';
-      };
-    };
+      }
+    } else {
+      switch (este.data('cdate')) {
+        case 27:
+          $equipos += "<tr><td><i>Día de descanso.</i></td></tr>";
+          break;
+        case 28:
+          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
+          break;
+        case 29:
+          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
+          break;
+        case 30:
+          $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
+          break;
+      }
+    }
     $('.cal-fecha:eq('+posicion+')').after('<div class="cal-cont hidden"><table><tbody>'+$equipos+'</tbody></table></div>');
     $('.cal-cont').hide().removeClass('hidden').slideToggle();
   };
