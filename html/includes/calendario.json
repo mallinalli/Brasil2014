@@ -36,7 +36,7 @@
 			]
 		},
 		{
-			"dia" : "12",
+			"dia" : "13",
 			"partidos" : [
 				{
 					"equipos" : [
@@ -51,7 +51,7 @@
 					],
 					"hora" : "1400",
 					"estadio" : "Un estadio de futbol",
-					"grupo" : "Z"
+					"grupo" : "Y"
 				},
 				{
 					"equipos" : [
