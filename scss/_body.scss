@@ -186,18 +186,29 @@ ul{
 .nota-completa{
 	img{
 		width: 100%;
+		float: left;
+	}
+	.img-nota{
+		width: 23%;
+	}
+	.cuerpo-nota{
+		width: 75%;
+		float: right;
+		text-align: justify;
+		padding: 0 15px;
 	}
 }
 .grupo{
 	.cal-grupo{
 		color: #fff;
-		font-weight: bold;
 		background: $elGris;
 		width: 24%;
 		float: left;
 		text-align: center;
+		margin-bottom: 10px;
 		p{
 			margin: 5px;
+			font-weight: bold;
 		}
 		&.hlpr-mr{
  			margin-right: 1.3%;
