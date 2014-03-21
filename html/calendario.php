@@ -2,7 +2,7 @@
         <div class="contenido">
         	<h2>Calendario</h2>
           	<div class="clearfix">
-              <section class="grupo">
+              <section class="grupo clearfix">
             		<div class="cal-grupo hlpr-mr">
             		    <p>Grupo A</p>
             		    <ul>
@@ -30,7 +30,7 @@
                       <li><img src="img/jpn.jpg">Japón</li>
                     </ul>
                 </div>
-                <div class="cal-grupo hlpr-mr">
+                <div class="cal-grupo">
                     <p>Grupo D</p>
                     <ul>
                       <li><img src="img/uru.jpg">Uruguay</li>
@@ -66,7 +66,7 @@
                       <li><img src="img/usa.jpg">Estados Unidos</li>
                     </ul>
                 </div>
-                <div class="cal-grupo hlpr-mr">
+                <div class="cal-grupo">
                     <p>Grupo H</p>
                     <ul>
                       <li><img src="img/bel.jpg">Bélgica</li>
