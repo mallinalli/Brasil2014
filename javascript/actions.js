@@ -4,6 +4,20 @@ $('.menubutton').on('click','a',function(a){
 });
 
 /**
+  /* ======================================
+  /* AQUÍ COMIENZA EL PLUGIN DE FOOTBALL.DB
+  /* ======================================
+  */
+$(document).ready(function(){
+  $.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/rounds?callback=?', function(data) {
+    for (var i = 1; i <= data.rounds.length; i++) {
+      $.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/round/'+i+'?callback=?', function(ronda) {
+        console.log(ronda);
+      });
+    }
+  });
+});
+/**
   /* ========================
   /* AQUÍ COMIENZA LA GALERÍA
   /* ========================
@@ -11,8 +25,8 @@ $('.menubutton').on('click','a',function(a){
 var margen = 0;
 var jItemW = $('.jcaritem').width()+5;
 var jItemsW = $('.jcaritem').length * ($('.jcaritem').width()+5);
-console.log('Ancho de los items: '+$('.jcaritem').length * ($('.jcaritem').width()+5));
-console.log('Ancho del contenedor: '+$('.jcarousel').width());
+/*console.log('Ancho de los items: '+$('.jcaritem').length * ($('.jcaritem').width()+5));
+console.log('Ancho del contenedor: '+$('.jcarousel').width());*/
 
 $('.jcarcontrol').on('click',function(){
   moveCont($(this).attr('id'));
