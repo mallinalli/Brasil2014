@@ -6,17 +6,17 @@
           		<div class="info medium"></div>
           		<div class="info small"></div>
           		<div class="info small"></div>
-          		<div class="info medium">5</div>
-          		<div class="info small"></div>
-          		<div class="info small"></div>
-          		<div class="info small"></div>
-          		<div class="info small"></div>
-          		<div class="info small">10</div>
           		<div class="info medium"></div>
           		<div class="info small"></div>
           		<div class="info small"></div>
           		<div class="info small"></div>
-          		<div class="info medium">15</div>
+          		<div class="info small"></div>
+          		<div class="info small"></div>
+          		<div class="info medium"></div>
+          		<div class="info small"></div>
+          		<div class="info small"></div>
+          		<div class="info small"></div>
+          		<div class="info medium"></div>
           	</div> 
         </div>
 
