@@ -474,20 +474,27 @@ ul{
 .pie{
 	background: $elGris;
 	color: #fff;
-	text-align: center;
 	font-size: 12px;
 	margin-top: 10px;
 	width: 100%;
-	/* .logos-p{
-		width: 300px;
-		margin: 0 auto;
-	} */
+	padding-top: 10px;
 	p{
 		width: 100%;
 		text-align: center;
 	}
 	.logos{
-		background: #000;
+		text-align: justify;
+		line-height: 90%;
+		&:after, &:before {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	.hlpr-logo {
+		content: '';
+		display: none;
+		width: 100%;
 	}
 	#tribuna, #indetta, #exa, #lamejor, #periodico, #canalpuebla, #radio{
 		background: url('../img/logos.png') no-repeat;
@@ -495,12 +502,11 @@ ul{
 		height: 75px;
 		display: inline-block;
 		margin: 10px 0; 
-		float: left;
 	}
 	#tribuna{
 		background-position: 12px 0;
 		display: block;
-		margin: 10px auto;
+		margin: 0 auto;
 	}
 	#indetta{
 		background-position: -120px 0;

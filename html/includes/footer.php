@@ -65,20 +65,16 @@
       </div>
       <footer class="main-footer">
         <div class="contenedor pie clearfix">
+          <div id="tribuna"></div>
           <div class="logos clearfix">
-            <div id="tribuna"></div>
-            <div class="hlpr-logo">
-              <div id="indetta"></div>
-              <div id="exa"></div>
-              <div id="lamejor"></div>
-            </div>
-            <div class="hlpr-logo">
-              <div id="periodico"></div>
-              <div id="canalpuebla"></div>
-              <div id="radio"></div>
-            </div>
+            <div id="indetta"></div>
+            <div id="exa"></div>
+            <div id="lamejor"></div>
+            <span class="hlpr-logo"></span>
+            <div id="periodico"></div>
+            <div id="canalpuebla"></div>
+            <div id="radio"></div>
           </div>
-          <!--img src="img/logo_factory.png" alt="Factory Television"/-->
           <p> Copyright &copy; 2011 TRIBUNA Comunicación, Sn. Martín Texmelucan no.68 Col. La Paz, Puebla, Mex. Tel. (222) 2328000</p>
         </div>
       </footer>
