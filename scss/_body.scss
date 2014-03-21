@@ -78,11 +78,22 @@ ul{
 		}
 	}
 }
-.contenido, .top-banner{
+.contenido{
 	margin: 0 auto;
 	width: 100%;
 }
+.top-banner, .aside-banner{
+	width: 100%;
 
+	margin: 15px auto;
+	img{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		max-width: 1024px;
+		display: block;
+	}
+}
 
 /* ==========================
 	Componente de video
