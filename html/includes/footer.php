@@ -95,6 +95,17 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="http://connect.soundcloud.com/sdk.js"></script>
         <script src="js/actions.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script>
+          Modernizr.load([
+            {
+              test: window.matchMedia,
+              nope: "js/media.match.min.js"
+            },
+            "js/enquire.min.js",
+            "js/queries.min.js"
+          ]);
+        </script>
 
         <!-- Add mousewheel plugin (this is optional) -->
         <script type="text/javascript" src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
