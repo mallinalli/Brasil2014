@@ -31,7 +31,7 @@
       }(document, 'script', 'facebook-jssdk'));</script>
       <header class="main-header">
         <div class="contenedor logo">
-          <a href="index.php"><img src="#" alt="Periódico Digital - Brasil 2014"></a>
+          <a href="index.php"></a>
         </div>
         <div class="contenedor menu">
           <div class="navhead clearfix">
