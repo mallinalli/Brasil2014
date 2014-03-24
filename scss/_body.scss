@@ -82,10 +82,13 @@ ul{
 	margin: 0 auto;
 	width: 100%;
 }
-.top-banner, .aside-banner{
+.top-banner{
 	width: 100%;
 
 	margin: 15px auto;
+}
+
+.top-banner, .aside-banner{
 	img{
 		width: 100%;
 		height: auto;
@@ -283,7 +286,7 @@ ul{
 .lateral{
 	width: 100%;
 	margin: 0 auto;
-	.resultados,.audios,.twitter,.foto {
+	.resultados,.audios,.twitter,.foto, .aside-banner {
 		margin-top: 10px;
 	}
 	.complemento{
@@ -294,7 +297,7 @@ ul{
 			font-size: 16px;
 			font-weight: bold;
 			font-family: 'Quattrocento Sans', sans-serif;
-			margin: 3px 0;
+			margin: 0;
 		}
 
 	}
@@ -347,14 +350,23 @@ ul{
 			}
 		}
 	}
-	.foto{
-		float: left;
-		width: 100%;
-		.foto-head, .foto-footer{
-			background: $elVerde;
-			@include border-radius(3px);
+	.widgets3{
+		.foto{
+			float: left;
+			width: 100%;
+			.foto-head, .foto-footer{
+				background: $elVerde;
+				@include border-radius(3px);
+				h2{
+					margin-top: 0;
+				}
+			}
 		}
-	}
+		.aside-banner{
+			float: left;
+			width: 100%;
+		}
+	} 
 }
 
 .cuenta {

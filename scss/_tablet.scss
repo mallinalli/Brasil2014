@@ -67,7 +67,7 @@
 	float: left;
 	margin-left: 1%;
 	.complemento{/* Empty Style */}
-	.widgets1, .widgets2 {
+	.widgets1, .widgets2, .widgets3 {
 		width: 100%;
 	}
 	.widgets1{
@@ -101,8 +101,18 @@
 		}
 		.audios{/* Empty Style */}
 	}
-	.foto{/* Empty Style */}
+	.widgets3{
+		float: left;
+		.foto{
+			width: 49%;
+			margin-right: 2%;
+		}
+		.aside-banner{
+			width: 49%;
+		}
+	}
 }
+
 .pie{
 	.hlpr-logo {
 		display: inline-block;
