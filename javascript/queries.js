@@ -9,7 +9,7 @@ enquire
 	if ($('.navegacion').css('display') != 'none') {
 		$('.navegacion').css('display','none');
 	} 
-    $('.logo').find('img').attr('src','img/logo-s.jpg');
+    $('.logo').find('a').html('<img src="img/logo-s.jpg" alt="Periódico Digital - Brasil 2014">');
 })
 
 /**
@@ -20,19 +20,7 @@ enquire
     /*Muestra el menu enla versión tablet
     */
     $('.navegacion').css('display','inline');
-    
-    $('.logo').find('img').attr('src','img/logo.jpg');
-    /*
-    /*Mueve el componente de twitter al contenedor .tribuna-place (junto al de notas destacadas)
-    */
-    /*$(document).ready(function(){
-        $('.twitter').appendTo('.lateral');
-    });*/
-})
-
-.register("screen and (max-width:768px)",function(){
-    $(document).ready(function(){
-    });
+    $('.logo').find('a').html('<img src="img/logo.jpg" alt="Periódico Digital - Brasil 2014">');
 })
 
 /**
