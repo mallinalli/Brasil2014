@@ -3,6 +3,7 @@
           <div class="clearfix">
           	<h2>Título de una noticia de un día anterior.</h2>
             <p>Fuente: Alguien</p>
+            <div class="the-share"></div>
           	<div class="nota-completa clearfix">
           	 	<img src="http://placehold.it/500x254">
           		<p class="pie-foto">Este es el pie de foto</p>

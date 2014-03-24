@@ -114,6 +114,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="http://connect.soundcloud.com/sdk.js"></script>
+        <script src="plugins/share/share.min.js"></script>
         <script src="js/actions.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script>
@@ -129,11 +130,9 @@
 
         <!-- Add mousewheel plugin (this is optional) -->
         <script type="text/javascript" src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-
         <!-- Add fancyBox main JS and CSS files -->
         <script type="text/javascript" src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
         <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
-        
         <!-- Add Thumbnail helper (this is optional) -->
         <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
         <script type="text/javascript" src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
@@ -161,36 +160,6 @@
           /*Include para el componente de twitter*/
           include('twitter.php');
         ?>
-
-        <!-- THE ZEN AREA -->
-        <div class="the-developer-zen-area">
-          <style type="text/css">
-            .the-developer-zen-area {
-              position: fixed;
-              bottom: 0;
-              right: 0;
-              background: rgba(255,255,255,0.3);
-              border: 1px solid rgba(0,0,0,0.5);
-              transition: all 0.5s;
-            }
-            .the-developer-zen-area:hover { background: #fff; }
-            .zen-rojo { background: red; }
-            .zen-azul { background: blue; }
-            .zen-amarillo { background: yellow; }
-            .zen-verde { background: green; }
-          </style>
-          Ésta es mi área zen u_u (temporal, para cosas temporales, no permanentes, pasajeras)
-          <button class="zen-togglecolors p54">Toggle zone's color</button>
-          <script>
-            var elid = 'p54';
-            $('.zen-togglecolors.'+elid).on('click',function(){
-              $('.lateral').toggleClass('zen-rojo');
-              $('.contenido').toggleClass('zen-azul');
-              $('.main-header').toggleClass('zen-amarillo');
-              $('.main-footer').toggleClass('zen-verde');
-            });
-          </script>
-        </div>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

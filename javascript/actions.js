@@ -4,19 +4,30 @@ $('.menubutton').on('click','a',function(a){
 });
 
 /**
+  /* ================================
+  /* AQUÍ COMIENZA EL PLUGIN DE SHARE
+  /* ================================
+  */
+new Share('.the-share',{
+  ui: {
+    flyout: 'top left',
+    button_text: 'Compartir',
+    button_color: '#444',
+    button_background: '#ccc'
+  }
+});
+/**
   /* ======================================
-  /* AQUÍ COMIENZA EL PLUGIN DE FOOTBALL.DB
+  /* AQUÍ COMIENZA EL PLUGIN DE FOOTBALL.DB (En construcción)
   /* ======================================
   */
-$(document).ready(function(){
-  $.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/rounds?callback=?', function(data) {
-    for (var i = 1; i <= data.rounds.length; i++) {
-      $.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/round/'+i+'?callback=?', function(ronda) {
-        console.log(ronda);
-      });
-    }
-  });
-});
+/*$.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/rounds?callback=?', function(data) {
+  for (var i = 1; i <= data.rounds.length; i++) {
+    $.getJSON('http://footballdb.herokuapp.com/api/v1/event/world.2014/round/'+i+'?callback=?', function(ronda) {
+      console.log(ronda);
+    });
+  }
+});*/
 /**
   /* ========================
   /* AQUÍ COMIENZA LA GALERÍA
@@ -25,8 +36,6 @@ $(document).ready(function(){
 var margen = 0;
 var jItemW = $('.jcaritem').width()+5;
 var jItemsW = $('.jcaritem').length * ($('.jcaritem').width()+5);
-/*console.log('Ancho de los items: '+$('.jcaritem').length * ($('.jcaritem').width()+5));
-console.log('Ancho del contenedor: '+$('.jcarousel').width());*/
 
 $('.jcarcontrol').on('click',function(){
   moveCont($(this).attr('id'));
