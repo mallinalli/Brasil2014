@@ -190,6 +190,14 @@ ul{
  .day{
  	font-size: 18px;
  	font-weight: bold;
+ 	cursor: pointer;
+ 	i {
+ 		font-size: 20px;
+ 		margin-right: 5px;
+ 	}
+ }
+ .day-block {
+ 	display: none;
  }
 .date{
 	float: right;
