@@ -167,5 +167,11 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+        <?php /*Para videos de youtube en nota*/ ?>
+        <script>
+          $(document).ready(function(){
+            $('.cuerponota').find('iframe').wrap('<center><div class="ytvideo"></div></center>');
+          });
+        </script>
     </body>
 </html>
