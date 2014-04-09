@@ -1,7 +1,7 @@
 body, h2, h3 {
   font-family: 'Quattrocento Sans', sans-serif;
   color: $elGris; /*gris*/
-}
+} 
 
 h2{
 	font-size: 26px;
@@ -203,20 +203,46 @@ ul{
 .the-share {
 	margin: -10px 0 13px auto;
 }
-
+.titulo-noticia{
+	font-weight: bold;
+}
 .nota-completa{
 	img{
 		width: 100%;
 		float: left;
 	}
 	.img-nota{
-		width: 23%;
+		width: 90%;
+		float: left;
+		margin: 0 10px 10px 0;
 	}
-	.cuerpo-nota{
-		width: 75%;
+	/* .cuerpo-nota{
+		width: 75%; 
 		float: right;
 		text-align: justify;
 		padding: 0 15px;
+	} */
+	.related-nota{
+		float: left;
+		width: 30%;
+	}
+	.zona-balazo{
+		text-align: center;
+		display: inline-block;
+		width: 70%;
+	}
+	.cuerponota{
+		font-size: 16.5px;
+		font-family: 'Quatroccento', serif;
+		
+		img {
+			max-width: 100%;
+			max-height: auto;
+		}
+	}
+	.source {
+		font-size: 13px;
+		margin-top: 0;
 	}
 }
 .grupo{

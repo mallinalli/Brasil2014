@@ -27,6 +27,22 @@
 			margin-top: 10px;
 		}
 	}
+	.middle-banner{
+		margin-bottom:10px; 
+		.banner-info{
+			float: left;
+			width: 66.3%;
+			height: 100px;
+			background: #ccc;
+			margin-right: 1.1%;
+		}
+		.banner-comp{
+			float: left;
+			width: 32.6%;
+			height: 100px;
+			background: #ccc;
+		}
+	}
 }
 
 .lateral{

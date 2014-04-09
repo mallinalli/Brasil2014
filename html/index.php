@@ -42,6 +42,10 @@
                 <h2> La Opinión de...</h2>
             </div>
           </div>
+          <div class="middle-banner clearfix">
+            <div class="banner-info"></div>
+            <div class="banner-comp"></div>
+          </div>
           <div class="video-components clearfix">
             <!-- Componente de VIDEO, versión TABLET/ESCRITORIO -->
             <section class="desk-home-video-component">
