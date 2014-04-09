@@ -272,6 +272,23 @@ ul{
 		margin-top: 0;
 	}
 }
+/* Para videos responsivos de youtube */
+.ytvideo {
+	display: inline-block;
+	width: 60%;
+	position: relative;
+	/* padding-bottom: 56.25%; */ /* 16:9 */
+	padding-bottom: 36.25%;
+	padding-top: 25px;
+	height: 0;
+}
+.ytvideo iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .grupo{
 	.cal-grupo{
 		color: #fff;
@@ -632,12 +649,15 @@ ul{
 		background: #ccc;
 		margin: 5px 0.75%;
 		float: left;
-		vertical-align: middle;
+		overflow: hidden;
+		a {
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			@include background-size(fill);
+		}
 		img {
-			max-width: 100%;
-			max-height: 100%;
-			min-width: 100%;
-			min-height: 100%;
+			width: 100%;
 		}
 	}
 	.large{

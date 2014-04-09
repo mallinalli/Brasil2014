@@ -138,21 +138,7 @@
                 }
               }
             }); 
-            $('.infogs').fancybox({
-              prevEffect : 'none',
-              nextEffect : 'none',
-
-              closeBtn  : true,
-              arrows    : false,
-              nextClick : true,
-
-              helpers : {
-                thumbs : {
-                  width  : 50,
-                  height : 50
-                }
-              }
-            }); 
+            $('.infogs').fancybox(); 
           });
         </script>
 
@@ -166,6 +152,12 @@
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <?php /*Para videos de youtube en nota*/ ?>
+        <script>
+          $(document).ready(function(){
+            $('.cuerponota').find('iframe').wrap('<center><div class="ytvideo"></div></center>');
+          });
         </script>
     </body>
 </html>
