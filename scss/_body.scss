@@ -463,6 +463,9 @@ ul{
 	background: $elAmarillo;
 	@include border-radius(3px);
 }
+.aud-head {
+	vertical-align: bottom;
+}
 .audio-list {
 	@include box-sizing(border-box);
 	padding: 3px 5px 3px 10px;
