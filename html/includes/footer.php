@@ -138,21 +138,7 @@
                 }
               }
             }); 
-            $('.infogs').fancybox({
-              prevEffect : 'none',
-              nextEffect : 'none',
-
-              closeBtn  : true,
-              arrows    : false,
-              nextClick : true,
-
-              helpers : {
-                thumbs : {
-                  width  : 50,
-                  height : 50
-                }
-              }
-            }); 
+            $('.infogs').fancybox(); 
           });
         </script>
 
