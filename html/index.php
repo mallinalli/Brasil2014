@@ -51,8 +51,8 @@
             </div>
           </div>
           <div class="middle-banner clearfix">
-            <div class="banner-info"></div>
-            <div class="banner-comp"></div>
+            <div class="banner-info"><img src="http://placehold.it/441x100&text=Infografias"></div>
+            <div class="banner-comp"><img src="http://placehold.it/217x100"></div>
           </div>
           <div class="video-components clearfix">
             <!-- Componente de VIDEO, versión TABLET/ESCRITORIO -->

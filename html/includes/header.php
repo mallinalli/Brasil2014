@@ -50,4 +50,4 @@
         </div>
       </header>
       <div class="contenedor clearfix">
-        <div class="top-banner">Aquí va un banner</div>
+        <div class="top-banner"><img src="http://placehold.it/1024x100"></div>

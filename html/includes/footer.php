@@ -75,7 +75,7 @@
               <h3 class="foto-footer">Presentado por</h3>
             </div>
             <div class="aside-banner">
-              Aquí va un banner
+              <img src="http://placehold.it/300x130">
             </div>
           </div>
         </aside>
