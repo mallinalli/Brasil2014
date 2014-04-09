@@ -1,7 +1,7 @@
         <?php include('includes/header.php') ?>
         <div class="contenido">
           <div class="clearfix">
-          	<h2 class="titulo-noticia">Título de una noticia de un día anterior.</h2>
+          	<h2 class="section-header">Título de una noticia de un día anterior.</h2>
 
             <div class="the-share"></div>
           	<div class="nota-completa clearfix">

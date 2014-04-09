@@ -1,6 +1,6 @@
         <?php include('includes/header.php') ?>
         <div class="contenido">
-        	<h2>Calendario</h2>
+        	<h2 class="section-header">Calendario</h2>
           	<div class="clearfix">
               <section class="grupo clearfix">
             		<div class="cal-grupo hlpr-mr">
