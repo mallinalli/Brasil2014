@@ -84,8 +84,7 @@ ul{
 }
 .top-banner{
 	width: 100%;
-
-	margin: 15px auto;
+	margin: 0 auto 15px auto;
 }
 
 .top-banner, .aside-banner{
@@ -109,10 +108,8 @@ ul{
 }
 .principal, .principales, .nota, .nota-s {
 	margin-bottom: 10px;
-	position: relative;
 	a {
-		position: absolute;
-		top: 0; bottom: 0; left: 0; right: 0;
+		text-decoration: none;
 	}
 }
 .principal{
@@ -143,6 +140,9 @@ ul{
 	&.hlpr-mr {
 		margin-right: 2%;
 	}
+}
+.section-header {
+	margin-top: 0;
 }
 .nota{
 	width: 32.6%;

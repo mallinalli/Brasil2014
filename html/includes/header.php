@@ -48,6 +48,6 @@
             <li><a href="infografias.php">Infografías</a></li>
           </ul>
         </div>
-        <div class="top-banner">Aquí va un banner</div>
       </header>
       <div class="contenedor clearfix">
+        <div class="top-banner">Aquí va un banner</div>
