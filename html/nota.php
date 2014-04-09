@@ -2,6 +2,7 @@
         <div class="contenido">
           <div class="clearfix">
           	<h2 class="titulo-noticia">Título de una noticia de un día anterior.</h2>
+
             <div class="the-share"></div>
           	<div class="nota-completa clearfix">
           	 	<img src="http://placehold.it/500x254">

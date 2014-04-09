@@ -1,8 +1,27 @@
+$(document).ready(function(){
+  $('.day-cont .day-block').first().slideToggle();
+  $('.day-cont .day-block').first().closest('.day-cont').find('i').attr('class','icon-caret-down');
+});
+
+
 $('.menubutton').on('click','a',function(a){
 	a.preventDefault();
 	$('.navegacion').stop().slideToggle();
 });
-
+/**
+  /* ====================================
+  /* AQUÍ COMIENZA EL CONTROL DE NOTICIAS
+  /* ====================================
+  */
+$('.day-cont').on('click','.day',function(){
+  $(this).closest('.day-cont').find('.day-block').slideToggle(function(){
+    if ($(this).css('display') != 'none') {
+      $(this).closest('.day-cont').find('i').attr('class','icon-caret-down');
+    } else {
+      $(this).closest('.day-cont').find('i').attr('class','icon-caret-right');
+    }
+  });
+});
 /**
   /* ================================
   /* AQUÍ COMIENZA EL PLUGIN DE SHARE

@@ -2,44 +2,52 @@
         <div class="contenido">
           <div class="clearfix">            
             <div class="principal clearfix">
-              <a href="nota.php"></a>
+              <a href="nota.php">
                 <img src="http://placehold.it/500x254" alt="#">
                 <p>Información importante aquí</p>
+              </a>
             </div>
             <div class="principales hlpr-mr">
-              <a href="nota.php"></a>
+              <a href="nota.php">
                 <img src="http://placehold.it/169x120" alt="#">
                 <p>Información importante aquí</p>
+              </a>
             </div>
             <div class="principales hlpr-mr-t">
-              <a href="nota.php"></a>
+              <a href="nota.php">
                 <img src="http://placehold.it/169x120" alt="#">
                 <p>Información importante aquí</p>
+              </a>
             </div>
             <div class="principales hlpr-mr">
-              <a href="nota.php"></a>
+              <a href="nota.php">
                 <img src="http://placehold.it/169x120" alt="#">
                 <p>Información importante aquí</p>
+              </a>
             </div>
             <div class="principales">
-              <a href="nota.php"></a>
+              <a href="nota.php">
                 <img src="http://placehold.it/169x120" alt="#">
                 <p>Información importante aquí</p>
+              </a>
             </div>
             <div class="nota hlpr-mr">
-              <a href="calendario.php#"></a>
+              <a href="calendario.php#">
                 <img src="http://placehold.it/220x156" alt="#">
                 <h2> Grupos</h2>
+              </a>
             </div> 
             <div class="nota hlpr-mr">
-              <a href="calendario.php#"></a>
+              <a href="calendario.php#">
                 <img src="http://placehold.it/220x156" alt="#">
                 <h2> Calendario</h2>
+              </a>
             </div>
             <div class="nota">
-              <a href="nota.php"></a>
+              <a href="nota.php">
                 <img src="http://placehold.it/220x156" alt="#">
                 <h2> La Opinión de...</h2>
+              </a>
             </div>
           </div>
           <div class="middle-banner clearfix">
