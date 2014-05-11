@@ -1,4 +1,32 @@
 $(document).ready(function(){
+  /*Botones para compartir en redes sociales -----------------------------------------------------------------------*/
+  $('.share').on('click','li',function(){
+    var theurl = $('.share').data('shurl');
+    var theimg = $('.share').data('shimg');
+    var thecap = $('.share').data('shcap');
+
+    var thesn = $(this).attr('class');
+
+    var newwindow;
+
+    popupme( theurl, thesn, theimg, thecap );
+
+    function popupme(url,sn,img,cap){
+      var shurl;
+      if (sn == 'sfb') {
+        shurl = 'https://facebook.com/sharer/sharer.php?u='+url;
+      } else if (sn == 'sgp') {
+        shurl = 'https://plus.google.com/share?url='+url;
+      } else {
+        shurl = 'https://twitter.com/intent/tweet?text='+cap+'&url='+url+'&via=pdpuebla'
+      }
+      newwindow = window.open(
+        shurl, '', "status=yes, height=500; width=500; resizeable=0");
+    }
+
+  });
+
+  /*Slide Up-Down Listado de Notas*/
   $('.day-cont .day-block').first().slideToggle();
   $('.day-cont .day-block').first().closest('.day-cont').find('i').attr('class','icon-caret-down');
 
@@ -25,19 +53,7 @@ $('.day-cont').on('click','.day',function(){
     }
   });
 });
-/**
-  /* ================================
-  /* AQUÍ COMIENZA EL PLUGIN DE SHARE
-  /* ================================
-  */
-new Share('.the-share',{
-  ui: {
-    flyout: 'top left',
-    button_text: 'Compartir',
-    button_color: '#444',
-    button_background: '#ccc'
-  }
-});
+
 /**
   /* ======================================
   /* AQUÍ COMIENZA EL PLUGIN DE FOOTBALL.DB (En construcción)
@@ -50,6 +66,7 @@ new Share('.the-share',{
     });
   }
 });*/
+
 /**
   /* ========================
   /* AQUÍ COMIENZA LA GALERÍA

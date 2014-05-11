@@ -2,8 +2,42 @@
         <div class="contenido">
           <div class="clearfix">
           	<h2 class="section-header">Título de una noticia de un día anterior.</h2>
+            <?php
+              /* =====================
+                  Inicia Compartir
+              ======================== */
+              /*Data for the share buttons *=*=*=*=* Uncomment to make it work ;D =*=*=*=* */
+              
+              /*$shurl = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') );
 
-            <div class="the-share"></div>
+              function make_bitly_url($url,$login,$appkey,$format = 'xml',$version = '2.0.1')
+              {
+                
+                $bitly = 'http://api.bit.ly/shorten?version='.$version.'&longUrl='.urlencode($url).'&login='.$login.'&apiKey='.$appkey.'&format='.$format;
+                
+                
+                $response = file_get_contents($bitly);
+                
+                if(strtolower($format) == 'json')
+                {
+                  $json = @json_decode($response,true);
+                  return $json['results'][$url]['shortUrl'];
+                } else {
+                  $xml = simplexml_load_string($response);
+                  return 'http://bit.ly/'.$xml->results->nodeKeyVal->hash;
+                }
+              }
+              $shortenthis = get_the_permalink();
+              $shlink = make_bitly_url($shortenthis,'sinnerei','R_97f00998074d81d71a99b73433f166ff','json');*/
+            ?>
+            <div class="share" data-shurl="" data-image="" data-caption="">
+              <ul>
+                <li class="stw"><i class="icon-twitter"></i></li><li class="sfb"><i class="icon-facebook"></i></li><!-- <li class="sgp"><i class="icon-google-plus"></i></li> -->
+              </ul>
+            </div>
+            <?php /*===========
+              Termina Compartir
+              =================*/ ?>
           	<div class="nota-completa clearfix">
           	 	<img src="http://placehold.it/500x254">
           		<p class="pie-foto">Este es el pie de foto</p>
