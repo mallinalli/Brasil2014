@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   /*Botones para compartir en redes sociales -----------------------------------------------------------------------*/
   $('.share').on('click','li',function(){
     var theurl = $('.share').data('shurl');
@@ -11,8 +12,8 @@ $(document).ready(function(){
 
     popupme( theurl, thesn, theimg, thecap );
 
-    function popupme(url,sn,img,cap){
-      var shurl;
+    function popupme(url,sn,img,cap)
+{      var shurl;
       if (sn == 'sfb') {
         shurl = 'https://facebook.com/sharer/sharer.php?u='+url;
       } else if (sn == 'sgp') {
@@ -100,7 +101,7 @@ function moveCont(elid){
   /* ===========================
   */
 
-$.getJSON('includes/calendario.json', function(data) {
+$.getJSON(themeURL+'/includes/calendario.json', function(data) {
   var cData = data.fechas;
   var lastFecha;
   $('.cal-fecha').on('click',function(){
@@ -146,7 +147,8 @@ $.getJSON('includes/calendario.json', function(data) {
     var $equipos = '';
     if (cSource != undefined) {
       for (var i = 0; i < cSource.partidos.length; i++) {
-        $equipos += '<tr><td><img src="'+cSource.partidos[i].equipos[0].bandera+'" alt="'+cSource.partidos[i].equipos[0].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[0].nombre+'</strong></td><td>vs</td><td><img src="'+cSource.partidos[i].equipos[1].bandera+'" alt="'+cSource.partidos[i].equipos[1].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[1].nombre+'</strong></td><td>'+cSource.partidos[i].hora+'</td><td>'+cSource.partidos[i].grupo+'</td><td>'+cSource.partidos[i].estadio+'</td></tr>';
+        /*añadir solución local*/
+        $equipos += '<tr><td><img src="'+themeURL+'/'+cSource.partidos[i].equipos[0].bandera+'" alt="'+cSource.partidos[i].equipos[0].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[0].nombre+'</strong></td><td>vs</td><td><img src="'+themeURL+'/'+cSource.partidos[i].equipos[1].bandera+'" alt="'+cSource.partidos[i].equipos[1].nombre+'"></td><td><strong>'+cSource.partidos[i].equipos[1].nombre+'</strong></td><td>'+cSource.partidos[i].hora+'</td><td>'+cSource.partidos[i].grupo+'</td><td>'+cSource.partidos[i].estadio+'</td></tr>';
       }
     } else {
       switch (este.data('cdate')) {
@@ -183,16 +185,19 @@ $.getJSON('includes/calendario.json', function(data) {
    */
 var elCanalDeYoutubeQueQuieresVer = 'canalpuebla';
 
-$.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?&max-results=50&alt=json', function(data) {
+$.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?q=BRASIL&max-results=50&alt=json', function(data) {
   var listaInicial = data.feed.entry;
 
-/*brujiscontreras*/
+console.log(listaInicial)
   var elvideo = [];
-  for (var i = 0; i < listaInicial.length; i++) {
-    if (listaInicial[i].content.$t.indexOf('brujiscontreras') > 0) {
+  /*for (var i = 0; i < listaInicial.length; i++) {
+    if (listaInicial[i].content.$t.indexOf('brasil2014') > 0) {
       elvideo.push(listaInicial[i]);
     }
-  };
+  }*/
+
+  elvideo = listaInicial;
+
   /**
 		/* Obtiene el último video del canal de Youtube y lo asigna al stage del componente
 		*/
@@ -366,7 +371,7 @@ SC.initialize({
   client_id: 'fadfafec99840a9bab19d077b12fd206'
 });
 
-var url = 'https://api.soundcloud.com/tracks.json?user_id=kitnelson&client_id=fadfafec99840a9bab19d077b12fd206';
+var url = 'https://api.soundcloud.com/tracks.json?user_id=tribuna-deportes-oficial&client_id=fadfafec99840a9bab19d077b12fd206';
 var trackPosition = -1;
 $.getJSON(url, function(tracks) {
   theAudioLoop(tracks,4);

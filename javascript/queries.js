@@ -9,7 +9,8 @@ enquire
 	if ($('.navegacion').css('display') != 'none') {
 		$('.navegacion').css('display','none');
 	} 
-    $('.logo').find('a').html('<img src="img/logo-s.jpg" alt="Periódico Digital - Brasil 2014">');
+    /*añadir solución local*/
+    $('.logo').find('a').html('<img src="'+themeURL+'/img/logo-s.jpg" alt="Periódico Digital - Brasil 2014">');
 })
 
 /**
@@ -20,7 +21,8 @@ enquire
     /*Muestra el menu enla versión tablet
     */
     $('.navegacion').css('display','inline');
-    $('.logo').find('a').html('<img src="img/logo.jpg" alt="Periódico Digital - Brasil 2014">');
+    /*añadir solución local*/
+    $('.logo').find('a').html('<img src="'+themeURL+'/img/logo.jpg" alt="Periódico Digital - Brasil 2014">');
 })
 
 /**
