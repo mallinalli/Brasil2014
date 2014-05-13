@@ -26,12 +26,12 @@
               <h2 class="res-head">Últimos Resultados</h2>
               <div class="res-list">
                 <ul>
-                  <li>Partido 1</li>
-                  <li>Partido 2</li>
-                  <li>Partido 3</li>
+                  <li><strong>Brasil 0</strong> - <strong>Hungría 3</strong></li>
+                  <li><strong>Canadá 1</strong> - <strong>Shikoku 4</strong></li>
+                  <li><strong>Tel Abib 2</strong> - <strong>URSS 5</strong></li>
                 </ul>
               </div>
-              <h3 class="res-footer">Presentado por</h3>
+              <h3 class="res-footer">Presentado por [Patrocinador]</h3>
             </div>
           </div>
           <div class="widgets2 clearfix">
@@ -72,7 +72,7 @@
                   </div>
                 </div>
               </div>
-              <h3 class="foto-footer">Presentado por</h3>
+              <h3 class="foto-footer">Presentado por [Patrocinador]</h3>
             </div>
             <div class="aside-banner">
               <img src="http://placehold.it/300x130">
@@ -99,7 +99,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="http://connect.soundcloud.com/sdk.js"></script>
-        <script src="plugins/share/share.min.js"></script>
         <script src="js/actions.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script>
@@ -147,12 +146,6 @@
           include('twitter.php');
         ?>
 
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
         <?php /*Para videos de youtube en nota*/ ?>
         <script>
           $(document).ready(function(){
