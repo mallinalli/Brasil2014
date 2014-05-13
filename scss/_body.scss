@@ -1,7 +1,10 @@
-body, h2, h3 {
+body {
   font-family: 'Quattrocento Sans', sans-serif;
   color: $elGris; /*gris*/
+  background: url(../img/bg2.jpg) no-repeat center center fixed;
+  @include background-size (cover);
 } 
+
 
 h2{
 	font-size: 26px;
@@ -81,6 +84,9 @@ ul{
 .contenido{
 	margin: 0 auto;
 	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	
 }
 .top-banner{
 	width: 99%;
