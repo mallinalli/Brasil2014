@@ -123,6 +123,7 @@
         <script>
           $(document).ready(function(){
             $('.fancybox-thumbs').fancybox({
+
               prevEffect : 'none',
               nextEffect : 'none',
 
@@ -137,7 +138,10 @@
                 }
               }
             }); 
-            $('.infogs').fancybox(); 
+            $('.infogs').fancybox({
+              fitToView: false,
+              maxWidth: 100+'%'
+            });
           });
         </script>
 
