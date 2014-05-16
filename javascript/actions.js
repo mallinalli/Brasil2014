@@ -31,8 +31,6 @@ $(document).ready(function(){
   $('.day-cont .day-block').first().slideToggle();
   $('.day-cont .day-block').first().closest('.day-cont').find('i').attr('class','icon-caret-down');
 
-  /*Galería de infografías*/
-  $('.info').find('.infogs').css('background','url('+$(this).find('img').attr('src')+') no-repeat center center' ).html('');
 });
 
 
