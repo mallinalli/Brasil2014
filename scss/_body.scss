@@ -98,8 +98,6 @@ ul{
 	img{
 		width: 100%;
 		height: auto;
-		
-		
 	}
 }
 .banner-comp{
@@ -109,11 +107,14 @@ ul{
 	img{
 		width: 100%;
 		height: auto;
-		
-		
 	}
 }
-.top-banner, .aside-banner{
+
+.small-banner, .medium-banner, .xsmall-banner {
+	margin: 5px 0;
+}
+
+.top-banner, .aside-banner, .small-banner, .medium-banner, .xsmall-banner {
 	img{
 		width: 100%;
 		height: auto;
