@@ -169,6 +169,25 @@ ul{
 		margin-right: 2%;
 	}
 }
+.s-principales{
+	width: 49%;
+	float: left;
+	background: $elGris;
+	height: 220px;
+
+	img{
+		width: 100%;
+	}
+	p{
+		color: #fff;
+		padding: 5px;
+	}
+	&.hlpr-mr {
+		margin-bottom: 10px;
+		margin-right: 2%;
+	}
+
+}
 .section-header {
 	margin-top: 0;
 	font-weight: bold;
@@ -672,8 +691,8 @@ ul{
 		}
 	}
 	.large{
-		width: 31%;
-		height: 284px;
+		width: 48%;
+		height: auto;
 
 	}
 	.medium{
