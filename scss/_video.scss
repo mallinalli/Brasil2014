@@ -5,11 +5,11 @@
 
 .home-video-component, .desk-home-video-component {
   @include user-select(none);
+  margin: 10px 0;
 }
 
 .home-video-component {
   background: lighten($elRojo,6%);
-  margin-bottom: 15px;
   overflow: hidden;
   @include border-radius(3px);
 }
@@ -89,7 +89,6 @@
 */
 
 .desk-home-video-component {
-  margin-bottom: 15px;
   height: 300px;
   overflow: hidden;
   background: lighten($elRojo,6%);

@@ -18,10 +18,10 @@
 	}
 }
 .contenido{
-	width: 66% !important;
+	width: 65.5% !important;
 	float: left;
-	@include box-sizing(border-box);
-	padding: 0.5% 0.5% 0 0.5%; /* Margen al interior del contenedor: */
+	margin-left: 0.5%;
+	padding: 10px 1% 0 1%; /* Margen al interior del contenedor: */
 	.nota-s{
 		.nota-r{
 			margin-top: 10px;

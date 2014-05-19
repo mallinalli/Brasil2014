@@ -23,14 +23,8 @@
 }
 .contenido{
 	width: 98%;
-	.principal{
-		/* img{
-			width: 100%;
-		}
-		p{
-			width: 100%;
-		} */
-	}
+	padding-top: 10px;
+	.principal{}
 	.principales{
 		&.hlpr-mr, &.hlpr-mr-t {
 			margin-right: 1.3%;
