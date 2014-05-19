@@ -1,5 +1,14 @@
 $(document).ready(function(){
-
+  /* La Elípsis de los títulos -------------------------------------------------------------------------------------*/
+  function thElipsis(){
+      $('.elipseme').dotdotdot({
+          wrap: 'word',
+          fallbackToLetter: true,
+          watch: true
+      });
+      console.log('elipsiando');
+  };
+  thElipsis();
   /*Botones para compartir en redes sociales -----------------------------------------------------------------------*/
   $('.share').on('click','li',function(){
     var theurl = $('.share').data('shurl');
@@ -19,7 +28,7 @@ $(document).ready(function(){
       } else if (sn == 'sgp') {
         shurl = 'https://plus.google.com/share?url='+url;
       } else {
-        shurl = 'https://twitter.com/intent/tweet?text='+cap+'&url='+url+'&via=pdpuebla'
+        shurl = 'https://twitter.com/intent/tweet?text='+cap+'&url='+url+'&via=Tribunadeportes'
       }
       newwindow = window.open(
         shurl, '', "status=yes, height=500; width=500; resizeable=0");
