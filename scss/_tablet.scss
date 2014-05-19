@@ -38,6 +38,13 @@
 		width: 24%;
 		height: 190px;
 	}
+	.s-principales{
+		&.hlpr-mr, &.hlpr-mr-t {
+			margin-right: 1.3%;
+		}
+		width: 24%;
+		height: 220px;
+	}
 }
 /* ==========================
 	Componente de video
@@ -50,8 +57,8 @@
 }
 .infografias{
 	.large{
-		width: 23.5%;
-		height: 310px;
+		width: 48%;
+		height: auto;
 
 	}
 	.medium{
