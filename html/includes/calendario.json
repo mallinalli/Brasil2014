@@ -794,6 +794,46 @@
 					"grupo" : "H"
 				}
 			]
+		},
+		{
+			"dia" : "28",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Brasil",
+							"bandera" : "img/flags/brasil.png"
+						},
+						{
+							"nombre" : "Chile",
+							"bandera" : "img/flags/chile.png"
+						}
+					],
+					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "29",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Holanda",
+							"bandera" : "img/flags/holanda.png"
+						},
+						{
+							"nombre" : "México",
+							"bandera" : "img/flags/mexico.png"
+						}
+					],
+					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
 		}
 	]
 }

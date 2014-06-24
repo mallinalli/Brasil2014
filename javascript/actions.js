@@ -163,12 +163,12 @@ $.getJSON(themeURL+'/includes/calendario.json', function(data) {
         case 27:
           $equipos += "<tr><td><i>Día de descanso.</i></td></tr>";
           break;
-        case 28:
+        /*case 28:
           $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
           break;
         case 29:
           $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
-          break;
+          break;*/
         case 30:
           $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
           break;
@@ -193,7 +193,7 @@ $.getJSON(themeURL+'/includes/calendario.json', function(data) {
    */
 var elCanalDeYoutubeQueQuieresVer = 'canalpuebla';
 
-$.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?q=BRASIL&max-results=50&alt=json', function(data) {
+$.getJSON('https://gdata.youtube.com/feeds/api/users/'+elCanalDeYoutubeQueQuieresVer+'/uploads/?max-results=50&q=brasil&alt=json', function(data) {
   var listaInicial = data.feed.entry;
 
 console.log(listaInicial)
