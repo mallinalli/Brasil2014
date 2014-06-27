@@ -136,7 +136,7 @@ $.getJSON(themeURL+'/includes/calendario.json', function(data) {
       } else if (evaluando >= 15 && evaluando < 18) {
         calEvent(17,$(this));
       } else if (evaluando >= 18 && evaluando < 21) {
-        calEvent(18,$(this));
+        calEvent(19,$(this));
       }
     }
   });
@@ -168,10 +168,10 @@ $.getJSON(themeURL+'/includes/calendario.json', function(data) {
           break;
         case 29:
           $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
-          break;*/
+          break;
         case 30:
           $equipos += "<tr><td><i>Octavos de final.</i></td></tr>";
-          break;
+          break;*/
       }
     }
     $('.cal-fecha:eq('+posicion+')').after('<div class="cal-cont hidden"><table><tbody>'+$equipos+'</tbody></table></div>');
