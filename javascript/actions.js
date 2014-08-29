@@ -139,6 +139,10 @@ $.getJSON(themeURL+'/includes/calendario.json', function(data) {
         calEvent(20,$(this));
       } else if (evaluando >= 21 && evaluando < 24) {
         calEvent(23,$(this));
+      } else if (evaluando >= 24 && evaluando < 27) {
+        calEvent(26,$(this));
+      } else if (evaluando >= 27 && evaluando < 30) {
+        calEvent(27,$(this));
       }
     }
   });

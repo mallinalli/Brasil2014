@@ -812,6 +812,21 @@
 					"hora" : "11:00",
 					"estadio" : "",
 					"grupo" : ""
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Colombia",
+							"bandera" : "img/flags/colombia.png"
+						},
+						{
+							"nombre" : "Uruguay",
+							"bandera" : "img/flags/uruguay.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
 				}
 			]
 		},
@@ -830,6 +845,213 @@
 						}
 					],
 					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Costa Rica",
+							"bandera" : "img/flags/costa_rica.png"
+						},
+						{
+							"nombre" : "Grecia",
+							"bandera" : "img/flags/grecia.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "30",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Francia",
+							"bandera" : "img/flags/francia.png"
+						},
+						{
+							"nombre" : "Nigeria",
+							"bandera" : "img/flags/nigeria.png"
+						}
+					],
+					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Alemania",
+							"bandera" : "img/flags/alemania.png"
+						},
+						{
+							"nombre" : "Argelia",
+							"bandera" : "img/flags/argelia.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "1",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Argentina",
+							"bandera" : "img/flags/argentina.png"
+						},
+						{
+							"nombre" : "Suiza",
+							"bandera" : "img/flags/suiza.png"
+						}
+					],
+					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Bélgica",
+							"bandera" : "img/flags/belgica.png"
+						},
+						{
+							"nombre" : "Estados Unidos",
+							"bandera" : "img/flags/usa.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "2",
+			"partidos" : [
+				
+			]
+		},
+		{
+			"dia" : "3",
+			"partidos" : [
+				
+			]
+		},
+		{
+			"dia" : "4",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Francia",
+							"bandera" : "img/flags/francia.png"
+						},
+						{
+							"nombre" : "Alemania",
+							"bandera" : "img/flags/alemania.png"
+						}
+					],
+					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Brasil",
+							"bandera" : "img/flags/brasil.png"
+						},
+						{
+							"nombre" : "Colombia",
+							"bandera" : "img/flags/colombia.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "5",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Argentina",
+							"bandera" : "img/flags/argentina.png"
+						},
+						{
+							"nombre" : "Bélgica",
+							"bandera" : "img/flags/belgica.png"
+						}
+					],
+					"hora" : "11:00",
+					"estadio" : "",
+					"grupo" : ""
+				},
+				{
+					"equipos" : [
+						{
+							"nombre" : "Holanda",
+							"bandera" : "img/flags/holanda.png"
+						},
+						{
+							"nombre" : "Costa Rica",
+							"bandera" : "img/flags/costa_rica.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "6",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Brasil",
+							"bandera" : "img/flags/brasil.png"
+						},
+						{
+							"nombre" : "Alemania",
+							"bandera" : "img/flags/alemania.png"
+						}
+					],
+					"hora" : "15:00",
+					"estadio" : "",
+					"grupo" : ""
+				}
+			]
+		},
+		{
+			"dia" : "7",
+			"partidos" : [
+				{
+					"equipos" : [
+						{
+							"nombre" : "Argentina",
+							"bandera" : "img/flags/argentina.png"
+						},
+						{
+							"nombre" : "Holanda",
+							"bandera" : "img/flags/holanda.png"
+						}
+					],
+					"hora" : "15:00",
 					"estadio" : "",
 					"grupo" : ""
 				}
